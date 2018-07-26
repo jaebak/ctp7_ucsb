@@ -10,10 +10,10 @@ package gem_pkg is
     --==  Firmware version  ==--
     --========================-- 
 
-    constant C_FIRMWARE_DATE    : std_logic_vector(31 downto 0) := x"20180321";
+    constant C_FIRMWARE_DATE    : std_logic_vector(31 downto 0) := x"20180726";
     constant C_FIRMWARE_MAJOR   : integer range 0 to 255        := 3;
     constant C_FIRMWARE_MINOR   : integer range 0 to 255        := 5;
-    constant C_FIRMWARE_BUILD   : integer range 0 to 255        := 0;
+    constant C_FIRMWARE_BUILD   : integer range 0 to 255        := 1;
     
     ------ Change log ------
     -- 1.8.6 no gbt sync procedure with oh
@@ -90,7 +90,8 @@ package gem_pkg is
     -- 3.4.3  Increased the PH FPGA TX elinks bitslip setting from 3 to 4 bits to allow 8 bit shift (whole clock cycle)
     -- 3.4.4  Set the default parameters for OH v3b FPGA elink bitslips that are working. Also ILA debugging OH index was changed from 0 to 1
     -- 3.4.5  Fix VFAT7 when using v3b (changed elink in v3b OH)
-    -- 3.5.0  Merged with promless project. NOTE: this version needs updated Zynq firmware with AXI-full and AXI interrupt support!        
+    -- 3.5.0  Merged with promless project. NOTE: this version needs updated Zynq firmware with AXI-full and AXI interrupt support!
+    -- 3.5.1  Added flipflops for ipb_mosi inputs in the ipbus_slave.vhd to ease the timing on the ipbus path    
 
     --======================--
     --==      General     ==--

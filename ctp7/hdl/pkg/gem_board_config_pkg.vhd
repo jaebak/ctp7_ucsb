@@ -22,7 +22,7 @@ package gem_board_config_package is
     constant CFG_BOARD_TYPE         : std_logic_vector(3 downto 0) := x"1"; 
 
     constant CFG_USE_TRIG_LINKS     : boolean := true; -- this should be TRUE by default, but could be set to false for tests or quicker compilation if not needed
-    constant CFG_NUM_OF_OHs         : integer := 2;     -- total number of OHs to instanciate (remember to adapt the CFG_OH_LINK_CONFIG_ARR accordingly)
+    constant CFG_NUM_OF_OHs         : integer := 4;     -- total number of OHs to instanciate (remember to adapt the CFG_OH_LINK_CONFIG_ARR accordingly)
 
     -- this should normally be set to false, but in special cases where the board is in a test stand that doesn't have AMC13, the board can use the internal oscillator for MGTs
     -- and then this parameter should be set to true (in this case the clockinit command should also be updated in CTP7 to use the oscillator instead of the backplane for reference)
@@ -43,9 +43,16 @@ package gem_board_config_package is
     
     type t_oh_link_config_arr is array (0 to CFG_NUM_OF_OHs - 1) of t_oh_link_config;
 
+--    constant CFG_OH_LINK_CONFIG_ARR : t_oh_link_config_arr := (
+--        (0, 1, 2, 24, 25), 
+--        (3, 4, 5, 26, 27) 
+--    );
+
     constant CFG_OH_LINK_CONFIG_ARR : t_oh_link_config_arr := (
         (0, 1, 2, 24, 25), 
-        (3, 4, 5, 26, 27) 
+        (3, 4, 5, 26, 27),
+        (6, 7, 8, 28, 29), 
+        (9, 10, 11, 30, 31)
     );
     
 --    constant CFG_OH_LINK_CONFIG_ARR : t_oh_link_config_arr := (

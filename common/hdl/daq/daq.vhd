@@ -1255,6 +1255,38 @@ begin
     regs_addresses(43)(REG_DAQ_ADDRESS_MSB downto REG_DAQ_ADDRESS_LSB) <= '0' & x"2d";
     regs_addresses(44)(REG_DAQ_ADDRESS_MSB downto REG_DAQ_ADDRESS_LSB) <= '0' & x"2e";
     regs_addresses(45)(REG_DAQ_ADDRESS_MSB downto REG_DAQ_ADDRESS_LSB) <= '0' & x"2f";
+    regs_addresses(46)(REG_DAQ_ADDRESS_MSB downto REG_DAQ_ADDRESS_LSB) <= '0' & x"30";
+    regs_addresses(47)(REG_DAQ_ADDRESS_MSB downto REG_DAQ_ADDRESS_LSB) <= '0' & x"31";
+    regs_addresses(48)(REG_DAQ_ADDRESS_MSB downto REG_DAQ_ADDRESS_LSB) <= '0' & x"32";
+    regs_addresses(49)(REG_DAQ_ADDRESS_MSB downto REG_DAQ_ADDRESS_LSB) <= '0' & x"33";
+    regs_addresses(50)(REG_DAQ_ADDRESS_MSB downto REG_DAQ_ADDRESS_LSB) <= '0' & x"34";
+    regs_addresses(51)(REG_DAQ_ADDRESS_MSB downto REG_DAQ_ADDRESS_LSB) <= '0' & x"35";
+    regs_addresses(52)(REG_DAQ_ADDRESS_MSB downto REG_DAQ_ADDRESS_LSB) <= '0' & x"36";
+    regs_addresses(53)(REG_DAQ_ADDRESS_MSB downto REG_DAQ_ADDRESS_LSB) <= '0' & x"37";
+    regs_addresses(54)(REG_DAQ_ADDRESS_MSB downto REG_DAQ_ADDRESS_LSB) <= '0' & x"38";
+    regs_addresses(55)(REG_DAQ_ADDRESS_MSB downto REG_DAQ_ADDRESS_LSB) <= '0' & x"39";
+    regs_addresses(56)(REG_DAQ_ADDRESS_MSB downto REG_DAQ_ADDRESS_LSB) <= '0' & x"3a";
+    regs_addresses(57)(REG_DAQ_ADDRESS_MSB downto REG_DAQ_ADDRESS_LSB) <= '0' & x"3b";
+    regs_addresses(58)(REG_DAQ_ADDRESS_MSB downto REG_DAQ_ADDRESS_LSB) <= '0' & x"3c";
+    regs_addresses(59)(REG_DAQ_ADDRESS_MSB downto REG_DAQ_ADDRESS_LSB) <= '0' & x"3d";
+    regs_addresses(60)(REG_DAQ_ADDRESS_MSB downto REG_DAQ_ADDRESS_LSB) <= '0' & x"3e";
+    regs_addresses(61)(REG_DAQ_ADDRESS_MSB downto REG_DAQ_ADDRESS_LSB) <= '0' & x"3f";
+    regs_addresses(62)(REG_DAQ_ADDRESS_MSB downto REG_DAQ_ADDRESS_LSB) <= '0' & x"40";
+    regs_addresses(63)(REG_DAQ_ADDRESS_MSB downto REG_DAQ_ADDRESS_LSB) <= '0' & x"41";
+    regs_addresses(64)(REG_DAQ_ADDRESS_MSB downto REG_DAQ_ADDRESS_LSB) <= '0' & x"42";
+    regs_addresses(65)(REG_DAQ_ADDRESS_MSB downto REG_DAQ_ADDRESS_LSB) <= '0' & x"43";
+    regs_addresses(66)(REG_DAQ_ADDRESS_MSB downto REG_DAQ_ADDRESS_LSB) <= '0' & x"44";
+    regs_addresses(67)(REG_DAQ_ADDRESS_MSB downto REG_DAQ_ADDRESS_LSB) <= '0' & x"45";
+    regs_addresses(68)(REG_DAQ_ADDRESS_MSB downto REG_DAQ_ADDRESS_LSB) <= '0' & x"46";
+    regs_addresses(69)(REG_DAQ_ADDRESS_MSB downto REG_DAQ_ADDRESS_LSB) <= '0' & x"47";
+    regs_addresses(70)(REG_DAQ_ADDRESS_MSB downto REG_DAQ_ADDRESS_LSB) <= '0' & x"48";
+    regs_addresses(71)(REG_DAQ_ADDRESS_MSB downto REG_DAQ_ADDRESS_LSB) <= '0' & x"49";
+    regs_addresses(72)(REG_DAQ_ADDRESS_MSB downto REG_DAQ_ADDRESS_LSB) <= '0' & x"4a";
+    regs_addresses(73)(REG_DAQ_ADDRESS_MSB downto REG_DAQ_ADDRESS_LSB) <= '0' & x"4b";
+    regs_addresses(74)(REG_DAQ_ADDRESS_MSB downto REG_DAQ_ADDRESS_LSB) <= '0' & x"4c";
+    regs_addresses(75)(REG_DAQ_ADDRESS_MSB downto REG_DAQ_ADDRESS_LSB) <= '0' & x"4d";
+    regs_addresses(76)(REG_DAQ_ADDRESS_MSB downto REG_DAQ_ADDRESS_LSB) <= '0' & x"4e";
+    regs_addresses(77)(REG_DAQ_ADDRESS_MSB downto REG_DAQ_ADDRESS_LSB) <= '0' & x"4f";
 
     -- Connect read signals
     regs_read_arr(0)(REG_DAQ_CONTROL_DAQ_ENABLE_BIT) <= daq_enable;
@@ -1374,6 +1406,86 @@ begin
     regs_read_arr(43)(REG_DAQ_OH1_LASTBLOCK4_MSB downto REG_DAQ_OH1_LASTBLOCK4_LSB) <= input_status_arr(1).ep_vfat_block_data(4);
     regs_read_arr(44)(REG_DAQ_OH1_LASTBLOCK5_MSB downto REG_DAQ_OH1_LASTBLOCK5_LSB) <= input_status_arr(1).ep_vfat_block_data(5);
     regs_read_arr(45)(REG_DAQ_OH1_LASTBLOCK6_MSB downto REG_DAQ_OH1_LASTBLOCK6_LSB) <= input_status_arr(1).ep_vfat_block_data(6);
+    regs_read_arr(46)(REG_DAQ_OH2_STATUS_VFAT_MIXED_EC_BIT) <= input_status_arr(2).err_mixed_vfat_ec;
+    regs_read_arr(46)(REG_DAQ_OH2_STATUS_VFAT_MIXED_BC_BIT) <= input_status_arr(2).err_mixed_vfat_bc;
+    regs_read_arr(46)(REG_DAQ_OH2_STATUS_OH_MIXED_BC_BIT) <= input_status_arr(2).err_mixed_oh_bc;
+    regs_read_arr(46)(REG_DAQ_OH2_STATUS_VFAT_TOO_MANY_BIT) <= input_status_arr(2).err_event_bigger_than_24;
+    regs_read_arr(46)(REG_DAQ_OH2_STATUS_VFAT_SMALL_BLOCK_BIT) <= input_status_arr(2).err_vfat_block_too_small;
+    regs_read_arr(46)(REG_DAQ_OH2_STATUS_VFAT_LARGE_BLOCK_BIT) <= input_status_arr(2).err_vfat_block_too_big;
+    regs_read_arr(46)(REG_DAQ_OH2_STATUS_VFAT_NO_MARKER_BIT) <= input_status_arr(2).err_corrupted_vfat_data;
+    regs_read_arr(46)(REG_DAQ_OH2_STATUS_INPUT_FIFO_HAD_OFLOW_BIT) <= input_status_arr(2).err_infifo_full;
+    regs_read_arr(46)(REG_DAQ_OH2_STATUS_INPUT_FIFO_HAD_UFLOW_BIT) <= input_status_arr(2).err_infifo_underflow;
+    regs_read_arr(46)(REG_DAQ_OH2_STATUS_EVENT_FIFO_HAD_OFLOW_BIT) <= input_status_arr(2).err_evtfifo_full;
+    regs_read_arr(46)(REG_DAQ_OH2_STATUS_EVT_SIZE_ERR_BIT) <= input_status_arr(2).err_event_too_big;
+    regs_read_arr(46)(REG_DAQ_OH2_STATUS_TTS_STATE_MSB downto REG_DAQ_OH2_STATUS_TTS_STATE_LSB) <= input_status_arr(2).tts_state;
+    regs_read_arr(46)(REG_DAQ_OH2_STATUS_VFAT_INPUT_HAD_OVF_BIT) <= input_status_arr(2).vfat_fifo_ovf;
+    regs_read_arr(46)(REG_DAQ_OH2_STATUS_VFAT_INPUT_HAD_UNF_BIT) <= input_status_arr(2).vfat_fifo_unf;
+    regs_read_arr(46)(REG_DAQ_OH2_STATUS_INPUT_FIFO_IS_UFLOW_BIT) <= input_status_arr(2).infifo_underflow;
+    regs_read_arr(46)(REG_DAQ_OH2_STATUS_INPUT_FIFO_IS_FULL_BIT) <= input_status_arr(2).infifo_full;
+    regs_read_arr(46)(REG_DAQ_OH2_STATUS_INPUT_FIFO_IS_AFULL_BIT) <= input_status_arr(2).infifo_near_full;
+    regs_read_arr(46)(REG_DAQ_OH2_STATUS_INPUT_FIFO_IS_EMPTY_BIT) <= input_status_arr(2).infifo_empty;
+    regs_read_arr(46)(REG_DAQ_OH2_STATUS_EVENT_FIFO_IS_UFLOW_BIT) <= input_status_arr(2).evtfifo_underflow;
+    regs_read_arr(46)(REG_DAQ_OH2_STATUS_EVENT_FIFO_IS_FULL_BIT) <= input_status_arr(2).evtfifo_full;
+    regs_read_arr(46)(REG_DAQ_OH2_STATUS_EVENT_FIFO_IS_AFULL_BIT) <= input_status_arr(2).evtfifo_near_full;
+    regs_read_arr(46)(REG_DAQ_OH2_STATUS_EVENT_FIFO_IS_EMPTY_BIT) <= input_status_arr(2).evtfifo_empty;
+    regs_read_arr(47)(REG_DAQ_OH2_COUNTERS_CORRUPT_VFAT_BLK_CNT_MSB downto REG_DAQ_OH2_COUNTERS_CORRUPT_VFAT_BLK_CNT_LSB) <= input_status_arr(2).cnt_corrupted_vfat;
+    regs_read_arr(48)(REG_DAQ_OH2_COUNTERS_EVN_MSB downto REG_DAQ_OH2_COUNTERS_EVN_LSB) <= input_status_arr(2).eb_event_num;
+    regs_read_arr(49)(REG_DAQ_OH2_CONTROL_EOE_TIMEOUT_MSB downto REG_DAQ_OH2_CONTROL_EOE_TIMEOUT_LSB) <= input_control_arr(2).eb_timeout_delay;
+    regs_read_arr(50)(REG_DAQ_OH2_COUNTERS_INPUT_FIFO_DATA_CNT_MSB downto REG_DAQ_OH2_COUNTERS_INPUT_FIFO_DATA_CNT_LSB) <= chamber_infifos(2).data_cnt;
+    regs_read_arr(50)(REG_DAQ_OH2_COUNTERS_EVT_FIFO_DATA_CNT_MSB downto REG_DAQ_OH2_COUNTERS_EVT_FIFO_DATA_CNT_LSB) <= chamber_evtfifos(2).data_cnt;
+    regs_read_arr(51)(REG_DAQ_OH2_COUNTERS_INPUT_FIFO_NEAR_FULL_CNT_MSB downto REG_DAQ_OH2_COUNTERS_INPUT_FIFO_NEAR_FULL_CNT_LSB) <= input_status_arr(2).infifo_near_full_cnt;
+    regs_read_arr(51)(REG_DAQ_OH2_COUNTERS_EVT_FIFO_NEAR_FULL_CNT_MSB downto REG_DAQ_OH2_COUNTERS_EVT_FIFO_NEAR_FULL_CNT_LSB) <= input_status_arr(2).evtfifo_near_full_cnt;
+    regs_read_arr(52)(REG_DAQ_OH2_COUNTERS_VFAT_BLOCK_RATE_MSB downto REG_DAQ_OH2_COUNTERS_VFAT_BLOCK_RATE_LSB) <= input_status_arr(2).infifo_wr_rate;
+    regs_read_arr(52)(REG_DAQ_OH2_COUNTERS_EVT_RATE_MSB downto REG_DAQ_OH2_COUNTERS_EVT_RATE_LSB) <= input_status_arr(2).evtfifo_wr_rate;
+    regs_read_arr(53)(REG_DAQ_OH2_COUNTERS_MAX_EOE_TIMER_MSB downto REG_DAQ_OH2_COUNTERS_MAX_EOE_TIMER_LSB) <= input_status_arr(2).eb_max_timer;
+    regs_read_arr(54)(REG_DAQ_OH2_COUNTERS_LAST_EOE_TIMER_MSB downto REG_DAQ_OH2_COUNTERS_LAST_EOE_TIMER_LSB) <= input_status_arr(2).eb_last_timer;
+    regs_read_arr(55)(REG_DAQ_OH2_LASTBLOCK0_MSB downto REG_DAQ_OH2_LASTBLOCK0_LSB) <= input_status_arr(2).ep_vfat_block_data(0);
+    regs_read_arr(56)(REG_DAQ_OH2_LASTBLOCK1_MSB downto REG_DAQ_OH2_LASTBLOCK1_LSB) <= input_status_arr(2).ep_vfat_block_data(1);
+    regs_read_arr(57)(REG_DAQ_OH2_LASTBLOCK2_MSB downto REG_DAQ_OH2_LASTBLOCK2_LSB) <= input_status_arr(2).ep_vfat_block_data(2);
+    regs_read_arr(58)(REG_DAQ_OH2_LASTBLOCK3_MSB downto REG_DAQ_OH2_LASTBLOCK3_LSB) <= input_status_arr(2).ep_vfat_block_data(3);
+    regs_read_arr(59)(REG_DAQ_OH2_LASTBLOCK4_MSB downto REG_DAQ_OH2_LASTBLOCK4_LSB) <= input_status_arr(2).ep_vfat_block_data(4);
+    regs_read_arr(60)(REG_DAQ_OH2_LASTBLOCK5_MSB downto REG_DAQ_OH2_LASTBLOCK5_LSB) <= input_status_arr(2).ep_vfat_block_data(5);
+    regs_read_arr(61)(REG_DAQ_OH2_LASTBLOCK6_MSB downto REG_DAQ_OH2_LASTBLOCK6_LSB) <= input_status_arr(2).ep_vfat_block_data(6);
+    regs_read_arr(62)(REG_DAQ_OH3_STATUS_VFAT_MIXED_EC_BIT) <= input_status_arr(3).err_mixed_vfat_ec;
+    regs_read_arr(62)(REG_DAQ_OH3_STATUS_VFAT_MIXED_BC_BIT) <= input_status_arr(3).err_mixed_vfat_bc;
+    regs_read_arr(62)(REG_DAQ_OH3_STATUS_OH_MIXED_BC_BIT) <= input_status_arr(3).err_mixed_oh_bc;
+    regs_read_arr(62)(REG_DAQ_OH3_STATUS_VFAT_TOO_MANY_BIT) <= input_status_arr(3).err_event_bigger_than_24;
+    regs_read_arr(62)(REG_DAQ_OH3_STATUS_VFAT_SMALL_BLOCK_BIT) <= input_status_arr(3).err_vfat_block_too_small;
+    regs_read_arr(62)(REG_DAQ_OH3_STATUS_VFAT_LARGE_BLOCK_BIT) <= input_status_arr(3).err_vfat_block_too_big;
+    regs_read_arr(62)(REG_DAQ_OH3_STATUS_VFAT_NO_MARKER_BIT) <= input_status_arr(3).err_corrupted_vfat_data;
+    regs_read_arr(62)(REG_DAQ_OH3_STATUS_INPUT_FIFO_HAD_OFLOW_BIT) <= input_status_arr(3).err_infifo_full;
+    regs_read_arr(62)(REG_DAQ_OH3_STATUS_INPUT_FIFO_HAD_UFLOW_BIT) <= input_status_arr(3).err_infifo_underflow;
+    regs_read_arr(62)(REG_DAQ_OH3_STATUS_EVENT_FIFO_HAD_OFLOW_BIT) <= input_status_arr(3).err_evtfifo_full;
+    regs_read_arr(62)(REG_DAQ_OH3_STATUS_EVT_SIZE_ERR_BIT) <= input_status_arr(3).err_event_too_big;
+    regs_read_arr(62)(REG_DAQ_OH3_STATUS_TTS_STATE_MSB downto REG_DAQ_OH3_STATUS_TTS_STATE_LSB) <= input_status_arr(3).tts_state;
+    regs_read_arr(62)(REG_DAQ_OH3_STATUS_VFAT_INPUT_HAD_OVF_BIT) <= input_status_arr(3).vfat_fifo_ovf;
+    regs_read_arr(62)(REG_DAQ_OH3_STATUS_VFAT_INPUT_HAD_UNF_BIT) <= input_status_arr(3).vfat_fifo_unf;
+    regs_read_arr(62)(REG_DAQ_OH3_STATUS_INPUT_FIFO_IS_UFLOW_BIT) <= input_status_arr(3).infifo_underflow;
+    regs_read_arr(62)(REG_DAQ_OH3_STATUS_INPUT_FIFO_IS_FULL_BIT) <= input_status_arr(3).infifo_full;
+    regs_read_arr(62)(REG_DAQ_OH3_STATUS_INPUT_FIFO_IS_AFULL_BIT) <= input_status_arr(3).infifo_near_full;
+    regs_read_arr(62)(REG_DAQ_OH3_STATUS_INPUT_FIFO_IS_EMPTY_BIT) <= input_status_arr(3).infifo_empty;
+    regs_read_arr(62)(REG_DAQ_OH3_STATUS_EVENT_FIFO_IS_UFLOW_BIT) <= input_status_arr(3).evtfifo_underflow;
+    regs_read_arr(62)(REG_DAQ_OH3_STATUS_EVENT_FIFO_IS_FULL_BIT) <= input_status_arr(3).evtfifo_full;
+    regs_read_arr(62)(REG_DAQ_OH3_STATUS_EVENT_FIFO_IS_AFULL_BIT) <= input_status_arr(3).evtfifo_near_full;
+    regs_read_arr(62)(REG_DAQ_OH3_STATUS_EVENT_FIFO_IS_EMPTY_BIT) <= input_status_arr(3).evtfifo_empty;
+    regs_read_arr(63)(REG_DAQ_OH3_COUNTERS_CORRUPT_VFAT_BLK_CNT_MSB downto REG_DAQ_OH3_COUNTERS_CORRUPT_VFAT_BLK_CNT_LSB) <= input_status_arr(3).cnt_corrupted_vfat;
+    regs_read_arr(64)(REG_DAQ_OH3_COUNTERS_EVN_MSB downto REG_DAQ_OH3_COUNTERS_EVN_LSB) <= input_status_arr(3).eb_event_num;
+    regs_read_arr(65)(REG_DAQ_OH3_CONTROL_EOE_TIMEOUT_MSB downto REG_DAQ_OH3_CONTROL_EOE_TIMEOUT_LSB) <= input_control_arr(3).eb_timeout_delay;
+    regs_read_arr(66)(REG_DAQ_OH3_COUNTERS_INPUT_FIFO_DATA_CNT_MSB downto REG_DAQ_OH3_COUNTERS_INPUT_FIFO_DATA_CNT_LSB) <= chamber_infifos(3).data_cnt;
+    regs_read_arr(66)(REG_DAQ_OH3_COUNTERS_EVT_FIFO_DATA_CNT_MSB downto REG_DAQ_OH3_COUNTERS_EVT_FIFO_DATA_CNT_LSB) <= chamber_evtfifos(3).data_cnt;
+    regs_read_arr(67)(REG_DAQ_OH3_COUNTERS_INPUT_FIFO_NEAR_FULL_CNT_MSB downto REG_DAQ_OH3_COUNTERS_INPUT_FIFO_NEAR_FULL_CNT_LSB) <= input_status_arr(3).infifo_near_full_cnt;
+    regs_read_arr(67)(REG_DAQ_OH3_COUNTERS_EVT_FIFO_NEAR_FULL_CNT_MSB downto REG_DAQ_OH3_COUNTERS_EVT_FIFO_NEAR_FULL_CNT_LSB) <= input_status_arr(3).evtfifo_near_full_cnt;
+    regs_read_arr(68)(REG_DAQ_OH3_COUNTERS_VFAT_BLOCK_RATE_MSB downto REG_DAQ_OH3_COUNTERS_VFAT_BLOCK_RATE_LSB) <= input_status_arr(3).infifo_wr_rate;
+    regs_read_arr(68)(REG_DAQ_OH3_COUNTERS_EVT_RATE_MSB downto REG_DAQ_OH3_COUNTERS_EVT_RATE_LSB) <= input_status_arr(3).evtfifo_wr_rate;
+    regs_read_arr(69)(REG_DAQ_OH3_COUNTERS_MAX_EOE_TIMER_MSB downto REG_DAQ_OH3_COUNTERS_MAX_EOE_TIMER_LSB) <= input_status_arr(3).eb_max_timer;
+    regs_read_arr(70)(REG_DAQ_OH3_COUNTERS_LAST_EOE_TIMER_MSB downto REG_DAQ_OH3_COUNTERS_LAST_EOE_TIMER_LSB) <= input_status_arr(3).eb_last_timer;
+    regs_read_arr(71)(REG_DAQ_OH3_LASTBLOCK0_MSB downto REG_DAQ_OH3_LASTBLOCK0_LSB) <= input_status_arr(3).ep_vfat_block_data(0);
+    regs_read_arr(72)(REG_DAQ_OH3_LASTBLOCK1_MSB downto REG_DAQ_OH3_LASTBLOCK1_LSB) <= input_status_arr(3).ep_vfat_block_data(1);
+    regs_read_arr(73)(REG_DAQ_OH3_LASTBLOCK2_MSB downto REG_DAQ_OH3_LASTBLOCK2_LSB) <= input_status_arr(3).ep_vfat_block_data(2);
+    regs_read_arr(74)(REG_DAQ_OH3_LASTBLOCK3_MSB downto REG_DAQ_OH3_LASTBLOCK3_LSB) <= input_status_arr(3).ep_vfat_block_data(3);
+    regs_read_arr(75)(REG_DAQ_OH3_LASTBLOCK4_MSB downto REG_DAQ_OH3_LASTBLOCK4_LSB) <= input_status_arr(3).ep_vfat_block_data(4);
+    regs_read_arr(76)(REG_DAQ_OH3_LASTBLOCK5_MSB downto REG_DAQ_OH3_LASTBLOCK5_LSB) <= input_status_arr(3).ep_vfat_block_data(5);
+    regs_read_arr(77)(REG_DAQ_OH3_LASTBLOCK6_MSB downto REG_DAQ_OH3_LASTBLOCK6_LSB) <= input_status_arr(3).ep_vfat_block_data(6);
 
     -- Connect write signals
     daq_enable <= regs_write_arr(0)(REG_DAQ_CONTROL_DAQ_ENABLE_BIT);
@@ -1390,6 +1502,8 @@ begin
     run_type <= regs_write_arr(13)(REG_DAQ_EXT_CONTROL_RUN_TYPE_MSB downto REG_DAQ_EXT_CONTROL_RUN_TYPE_LSB);
     input_control_arr(0).eb_timeout_delay <= regs_write_arr(17)(REG_DAQ_OH0_CONTROL_EOE_TIMEOUT_MSB downto REG_DAQ_OH0_CONTROL_EOE_TIMEOUT_LSB);
     input_control_arr(1).eb_timeout_delay <= regs_write_arr(33)(REG_DAQ_OH1_CONTROL_EOE_TIMEOUT_MSB downto REG_DAQ_OH1_CONTROL_EOE_TIMEOUT_LSB);
+    input_control_arr(2).eb_timeout_delay <= regs_write_arr(49)(REG_DAQ_OH2_CONTROL_EOE_TIMEOUT_MSB downto REG_DAQ_OH2_CONTROL_EOE_TIMEOUT_LSB);
+    input_control_arr(3).eb_timeout_delay <= regs_write_arr(65)(REG_DAQ_OH3_CONTROL_EOE_TIMEOUT_MSB downto REG_DAQ_OH3_CONTROL_EOE_TIMEOUT_LSB);
 
     -- Connect write pulse signals
 
@@ -1414,6 +1528,8 @@ begin
     regs_defaults(13)(REG_DAQ_EXT_CONTROL_RUN_TYPE_MSB downto REG_DAQ_EXT_CONTROL_RUN_TYPE_LSB) <= REG_DAQ_EXT_CONTROL_RUN_TYPE_DEFAULT;
     regs_defaults(17)(REG_DAQ_OH0_CONTROL_EOE_TIMEOUT_MSB downto REG_DAQ_OH0_CONTROL_EOE_TIMEOUT_LSB) <= REG_DAQ_OH0_CONTROL_EOE_TIMEOUT_DEFAULT;
     regs_defaults(33)(REG_DAQ_OH1_CONTROL_EOE_TIMEOUT_MSB downto REG_DAQ_OH1_CONTROL_EOE_TIMEOUT_LSB) <= REG_DAQ_OH1_CONTROL_EOE_TIMEOUT_DEFAULT;
+    regs_defaults(49)(REG_DAQ_OH2_CONTROL_EOE_TIMEOUT_MSB downto REG_DAQ_OH2_CONTROL_EOE_TIMEOUT_LSB) <= REG_DAQ_OH2_CONTROL_EOE_TIMEOUT_DEFAULT;
+    regs_defaults(65)(REG_DAQ_OH3_CONTROL_EOE_TIMEOUT_MSB downto REG_DAQ_OH3_CONTROL_EOE_TIMEOUT_LSB) <= REG_DAQ_OH3_CONTROL_EOE_TIMEOUT_DEFAULT;
 
     -- Define writable regs
     regs_writable_arr(0) <= '1';
@@ -1421,6 +1537,8 @@ begin
     regs_writable_arr(13) <= '1';
     regs_writable_arr(17) <= '1';
     regs_writable_arr(33) <= '1';
+    regs_writable_arr(49) <= '1';
+    regs_writable_arr(65) <= '1';
 
     --==== Registers end ============================================================================
 
