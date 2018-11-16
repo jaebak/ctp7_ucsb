@@ -311,7 +311,7 @@ begin
                             tx_sca_command.channel <= SCA_CHANNEL_GPIO;
                             tx_sca_command.command <= SCA_CMD_GPIO_SET_OUT;
                             tx_sca_command.length <= x"04";
-                            tx_sca_command.data <= x"00000000";
+                            tx_sca_command.data <= x"f0ffff0f";
                         elsif (trans_error = '1') then
                             top_state <= ERROR;
                             trans_en <= '0';

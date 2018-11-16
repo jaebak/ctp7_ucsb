@@ -149,6 +149,326 @@
         <node id="LINK0_SYNC_WORD_CNT" address="0xa5" permission="r" mask="0xffff"/>
         <node id="LINK1_SYNC_WORD_CNT" address="0xa5" permission="r" mask="0xffff0000"/>
       </node>
+      <node id="OH2" address="0x300" >
+        <node id="TRIGGER_RATE" address="0x0" permission="r" />
+        <node id="TRIGGER_CNT" address="0x1" permission="r" />
+        <node id="CLUSTER_SIZE_0_RATE" address="0x10" permission="r" />
+        <node id="CLUSTER_SIZE_1_RATE" address="0x11" permission="r" />
+        <node id="CLUSTER_SIZE_2_RATE" address="0x12" permission="r" />
+        <node id="CLUSTER_SIZE_3_RATE" address="0x13" permission="r" />
+        <node id="CLUSTER_SIZE_4_RATE" address="0x14" permission="r" />
+        <node id="CLUSTER_SIZE_5_RATE" address="0x15" permission="r" />
+        <node id="CLUSTER_SIZE_6_RATE" address="0x16" permission="r" />
+        <node id="CLUSTER_SIZE_7_RATE" address="0x17" permission="r" />
+        <node id="CLUSTER_SIZE_8_RATE" address="0x18" permission="r" />
+        <node id="CLUSTER_SIZE_0_CNT" address="0x20" permission="r" />
+        <node id="CLUSTER_SIZE_1_CNT" address="0x21" permission="r" />
+        <node id="CLUSTER_SIZE_2_CNT" address="0x22" permission="r" />
+        <node id="CLUSTER_SIZE_3_CNT" address="0x23" permission="r" />
+        <node id="CLUSTER_SIZE_4_CNT" address="0x24" permission="r" />
+        <node id="CLUSTER_SIZE_5_CNT" address="0x25" permission="r" />
+        <node id="CLUSTER_SIZE_6_CNT" address="0x26" permission="r" />
+        <node id="CLUSTER_SIZE_7_CNT" address="0x27" permission="r" />
+        <node id="CLUSTER_SIZE_8_CNT" address="0x28" permission="r" />
+        <node id="LINK0_SBIT_OVERFLOW_CNT" address="0xa0" permission="r" mask="0xffff"/>
+        <node id="LINK1_SBIT_OVERFLOW_CNT" address="0xa0" permission="r" mask="0xffff0000"/>
+        <node id="LINK0_MISSED_COMMA_CNT" address="0xa1" permission="r" mask="0xffff"/>
+        <node id="LINK1_MISSED_COMMA_CNT" address="0xa1" permission="r" mask="0xffff0000"/>
+        <node id="LINK0_OVERFLOW_CNT" address="0xa3" permission="r" mask="0xffff"/>
+        <node id="LINK1_OVERFLOW_CNT" address="0xa3" permission="r" mask="0xffff0000"/>
+        <node id="LINK0_UNDERFLOW_CNT" address="0xa4" permission="r" mask="0xffff"/>
+        <node id="LINK1_UNDERFLOW_CNT" address="0xa4" permission="r" mask="0xffff0000"/>
+        <node id="LINK0_SYNC_WORD_CNT" address="0xa5" permission="r" mask="0xffff"/>
+        <node id="LINK1_SYNC_WORD_CNT" address="0xa5" permission="r" mask="0xffff0000"/>
+      </node>
+      <node id="OH3" address="0x400" >
+        <node id="TRIGGER_RATE" address="0x0" permission="r" />
+        <node id="TRIGGER_CNT" address="0x1" permission="r" />
+        <node id="CLUSTER_SIZE_0_RATE" address="0x10" permission="r" />
+        <node id="CLUSTER_SIZE_1_RATE" address="0x11" permission="r" />
+        <node id="CLUSTER_SIZE_2_RATE" address="0x12" permission="r" />
+        <node id="CLUSTER_SIZE_3_RATE" address="0x13" permission="r" />
+        <node id="CLUSTER_SIZE_4_RATE" address="0x14" permission="r" />
+        <node id="CLUSTER_SIZE_5_RATE" address="0x15" permission="r" />
+        <node id="CLUSTER_SIZE_6_RATE" address="0x16" permission="r" />
+        <node id="CLUSTER_SIZE_7_RATE" address="0x17" permission="r" />
+        <node id="CLUSTER_SIZE_8_RATE" address="0x18" permission="r" />
+        <node id="CLUSTER_SIZE_0_CNT" address="0x20" permission="r" />
+        <node id="CLUSTER_SIZE_1_CNT" address="0x21" permission="r" />
+        <node id="CLUSTER_SIZE_2_CNT" address="0x22" permission="r" />
+        <node id="CLUSTER_SIZE_3_CNT" address="0x23" permission="r" />
+        <node id="CLUSTER_SIZE_4_CNT" address="0x24" permission="r" />
+        <node id="CLUSTER_SIZE_5_CNT" address="0x25" permission="r" />
+        <node id="CLUSTER_SIZE_6_CNT" address="0x26" permission="r" />
+        <node id="CLUSTER_SIZE_7_CNT" address="0x27" permission="r" />
+        <node id="CLUSTER_SIZE_8_CNT" address="0x28" permission="r" />
+        <node id="LINK0_SBIT_OVERFLOW_CNT" address="0xa0" permission="r" mask="0xffff"/>
+        <node id="LINK1_SBIT_OVERFLOW_CNT" address="0xa0" permission="r" mask="0xffff0000"/>
+        <node id="LINK0_MISSED_COMMA_CNT" address="0xa1" permission="r" mask="0xffff"/>
+        <node id="LINK1_MISSED_COMMA_CNT" address="0xa1" permission="r" mask="0xffff0000"/>
+        <node id="LINK0_OVERFLOW_CNT" address="0xa3" permission="r" mask="0xffff"/>
+        <node id="LINK1_OVERFLOW_CNT" address="0xa3" permission="r" mask="0xffff0000"/>
+        <node id="LINK0_UNDERFLOW_CNT" address="0xa4" permission="r" mask="0xffff"/>
+        <node id="LINK1_UNDERFLOW_CNT" address="0xa4" permission="r" mask="0xffff0000"/>
+        <node id="LINK0_SYNC_WORD_CNT" address="0xa5" permission="r" mask="0xffff"/>
+        <node id="LINK1_SYNC_WORD_CNT" address="0xa5" permission="r" mask="0xffff0000"/>
+      </node>
+      <node id="OH4" address="0x500" >
+        <node id="TRIGGER_RATE" address="0x0" permission="r" />
+        <node id="TRIGGER_CNT" address="0x1" permission="r" />
+        <node id="CLUSTER_SIZE_0_RATE" address="0x10" permission="r" />
+        <node id="CLUSTER_SIZE_1_RATE" address="0x11" permission="r" />
+        <node id="CLUSTER_SIZE_2_RATE" address="0x12" permission="r" />
+        <node id="CLUSTER_SIZE_3_RATE" address="0x13" permission="r" />
+        <node id="CLUSTER_SIZE_4_RATE" address="0x14" permission="r" />
+        <node id="CLUSTER_SIZE_5_RATE" address="0x15" permission="r" />
+        <node id="CLUSTER_SIZE_6_RATE" address="0x16" permission="r" />
+        <node id="CLUSTER_SIZE_7_RATE" address="0x17" permission="r" />
+        <node id="CLUSTER_SIZE_8_RATE" address="0x18" permission="r" />
+        <node id="CLUSTER_SIZE_0_CNT" address="0x20" permission="r" />
+        <node id="CLUSTER_SIZE_1_CNT" address="0x21" permission="r" />
+        <node id="CLUSTER_SIZE_2_CNT" address="0x22" permission="r" />
+        <node id="CLUSTER_SIZE_3_CNT" address="0x23" permission="r" />
+        <node id="CLUSTER_SIZE_4_CNT" address="0x24" permission="r" />
+        <node id="CLUSTER_SIZE_5_CNT" address="0x25" permission="r" />
+        <node id="CLUSTER_SIZE_6_CNT" address="0x26" permission="r" />
+        <node id="CLUSTER_SIZE_7_CNT" address="0x27" permission="r" />
+        <node id="CLUSTER_SIZE_8_CNT" address="0x28" permission="r" />
+        <node id="LINK0_SBIT_OVERFLOW_CNT" address="0xa0" permission="r" mask="0xffff"/>
+        <node id="LINK1_SBIT_OVERFLOW_CNT" address="0xa0" permission="r" mask="0xffff0000"/>
+        <node id="LINK0_MISSED_COMMA_CNT" address="0xa1" permission="r" mask="0xffff"/>
+        <node id="LINK1_MISSED_COMMA_CNT" address="0xa1" permission="r" mask="0xffff0000"/>
+        <node id="LINK0_OVERFLOW_CNT" address="0xa3" permission="r" mask="0xffff"/>
+        <node id="LINK1_OVERFLOW_CNT" address="0xa3" permission="r" mask="0xffff0000"/>
+        <node id="LINK0_UNDERFLOW_CNT" address="0xa4" permission="r" mask="0xffff"/>
+        <node id="LINK1_UNDERFLOW_CNT" address="0xa4" permission="r" mask="0xffff0000"/>
+        <node id="LINK0_SYNC_WORD_CNT" address="0xa5" permission="r" mask="0xffff"/>
+        <node id="LINK1_SYNC_WORD_CNT" address="0xa5" permission="r" mask="0xffff0000"/>
+      </node>
+      <node id="OH5" address="0x600" >
+        <node id="TRIGGER_RATE" address="0x0" permission="r" />
+        <node id="TRIGGER_CNT" address="0x1" permission="r" />
+        <node id="CLUSTER_SIZE_0_RATE" address="0x10" permission="r" />
+        <node id="CLUSTER_SIZE_1_RATE" address="0x11" permission="r" />
+        <node id="CLUSTER_SIZE_2_RATE" address="0x12" permission="r" />
+        <node id="CLUSTER_SIZE_3_RATE" address="0x13" permission="r" />
+        <node id="CLUSTER_SIZE_4_RATE" address="0x14" permission="r" />
+        <node id="CLUSTER_SIZE_5_RATE" address="0x15" permission="r" />
+        <node id="CLUSTER_SIZE_6_RATE" address="0x16" permission="r" />
+        <node id="CLUSTER_SIZE_7_RATE" address="0x17" permission="r" />
+        <node id="CLUSTER_SIZE_8_RATE" address="0x18" permission="r" />
+        <node id="CLUSTER_SIZE_0_CNT" address="0x20" permission="r" />
+        <node id="CLUSTER_SIZE_1_CNT" address="0x21" permission="r" />
+        <node id="CLUSTER_SIZE_2_CNT" address="0x22" permission="r" />
+        <node id="CLUSTER_SIZE_3_CNT" address="0x23" permission="r" />
+        <node id="CLUSTER_SIZE_4_CNT" address="0x24" permission="r" />
+        <node id="CLUSTER_SIZE_5_CNT" address="0x25" permission="r" />
+        <node id="CLUSTER_SIZE_6_CNT" address="0x26" permission="r" />
+        <node id="CLUSTER_SIZE_7_CNT" address="0x27" permission="r" />
+        <node id="CLUSTER_SIZE_8_CNT" address="0x28" permission="r" />
+        <node id="LINK0_SBIT_OVERFLOW_CNT" address="0xa0" permission="r" mask="0xffff"/>
+        <node id="LINK1_SBIT_OVERFLOW_CNT" address="0xa0" permission="r" mask="0xffff0000"/>
+        <node id="LINK0_MISSED_COMMA_CNT" address="0xa1" permission="r" mask="0xffff"/>
+        <node id="LINK1_MISSED_COMMA_CNT" address="0xa1" permission="r" mask="0xffff0000"/>
+        <node id="LINK0_OVERFLOW_CNT" address="0xa3" permission="r" mask="0xffff"/>
+        <node id="LINK1_OVERFLOW_CNT" address="0xa3" permission="r" mask="0xffff0000"/>
+        <node id="LINK0_UNDERFLOW_CNT" address="0xa4" permission="r" mask="0xffff"/>
+        <node id="LINK1_UNDERFLOW_CNT" address="0xa4" permission="r" mask="0xffff0000"/>
+        <node id="LINK0_SYNC_WORD_CNT" address="0xa5" permission="r" mask="0xffff"/>
+        <node id="LINK1_SYNC_WORD_CNT" address="0xa5" permission="r" mask="0xffff0000"/>
+      </node>
+      <node id="OH6" address="0x700" >
+        <node id="TRIGGER_RATE" address="0x0" permission="r" />
+        <node id="TRIGGER_CNT" address="0x1" permission="r" />
+        <node id="CLUSTER_SIZE_0_RATE" address="0x10" permission="r" />
+        <node id="CLUSTER_SIZE_1_RATE" address="0x11" permission="r" />
+        <node id="CLUSTER_SIZE_2_RATE" address="0x12" permission="r" />
+        <node id="CLUSTER_SIZE_3_RATE" address="0x13" permission="r" />
+        <node id="CLUSTER_SIZE_4_RATE" address="0x14" permission="r" />
+        <node id="CLUSTER_SIZE_5_RATE" address="0x15" permission="r" />
+        <node id="CLUSTER_SIZE_6_RATE" address="0x16" permission="r" />
+        <node id="CLUSTER_SIZE_7_RATE" address="0x17" permission="r" />
+        <node id="CLUSTER_SIZE_8_RATE" address="0x18" permission="r" />
+        <node id="CLUSTER_SIZE_0_CNT" address="0x20" permission="r" />
+        <node id="CLUSTER_SIZE_1_CNT" address="0x21" permission="r" />
+        <node id="CLUSTER_SIZE_2_CNT" address="0x22" permission="r" />
+        <node id="CLUSTER_SIZE_3_CNT" address="0x23" permission="r" />
+        <node id="CLUSTER_SIZE_4_CNT" address="0x24" permission="r" />
+        <node id="CLUSTER_SIZE_5_CNT" address="0x25" permission="r" />
+        <node id="CLUSTER_SIZE_6_CNT" address="0x26" permission="r" />
+        <node id="CLUSTER_SIZE_7_CNT" address="0x27" permission="r" />
+        <node id="CLUSTER_SIZE_8_CNT" address="0x28" permission="r" />
+        <node id="LINK0_SBIT_OVERFLOW_CNT" address="0xa0" permission="r" mask="0xffff"/>
+        <node id="LINK1_SBIT_OVERFLOW_CNT" address="0xa0" permission="r" mask="0xffff0000"/>
+        <node id="LINK0_MISSED_COMMA_CNT" address="0xa1" permission="r" mask="0xffff"/>
+        <node id="LINK1_MISSED_COMMA_CNT" address="0xa1" permission="r" mask="0xffff0000"/>
+        <node id="LINK0_OVERFLOW_CNT" address="0xa3" permission="r" mask="0xffff"/>
+        <node id="LINK1_OVERFLOW_CNT" address="0xa3" permission="r" mask="0xffff0000"/>
+        <node id="LINK0_UNDERFLOW_CNT" address="0xa4" permission="r" mask="0xffff"/>
+        <node id="LINK1_UNDERFLOW_CNT" address="0xa4" permission="r" mask="0xffff0000"/>
+        <node id="LINK0_SYNC_WORD_CNT" address="0xa5" permission="r" mask="0xffff"/>
+        <node id="LINK1_SYNC_WORD_CNT" address="0xa5" permission="r" mask="0xffff0000"/>
+      </node>
+      <node id="OH7" address="0x800" >
+        <node id="TRIGGER_RATE" address="0x0" permission="r" />
+        <node id="TRIGGER_CNT" address="0x1" permission="r" />
+        <node id="CLUSTER_SIZE_0_RATE" address="0x10" permission="r" />
+        <node id="CLUSTER_SIZE_1_RATE" address="0x11" permission="r" />
+        <node id="CLUSTER_SIZE_2_RATE" address="0x12" permission="r" />
+        <node id="CLUSTER_SIZE_3_RATE" address="0x13" permission="r" />
+        <node id="CLUSTER_SIZE_4_RATE" address="0x14" permission="r" />
+        <node id="CLUSTER_SIZE_5_RATE" address="0x15" permission="r" />
+        <node id="CLUSTER_SIZE_6_RATE" address="0x16" permission="r" />
+        <node id="CLUSTER_SIZE_7_RATE" address="0x17" permission="r" />
+        <node id="CLUSTER_SIZE_8_RATE" address="0x18" permission="r" />
+        <node id="CLUSTER_SIZE_0_CNT" address="0x20" permission="r" />
+        <node id="CLUSTER_SIZE_1_CNT" address="0x21" permission="r" />
+        <node id="CLUSTER_SIZE_2_CNT" address="0x22" permission="r" />
+        <node id="CLUSTER_SIZE_3_CNT" address="0x23" permission="r" />
+        <node id="CLUSTER_SIZE_4_CNT" address="0x24" permission="r" />
+        <node id="CLUSTER_SIZE_5_CNT" address="0x25" permission="r" />
+        <node id="CLUSTER_SIZE_6_CNT" address="0x26" permission="r" />
+        <node id="CLUSTER_SIZE_7_CNT" address="0x27" permission="r" />
+        <node id="CLUSTER_SIZE_8_CNT" address="0x28" permission="r" />
+        <node id="LINK0_SBIT_OVERFLOW_CNT" address="0xa0" permission="r" mask="0xffff"/>
+        <node id="LINK1_SBIT_OVERFLOW_CNT" address="0xa0" permission="r" mask="0xffff0000"/>
+        <node id="LINK0_MISSED_COMMA_CNT" address="0xa1" permission="r" mask="0xffff"/>
+        <node id="LINK1_MISSED_COMMA_CNT" address="0xa1" permission="r" mask="0xffff0000"/>
+        <node id="LINK0_OVERFLOW_CNT" address="0xa3" permission="r" mask="0xffff"/>
+        <node id="LINK1_OVERFLOW_CNT" address="0xa3" permission="r" mask="0xffff0000"/>
+        <node id="LINK0_UNDERFLOW_CNT" address="0xa4" permission="r" mask="0xffff"/>
+        <node id="LINK1_UNDERFLOW_CNT" address="0xa4" permission="r" mask="0xffff0000"/>
+        <node id="LINK0_SYNC_WORD_CNT" address="0xa5" permission="r" mask="0xffff"/>
+        <node id="LINK1_SYNC_WORD_CNT" address="0xa5" permission="r" mask="0xffff0000"/>
+      </node>
+      <node id="OH8" address="0x900" >
+        <node id="TRIGGER_RATE" address="0x0" permission="r" />
+        <node id="TRIGGER_CNT" address="0x1" permission="r" />
+        <node id="CLUSTER_SIZE_0_RATE" address="0x10" permission="r" />
+        <node id="CLUSTER_SIZE_1_RATE" address="0x11" permission="r" />
+        <node id="CLUSTER_SIZE_2_RATE" address="0x12" permission="r" />
+        <node id="CLUSTER_SIZE_3_RATE" address="0x13" permission="r" />
+        <node id="CLUSTER_SIZE_4_RATE" address="0x14" permission="r" />
+        <node id="CLUSTER_SIZE_5_RATE" address="0x15" permission="r" />
+        <node id="CLUSTER_SIZE_6_RATE" address="0x16" permission="r" />
+        <node id="CLUSTER_SIZE_7_RATE" address="0x17" permission="r" />
+        <node id="CLUSTER_SIZE_8_RATE" address="0x18" permission="r" />
+        <node id="CLUSTER_SIZE_0_CNT" address="0x20" permission="r" />
+        <node id="CLUSTER_SIZE_1_CNT" address="0x21" permission="r" />
+        <node id="CLUSTER_SIZE_2_CNT" address="0x22" permission="r" />
+        <node id="CLUSTER_SIZE_3_CNT" address="0x23" permission="r" />
+        <node id="CLUSTER_SIZE_4_CNT" address="0x24" permission="r" />
+        <node id="CLUSTER_SIZE_5_CNT" address="0x25" permission="r" />
+        <node id="CLUSTER_SIZE_6_CNT" address="0x26" permission="r" />
+        <node id="CLUSTER_SIZE_7_CNT" address="0x27" permission="r" />
+        <node id="CLUSTER_SIZE_8_CNT" address="0x28" permission="r" />
+        <node id="LINK0_SBIT_OVERFLOW_CNT" address="0xa0" permission="r" mask="0xffff"/>
+        <node id="LINK1_SBIT_OVERFLOW_CNT" address="0xa0" permission="r" mask="0xffff0000"/>
+        <node id="LINK0_MISSED_COMMA_CNT" address="0xa1" permission="r" mask="0xffff"/>
+        <node id="LINK1_MISSED_COMMA_CNT" address="0xa1" permission="r" mask="0xffff0000"/>
+        <node id="LINK0_OVERFLOW_CNT" address="0xa3" permission="r" mask="0xffff"/>
+        <node id="LINK1_OVERFLOW_CNT" address="0xa3" permission="r" mask="0xffff0000"/>
+        <node id="LINK0_UNDERFLOW_CNT" address="0xa4" permission="r" mask="0xffff"/>
+        <node id="LINK1_UNDERFLOW_CNT" address="0xa4" permission="r" mask="0xffff0000"/>
+        <node id="LINK0_SYNC_WORD_CNT" address="0xa5" permission="r" mask="0xffff"/>
+        <node id="LINK1_SYNC_WORD_CNT" address="0xa5" permission="r" mask="0xffff0000"/>
+      </node>
+      <node id="OH9" address="0xa00" >
+        <node id="TRIGGER_RATE" address="0x0" permission="r" />
+        <node id="TRIGGER_CNT" address="0x1" permission="r" />
+        <node id="CLUSTER_SIZE_0_RATE" address="0x10" permission="r" />
+        <node id="CLUSTER_SIZE_1_RATE" address="0x11" permission="r" />
+        <node id="CLUSTER_SIZE_2_RATE" address="0x12" permission="r" />
+        <node id="CLUSTER_SIZE_3_RATE" address="0x13" permission="r" />
+        <node id="CLUSTER_SIZE_4_RATE" address="0x14" permission="r" />
+        <node id="CLUSTER_SIZE_5_RATE" address="0x15" permission="r" />
+        <node id="CLUSTER_SIZE_6_RATE" address="0x16" permission="r" />
+        <node id="CLUSTER_SIZE_7_RATE" address="0x17" permission="r" />
+        <node id="CLUSTER_SIZE_8_RATE" address="0x18" permission="r" />
+        <node id="CLUSTER_SIZE_0_CNT" address="0x20" permission="r" />
+        <node id="CLUSTER_SIZE_1_CNT" address="0x21" permission="r" />
+        <node id="CLUSTER_SIZE_2_CNT" address="0x22" permission="r" />
+        <node id="CLUSTER_SIZE_3_CNT" address="0x23" permission="r" />
+        <node id="CLUSTER_SIZE_4_CNT" address="0x24" permission="r" />
+        <node id="CLUSTER_SIZE_5_CNT" address="0x25" permission="r" />
+        <node id="CLUSTER_SIZE_6_CNT" address="0x26" permission="r" />
+        <node id="CLUSTER_SIZE_7_CNT" address="0x27" permission="r" />
+        <node id="CLUSTER_SIZE_8_CNT" address="0x28" permission="r" />
+        <node id="LINK0_SBIT_OVERFLOW_CNT" address="0xa0" permission="r" mask="0xffff"/>
+        <node id="LINK1_SBIT_OVERFLOW_CNT" address="0xa0" permission="r" mask="0xffff0000"/>
+        <node id="LINK0_MISSED_COMMA_CNT" address="0xa1" permission="r" mask="0xffff"/>
+        <node id="LINK1_MISSED_COMMA_CNT" address="0xa1" permission="r" mask="0xffff0000"/>
+        <node id="LINK0_OVERFLOW_CNT" address="0xa3" permission="r" mask="0xffff"/>
+        <node id="LINK1_OVERFLOW_CNT" address="0xa3" permission="r" mask="0xffff0000"/>
+        <node id="LINK0_UNDERFLOW_CNT" address="0xa4" permission="r" mask="0xffff"/>
+        <node id="LINK1_UNDERFLOW_CNT" address="0xa4" permission="r" mask="0xffff0000"/>
+        <node id="LINK0_SYNC_WORD_CNT" address="0xa5" permission="r" mask="0xffff"/>
+        <node id="LINK1_SYNC_WORD_CNT" address="0xa5" permission="r" mask="0xffff0000"/>
+      </node>
+      <node id="OH10" address="0xb00" >
+        <node id="TRIGGER_RATE" address="0x0" permission="r" />
+        <node id="TRIGGER_CNT" address="0x1" permission="r" />
+        <node id="CLUSTER_SIZE_0_RATE" address="0x10" permission="r" />
+        <node id="CLUSTER_SIZE_1_RATE" address="0x11" permission="r" />
+        <node id="CLUSTER_SIZE_2_RATE" address="0x12" permission="r" />
+        <node id="CLUSTER_SIZE_3_RATE" address="0x13" permission="r" />
+        <node id="CLUSTER_SIZE_4_RATE" address="0x14" permission="r" />
+        <node id="CLUSTER_SIZE_5_RATE" address="0x15" permission="r" />
+        <node id="CLUSTER_SIZE_6_RATE" address="0x16" permission="r" />
+        <node id="CLUSTER_SIZE_7_RATE" address="0x17" permission="r" />
+        <node id="CLUSTER_SIZE_8_RATE" address="0x18" permission="r" />
+        <node id="CLUSTER_SIZE_0_CNT" address="0x20" permission="r" />
+        <node id="CLUSTER_SIZE_1_CNT" address="0x21" permission="r" />
+        <node id="CLUSTER_SIZE_2_CNT" address="0x22" permission="r" />
+        <node id="CLUSTER_SIZE_3_CNT" address="0x23" permission="r" />
+        <node id="CLUSTER_SIZE_4_CNT" address="0x24" permission="r" />
+        <node id="CLUSTER_SIZE_5_CNT" address="0x25" permission="r" />
+        <node id="CLUSTER_SIZE_6_CNT" address="0x26" permission="r" />
+        <node id="CLUSTER_SIZE_7_CNT" address="0x27" permission="r" />
+        <node id="CLUSTER_SIZE_8_CNT" address="0x28" permission="r" />
+        <node id="LINK0_SBIT_OVERFLOW_CNT" address="0xa0" permission="r" mask="0xffff"/>
+        <node id="LINK1_SBIT_OVERFLOW_CNT" address="0xa0" permission="r" mask="0xffff0000"/>
+        <node id="LINK0_MISSED_COMMA_CNT" address="0xa1" permission="r" mask="0xffff"/>
+        <node id="LINK1_MISSED_COMMA_CNT" address="0xa1" permission="r" mask="0xffff0000"/>
+        <node id="LINK0_OVERFLOW_CNT" address="0xa3" permission="r" mask="0xffff"/>
+        <node id="LINK1_OVERFLOW_CNT" address="0xa3" permission="r" mask="0xffff0000"/>
+        <node id="LINK0_UNDERFLOW_CNT" address="0xa4" permission="r" mask="0xffff"/>
+        <node id="LINK1_UNDERFLOW_CNT" address="0xa4" permission="r" mask="0xffff0000"/>
+        <node id="LINK0_SYNC_WORD_CNT" address="0xa5" permission="r" mask="0xffff"/>
+        <node id="LINK1_SYNC_WORD_CNT" address="0xa5" permission="r" mask="0xffff0000"/>
+      </node>
+      <node id="OH11" address="0xc00" >
+        <node id="TRIGGER_RATE" address="0x0" permission="r" />
+        <node id="TRIGGER_CNT" address="0x1" permission="r" />
+        <node id="CLUSTER_SIZE_0_RATE" address="0x10" permission="r" />
+        <node id="CLUSTER_SIZE_1_RATE" address="0x11" permission="r" />
+        <node id="CLUSTER_SIZE_2_RATE" address="0x12" permission="r" />
+        <node id="CLUSTER_SIZE_3_RATE" address="0x13" permission="r" />
+        <node id="CLUSTER_SIZE_4_RATE" address="0x14" permission="r" />
+        <node id="CLUSTER_SIZE_5_RATE" address="0x15" permission="r" />
+        <node id="CLUSTER_SIZE_6_RATE" address="0x16" permission="r" />
+        <node id="CLUSTER_SIZE_7_RATE" address="0x17" permission="r" />
+        <node id="CLUSTER_SIZE_8_RATE" address="0x18" permission="r" />
+        <node id="CLUSTER_SIZE_0_CNT" address="0x20" permission="r" />
+        <node id="CLUSTER_SIZE_1_CNT" address="0x21" permission="r" />
+        <node id="CLUSTER_SIZE_2_CNT" address="0x22" permission="r" />
+        <node id="CLUSTER_SIZE_3_CNT" address="0x23" permission="r" />
+        <node id="CLUSTER_SIZE_4_CNT" address="0x24" permission="r" />
+        <node id="CLUSTER_SIZE_5_CNT" address="0x25" permission="r" />
+        <node id="CLUSTER_SIZE_6_CNT" address="0x26" permission="r" />
+        <node id="CLUSTER_SIZE_7_CNT" address="0x27" permission="r" />
+        <node id="CLUSTER_SIZE_8_CNT" address="0x28" permission="r" />
+        <node id="LINK0_SBIT_OVERFLOW_CNT" address="0xa0" permission="r" mask="0xffff"/>
+        <node id="LINK1_SBIT_OVERFLOW_CNT" address="0xa0" permission="r" mask="0xffff0000"/>
+        <node id="LINK0_MISSED_COMMA_CNT" address="0xa1" permission="r" mask="0xffff"/>
+        <node id="LINK1_MISSED_COMMA_CNT" address="0xa1" permission="r" mask="0xffff0000"/>
+        <node id="LINK0_OVERFLOW_CNT" address="0xa3" permission="r" mask="0xffff"/>
+        <node id="LINK1_OVERFLOW_CNT" address="0xa3" permission="r" mask="0xffff0000"/>
+        <node id="LINK0_UNDERFLOW_CNT" address="0xa4" permission="r" mask="0xffff"/>
+        <node id="LINK1_UNDERFLOW_CNT" address="0xa4" permission="r" mask="0xffff0000"/>
+        <node id="LINK0_SYNC_WORD_CNT" address="0xa5" permission="r" mask="0xffff"/>
+        <node id="LINK1_SYNC_WORD_CNT" address="0xa5" permission="r" mask="0xffff0000"/>
+      </node>
     </node>
     <node id="GEM_SYSTEM" address="0x900000" >
       <node id="CTRL" address="0x100" >
@@ -220,6 +540,36 @@
           <node id="ERROR_CNT" address="0x2" permission="r" />
         </node>
         <node id="LINK_5" address="0x60" >
+          <node id="SYNC_DONE" address="0x0" permission="r" mask="0x1"/>
+          <node id="MEGA_WORD_CNT" address="0x1" permission="r" />
+          <node id="ERROR_CNT" address="0x2" permission="r" />
+        </node>
+        <node id="LINK_6" address="0x70" >
+          <node id="SYNC_DONE" address="0x0" permission="r" mask="0x1"/>
+          <node id="MEGA_WORD_CNT" address="0x1" permission="r" />
+          <node id="ERROR_CNT" address="0x2" permission="r" />
+        </node>
+        <node id="LINK_7" address="0x80" >
+          <node id="SYNC_DONE" address="0x0" permission="r" mask="0x1"/>
+          <node id="MEGA_WORD_CNT" address="0x1" permission="r" />
+          <node id="ERROR_CNT" address="0x2" permission="r" />
+        </node>
+        <node id="LINK_8" address="0x90" >
+          <node id="SYNC_DONE" address="0x0" permission="r" mask="0x1"/>
+          <node id="MEGA_WORD_CNT" address="0x1" permission="r" />
+          <node id="ERROR_CNT" address="0x2" permission="r" />
+        </node>
+        <node id="LINK_9" address="0xa0" >
+          <node id="SYNC_DONE" address="0x0" permission="r" mask="0x1"/>
+          <node id="MEGA_WORD_CNT" address="0x1" permission="r" />
+          <node id="ERROR_CNT" address="0x2" permission="r" />
+        </node>
+        <node id="LINK_10" address="0xb0" >
+          <node id="SYNC_DONE" address="0x0" permission="r" mask="0x1"/>
+          <node id="MEGA_WORD_CNT" address="0x1" permission="r" />
+          <node id="ERROR_CNT" address="0x2" permission="r" />
+        </node>
+        <node id="LINK_11" address="0xc0" >
           <node id="SYNC_DONE" address="0x0" permission="r" mask="0x1"/>
           <node id="MEGA_WORD_CNT" address="0x1" permission="r" />
           <node id="ERROR_CNT" address="0x2" permission="r" />
@@ -426,6 +776,486 @@
         <node id="LASTBLOCK6" address="0xf" permission="r" />
       </node>
       <node id="OH1" address="0x20" >
+        <node id="CONTROL" address="0x0" >
+          <node id="EOE_TIMEOUT" address="0x3" permission="rw" mask="0xffffff"/>
+        </node>
+        <node id="STATUS" address="0x0" >
+          <node id="VFAT_MIXED_EC" address="0x0" permission="r" mask="0x2"/>
+          <node id="VFAT_MIXED_BC" address="0x0" permission="r" mask="0x4"/>
+          <node id="OH_MIXED_BC" address="0x0" permission="r" mask="0x8"/>
+          <node id="VFAT_TOO_MANY" address="0x0" permission="r" mask="0x10"/>
+          <node id="VFAT_SMALL_BLOCK" address="0x0" permission="r" mask="0x20"/>
+          <node id="VFAT_LARGE_BLOCK" address="0x0" permission="r" mask="0x40"/>
+          <node id="VFAT_NO_MARKER" address="0x0" permission="r" mask="0x80"/>
+          <node id="INPUT_FIFO_HAD_OFLOW" address="0x0" permission="r" mask="0x100"/>
+          <node id="INPUT_FIFO_HAD_UFLOW" address="0x0" permission="r" mask="0x200"/>
+          <node id="EVENT_FIFO_HAD_OFLOW" address="0x0" permission="r" mask="0x400"/>
+          <node id="EVT_SIZE_ERR" address="0x0" permission="r" mask="0x800"/>
+          <node id="VFAT_INPUT_HAD_OVF" address="0x0" permission="r" mask="0x10000"/>
+          <node id="VFAT_INPUT_HAD_UNF" address="0x0" permission="r" mask="0x20000"/>
+          <node id="TTS_STATE" address="0x0" permission="r" mask="0xf000"/>
+          <node id="INPUT_FIFO_IS_UFLOW" address="0x0" permission="r" mask="0x1000000"/>
+          <node id="INPUT_FIFO_IS_FULL" address="0x0" permission="r" mask="0x2000000"/>
+          <node id="INPUT_FIFO_IS_AFULL" address="0x0" permission="r" mask="0x4000000"/>
+          <node id="INPUT_FIFO_IS_EMPTY" address="0x0" permission="r" mask="0x8000000"/>
+          <node id="EVENT_FIFO_IS_UFLOW" address="0x0" permission="r" mask="0x10000000"/>
+          <node id="EVENT_FIFO_IS_FULL" address="0x0" permission="r" mask="0x20000000"/>
+          <node id="EVENT_FIFO_IS_AFULL" address="0x0" permission="r" mask="0x40000000"/>
+          <node id="EVENT_FIFO_IS_EMPTY" address="0x0" permission="r" mask="0x80000000"/>
+        </node>
+        <node id="COUNTERS" address="0x0" >
+          <node id="CORRUPT_VFAT_BLK_CNT" address="0x1" permission="r" />
+          <node id="EVN" address="0x2" permission="r" mask="0xffffff"/>
+          <node id="INPUT_FIFO_DATA_CNT" address="0x4" permission="r" mask="0xfff"/>
+          <node id="EVT_FIFO_DATA_CNT" address="0x4" permission="r" mask="0xfff0000"/>
+          <node id="INPUT_FIFO_NEAR_FULL_CNT" address="0x5" permission="r" mask="0xffff"/>
+          <node id="EVT_FIFO_NEAR_FULL_CNT" address="0x5" permission="r" mask="0xffff0000"/>
+          <node id="VFAT_BLOCK_RATE" address="0x6" permission="r" mask="0x7fff"/>
+          <node id="EVT_RATE" address="0x6" permission="r" mask="0xffff8000"/>
+          <node id="MAX_EOE_TIMER" address="0x7" permission="r" mask="0xffffff"/>
+          <node id="LAST_EOE_TIMER" address="0x8" permission="r" mask="0xffffff"/>
+        </node>
+        <node id="LASTBLOCK0" address="0x9" permission="r" />
+        <node id="LASTBLOCK1" address="0xa" permission="r" />
+        <node id="LASTBLOCK2" address="0xb" permission="r" />
+        <node id="LASTBLOCK3" address="0xc" permission="r" />
+        <node id="LASTBLOCK4" address="0xd" permission="r" />
+        <node id="LASTBLOCK5" address="0xe" permission="r" />
+        <node id="LASTBLOCK6" address="0xf" permission="r" />
+      </node>
+      <node id="OH2" address="0x30" >
+        <node id="CONTROL" address="0x0" >
+          <node id="EOE_TIMEOUT" address="0x3" permission="rw" mask="0xffffff"/>
+        </node>
+        <node id="STATUS" address="0x0" >
+          <node id="VFAT_MIXED_EC" address="0x0" permission="r" mask="0x2"/>
+          <node id="VFAT_MIXED_BC" address="0x0" permission="r" mask="0x4"/>
+          <node id="OH_MIXED_BC" address="0x0" permission="r" mask="0x8"/>
+          <node id="VFAT_TOO_MANY" address="0x0" permission="r" mask="0x10"/>
+          <node id="VFAT_SMALL_BLOCK" address="0x0" permission="r" mask="0x20"/>
+          <node id="VFAT_LARGE_BLOCK" address="0x0" permission="r" mask="0x40"/>
+          <node id="VFAT_NO_MARKER" address="0x0" permission="r" mask="0x80"/>
+          <node id="INPUT_FIFO_HAD_OFLOW" address="0x0" permission="r" mask="0x100"/>
+          <node id="INPUT_FIFO_HAD_UFLOW" address="0x0" permission="r" mask="0x200"/>
+          <node id="EVENT_FIFO_HAD_OFLOW" address="0x0" permission="r" mask="0x400"/>
+          <node id="EVT_SIZE_ERR" address="0x0" permission="r" mask="0x800"/>
+          <node id="VFAT_INPUT_HAD_OVF" address="0x0" permission="r" mask="0x10000"/>
+          <node id="VFAT_INPUT_HAD_UNF" address="0x0" permission="r" mask="0x20000"/>
+          <node id="TTS_STATE" address="0x0" permission="r" mask="0xf000"/>
+          <node id="INPUT_FIFO_IS_UFLOW" address="0x0" permission="r" mask="0x1000000"/>
+          <node id="INPUT_FIFO_IS_FULL" address="0x0" permission="r" mask="0x2000000"/>
+          <node id="INPUT_FIFO_IS_AFULL" address="0x0" permission="r" mask="0x4000000"/>
+          <node id="INPUT_FIFO_IS_EMPTY" address="0x0" permission="r" mask="0x8000000"/>
+          <node id="EVENT_FIFO_IS_UFLOW" address="0x0" permission="r" mask="0x10000000"/>
+          <node id="EVENT_FIFO_IS_FULL" address="0x0" permission="r" mask="0x20000000"/>
+          <node id="EVENT_FIFO_IS_AFULL" address="0x0" permission="r" mask="0x40000000"/>
+          <node id="EVENT_FIFO_IS_EMPTY" address="0x0" permission="r" mask="0x80000000"/>
+        </node>
+        <node id="COUNTERS" address="0x0" >
+          <node id="CORRUPT_VFAT_BLK_CNT" address="0x1" permission="r" />
+          <node id="EVN" address="0x2" permission="r" mask="0xffffff"/>
+          <node id="INPUT_FIFO_DATA_CNT" address="0x4" permission="r" mask="0xfff"/>
+          <node id="EVT_FIFO_DATA_CNT" address="0x4" permission="r" mask="0xfff0000"/>
+          <node id="INPUT_FIFO_NEAR_FULL_CNT" address="0x5" permission="r" mask="0xffff"/>
+          <node id="EVT_FIFO_NEAR_FULL_CNT" address="0x5" permission="r" mask="0xffff0000"/>
+          <node id="VFAT_BLOCK_RATE" address="0x6" permission="r" mask="0x7fff"/>
+          <node id="EVT_RATE" address="0x6" permission="r" mask="0xffff8000"/>
+          <node id="MAX_EOE_TIMER" address="0x7" permission="r" mask="0xffffff"/>
+          <node id="LAST_EOE_TIMER" address="0x8" permission="r" mask="0xffffff"/>
+        </node>
+        <node id="LASTBLOCK0" address="0x9" permission="r" />
+        <node id="LASTBLOCK1" address="0xa" permission="r" />
+        <node id="LASTBLOCK2" address="0xb" permission="r" />
+        <node id="LASTBLOCK3" address="0xc" permission="r" />
+        <node id="LASTBLOCK4" address="0xd" permission="r" />
+        <node id="LASTBLOCK5" address="0xe" permission="r" />
+        <node id="LASTBLOCK6" address="0xf" permission="r" />
+      </node>
+      <node id="OH3" address="0x40" >
+        <node id="CONTROL" address="0x0" >
+          <node id="EOE_TIMEOUT" address="0x3" permission="rw" mask="0xffffff"/>
+        </node>
+        <node id="STATUS" address="0x0" >
+          <node id="VFAT_MIXED_EC" address="0x0" permission="r" mask="0x2"/>
+          <node id="VFAT_MIXED_BC" address="0x0" permission="r" mask="0x4"/>
+          <node id="OH_MIXED_BC" address="0x0" permission="r" mask="0x8"/>
+          <node id="VFAT_TOO_MANY" address="0x0" permission="r" mask="0x10"/>
+          <node id="VFAT_SMALL_BLOCK" address="0x0" permission="r" mask="0x20"/>
+          <node id="VFAT_LARGE_BLOCK" address="0x0" permission="r" mask="0x40"/>
+          <node id="VFAT_NO_MARKER" address="0x0" permission="r" mask="0x80"/>
+          <node id="INPUT_FIFO_HAD_OFLOW" address="0x0" permission="r" mask="0x100"/>
+          <node id="INPUT_FIFO_HAD_UFLOW" address="0x0" permission="r" mask="0x200"/>
+          <node id="EVENT_FIFO_HAD_OFLOW" address="0x0" permission="r" mask="0x400"/>
+          <node id="EVT_SIZE_ERR" address="0x0" permission="r" mask="0x800"/>
+          <node id="VFAT_INPUT_HAD_OVF" address="0x0" permission="r" mask="0x10000"/>
+          <node id="VFAT_INPUT_HAD_UNF" address="0x0" permission="r" mask="0x20000"/>
+          <node id="TTS_STATE" address="0x0" permission="r" mask="0xf000"/>
+          <node id="INPUT_FIFO_IS_UFLOW" address="0x0" permission="r" mask="0x1000000"/>
+          <node id="INPUT_FIFO_IS_FULL" address="0x0" permission="r" mask="0x2000000"/>
+          <node id="INPUT_FIFO_IS_AFULL" address="0x0" permission="r" mask="0x4000000"/>
+          <node id="INPUT_FIFO_IS_EMPTY" address="0x0" permission="r" mask="0x8000000"/>
+          <node id="EVENT_FIFO_IS_UFLOW" address="0x0" permission="r" mask="0x10000000"/>
+          <node id="EVENT_FIFO_IS_FULL" address="0x0" permission="r" mask="0x20000000"/>
+          <node id="EVENT_FIFO_IS_AFULL" address="0x0" permission="r" mask="0x40000000"/>
+          <node id="EVENT_FIFO_IS_EMPTY" address="0x0" permission="r" mask="0x80000000"/>
+        </node>
+        <node id="COUNTERS" address="0x0" >
+          <node id="CORRUPT_VFAT_BLK_CNT" address="0x1" permission="r" />
+          <node id="EVN" address="0x2" permission="r" mask="0xffffff"/>
+          <node id="INPUT_FIFO_DATA_CNT" address="0x4" permission="r" mask="0xfff"/>
+          <node id="EVT_FIFO_DATA_CNT" address="0x4" permission="r" mask="0xfff0000"/>
+          <node id="INPUT_FIFO_NEAR_FULL_CNT" address="0x5" permission="r" mask="0xffff"/>
+          <node id="EVT_FIFO_NEAR_FULL_CNT" address="0x5" permission="r" mask="0xffff0000"/>
+          <node id="VFAT_BLOCK_RATE" address="0x6" permission="r" mask="0x7fff"/>
+          <node id="EVT_RATE" address="0x6" permission="r" mask="0xffff8000"/>
+          <node id="MAX_EOE_TIMER" address="0x7" permission="r" mask="0xffffff"/>
+          <node id="LAST_EOE_TIMER" address="0x8" permission="r" mask="0xffffff"/>
+        </node>
+        <node id="LASTBLOCK0" address="0x9" permission="r" />
+        <node id="LASTBLOCK1" address="0xa" permission="r" />
+        <node id="LASTBLOCK2" address="0xb" permission="r" />
+        <node id="LASTBLOCK3" address="0xc" permission="r" />
+        <node id="LASTBLOCK4" address="0xd" permission="r" />
+        <node id="LASTBLOCK5" address="0xe" permission="r" />
+        <node id="LASTBLOCK6" address="0xf" permission="r" />
+      </node>
+      <node id="OH4" address="0x50" >
+        <node id="CONTROL" address="0x0" >
+          <node id="EOE_TIMEOUT" address="0x3" permission="rw" mask="0xffffff"/>
+        </node>
+        <node id="STATUS" address="0x0" >
+          <node id="VFAT_MIXED_EC" address="0x0" permission="r" mask="0x2"/>
+          <node id="VFAT_MIXED_BC" address="0x0" permission="r" mask="0x4"/>
+          <node id="OH_MIXED_BC" address="0x0" permission="r" mask="0x8"/>
+          <node id="VFAT_TOO_MANY" address="0x0" permission="r" mask="0x10"/>
+          <node id="VFAT_SMALL_BLOCK" address="0x0" permission="r" mask="0x20"/>
+          <node id="VFAT_LARGE_BLOCK" address="0x0" permission="r" mask="0x40"/>
+          <node id="VFAT_NO_MARKER" address="0x0" permission="r" mask="0x80"/>
+          <node id="INPUT_FIFO_HAD_OFLOW" address="0x0" permission="r" mask="0x100"/>
+          <node id="INPUT_FIFO_HAD_UFLOW" address="0x0" permission="r" mask="0x200"/>
+          <node id="EVENT_FIFO_HAD_OFLOW" address="0x0" permission="r" mask="0x400"/>
+          <node id="EVT_SIZE_ERR" address="0x0" permission="r" mask="0x800"/>
+          <node id="VFAT_INPUT_HAD_OVF" address="0x0" permission="r" mask="0x10000"/>
+          <node id="VFAT_INPUT_HAD_UNF" address="0x0" permission="r" mask="0x20000"/>
+          <node id="TTS_STATE" address="0x0" permission="r" mask="0xf000"/>
+          <node id="INPUT_FIFO_IS_UFLOW" address="0x0" permission="r" mask="0x1000000"/>
+          <node id="INPUT_FIFO_IS_FULL" address="0x0" permission="r" mask="0x2000000"/>
+          <node id="INPUT_FIFO_IS_AFULL" address="0x0" permission="r" mask="0x4000000"/>
+          <node id="INPUT_FIFO_IS_EMPTY" address="0x0" permission="r" mask="0x8000000"/>
+          <node id="EVENT_FIFO_IS_UFLOW" address="0x0" permission="r" mask="0x10000000"/>
+          <node id="EVENT_FIFO_IS_FULL" address="0x0" permission="r" mask="0x20000000"/>
+          <node id="EVENT_FIFO_IS_AFULL" address="0x0" permission="r" mask="0x40000000"/>
+          <node id="EVENT_FIFO_IS_EMPTY" address="0x0" permission="r" mask="0x80000000"/>
+        </node>
+        <node id="COUNTERS" address="0x0" >
+          <node id="CORRUPT_VFAT_BLK_CNT" address="0x1" permission="r" />
+          <node id="EVN" address="0x2" permission="r" mask="0xffffff"/>
+          <node id="INPUT_FIFO_DATA_CNT" address="0x4" permission="r" mask="0xfff"/>
+          <node id="EVT_FIFO_DATA_CNT" address="0x4" permission="r" mask="0xfff0000"/>
+          <node id="INPUT_FIFO_NEAR_FULL_CNT" address="0x5" permission="r" mask="0xffff"/>
+          <node id="EVT_FIFO_NEAR_FULL_CNT" address="0x5" permission="r" mask="0xffff0000"/>
+          <node id="VFAT_BLOCK_RATE" address="0x6" permission="r" mask="0x7fff"/>
+          <node id="EVT_RATE" address="0x6" permission="r" mask="0xffff8000"/>
+          <node id="MAX_EOE_TIMER" address="0x7" permission="r" mask="0xffffff"/>
+          <node id="LAST_EOE_TIMER" address="0x8" permission="r" mask="0xffffff"/>
+        </node>
+        <node id="LASTBLOCK0" address="0x9" permission="r" />
+        <node id="LASTBLOCK1" address="0xa" permission="r" />
+        <node id="LASTBLOCK2" address="0xb" permission="r" />
+        <node id="LASTBLOCK3" address="0xc" permission="r" />
+        <node id="LASTBLOCK4" address="0xd" permission="r" />
+        <node id="LASTBLOCK5" address="0xe" permission="r" />
+        <node id="LASTBLOCK6" address="0xf" permission="r" />
+      </node>
+      <node id="OH5" address="0x60" >
+        <node id="CONTROL" address="0x0" >
+          <node id="EOE_TIMEOUT" address="0x3" permission="rw" mask="0xffffff"/>
+        </node>
+        <node id="STATUS" address="0x0" >
+          <node id="VFAT_MIXED_EC" address="0x0" permission="r" mask="0x2"/>
+          <node id="VFAT_MIXED_BC" address="0x0" permission="r" mask="0x4"/>
+          <node id="OH_MIXED_BC" address="0x0" permission="r" mask="0x8"/>
+          <node id="VFAT_TOO_MANY" address="0x0" permission="r" mask="0x10"/>
+          <node id="VFAT_SMALL_BLOCK" address="0x0" permission="r" mask="0x20"/>
+          <node id="VFAT_LARGE_BLOCK" address="0x0" permission="r" mask="0x40"/>
+          <node id="VFAT_NO_MARKER" address="0x0" permission="r" mask="0x80"/>
+          <node id="INPUT_FIFO_HAD_OFLOW" address="0x0" permission="r" mask="0x100"/>
+          <node id="INPUT_FIFO_HAD_UFLOW" address="0x0" permission="r" mask="0x200"/>
+          <node id="EVENT_FIFO_HAD_OFLOW" address="0x0" permission="r" mask="0x400"/>
+          <node id="EVT_SIZE_ERR" address="0x0" permission="r" mask="0x800"/>
+          <node id="VFAT_INPUT_HAD_OVF" address="0x0" permission="r" mask="0x10000"/>
+          <node id="VFAT_INPUT_HAD_UNF" address="0x0" permission="r" mask="0x20000"/>
+          <node id="TTS_STATE" address="0x0" permission="r" mask="0xf000"/>
+          <node id="INPUT_FIFO_IS_UFLOW" address="0x0" permission="r" mask="0x1000000"/>
+          <node id="INPUT_FIFO_IS_FULL" address="0x0" permission="r" mask="0x2000000"/>
+          <node id="INPUT_FIFO_IS_AFULL" address="0x0" permission="r" mask="0x4000000"/>
+          <node id="INPUT_FIFO_IS_EMPTY" address="0x0" permission="r" mask="0x8000000"/>
+          <node id="EVENT_FIFO_IS_UFLOW" address="0x0" permission="r" mask="0x10000000"/>
+          <node id="EVENT_FIFO_IS_FULL" address="0x0" permission="r" mask="0x20000000"/>
+          <node id="EVENT_FIFO_IS_AFULL" address="0x0" permission="r" mask="0x40000000"/>
+          <node id="EVENT_FIFO_IS_EMPTY" address="0x0" permission="r" mask="0x80000000"/>
+        </node>
+        <node id="COUNTERS" address="0x0" >
+          <node id="CORRUPT_VFAT_BLK_CNT" address="0x1" permission="r" />
+          <node id="EVN" address="0x2" permission="r" mask="0xffffff"/>
+          <node id="INPUT_FIFO_DATA_CNT" address="0x4" permission="r" mask="0xfff"/>
+          <node id="EVT_FIFO_DATA_CNT" address="0x4" permission="r" mask="0xfff0000"/>
+          <node id="INPUT_FIFO_NEAR_FULL_CNT" address="0x5" permission="r" mask="0xffff"/>
+          <node id="EVT_FIFO_NEAR_FULL_CNT" address="0x5" permission="r" mask="0xffff0000"/>
+          <node id="VFAT_BLOCK_RATE" address="0x6" permission="r" mask="0x7fff"/>
+          <node id="EVT_RATE" address="0x6" permission="r" mask="0xffff8000"/>
+          <node id="MAX_EOE_TIMER" address="0x7" permission="r" mask="0xffffff"/>
+          <node id="LAST_EOE_TIMER" address="0x8" permission="r" mask="0xffffff"/>
+        </node>
+        <node id="LASTBLOCK0" address="0x9" permission="r" />
+        <node id="LASTBLOCK1" address="0xa" permission="r" />
+        <node id="LASTBLOCK2" address="0xb" permission="r" />
+        <node id="LASTBLOCK3" address="0xc" permission="r" />
+        <node id="LASTBLOCK4" address="0xd" permission="r" />
+        <node id="LASTBLOCK5" address="0xe" permission="r" />
+        <node id="LASTBLOCK6" address="0xf" permission="r" />
+      </node>
+      <node id="OH6" address="0x70" >
+        <node id="CONTROL" address="0x0" >
+          <node id="EOE_TIMEOUT" address="0x3" permission="rw" mask="0xffffff"/>
+        </node>
+        <node id="STATUS" address="0x0" >
+          <node id="VFAT_MIXED_EC" address="0x0" permission="r" mask="0x2"/>
+          <node id="VFAT_MIXED_BC" address="0x0" permission="r" mask="0x4"/>
+          <node id="OH_MIXED_BC" address="0x0" permission="r" mask="0x8"/>
+          <node id="VFAT_TOO_MANY" address="0x0" permission="r" mask="0x10"/>
+          <node id="VFAT_SMALL_BLOCK" address="0x0" permission="r" mask="0x20"/>
+          <node id="VFAT_LARGE_BLOCK" address="0x0" permission="r" mask="0x40"/>
+          <node id="VFAT_NO_MARKER" address="0x0" permission="r" mask="0x80"/>
+          <node id="INPUT_FIFO_HAD_OFLOW" address="0x0" permission="r" mask="0x100"/>
+          <node id="INPUT_FIFO_HAD_UFLOW" address="0x0" permission="r" mask="0x200"/>
+          <node id="EVENT_FIFO_HAD_OFLOW" address="0x0" permission="r" mask="0x400"/>
+          <node id="EVT_SIZE_ERR" address="0x0" permission="r" mask="0x800"/>
+          <node id="VFAT_INPUT_HAD_OVF" address="0x0" permission="r" mask="0x10000"/>
+          <node id="VFAT_INPUT_HAD_UNF" address="0x0" permission="r" mask="0x20000"/>
+          <node id="TTS_STATE" address="0x0" permission="r" mask="0xf000"/>
+          <node id="INPUT_FIFO_IS_UFLOW" address="0x0" permission="r" mask="0x1000000"/>
+          <node id="INPUT_FIFO_IS_FULL" address="0x0" permission="r" mask="0x2000000"/>
+          <node id="INPUT_FIFO_IS_AFULL" address="0x0" permission="r" mask="0x4000000"/>
+          <node id="INPUT_FIFO_IS_EMPTY" address="0x0" permission="r" mask="0x8000000"/>
+          <node id="EVENT_FIFO_IS_UFLOW" address="0x0" permission="r" mask="0x10000000"/>
+          <node id="EVENT_FIFO_IS_FULL" address="0x0" permission="r" mask="0x20000000"/>
+          <node id="EVENT_FIFO_IS_AFULL" address="0x0" permission="r" mask="0x40000000"/>
+          <node id="EVENT_FIFO_IS_EMPTY" address="0x0" permission="r" mask="0x80000000"/>
+        </node>
+        <node id="COUNTERS" address="0x0" >
+          <node id="CORRUPT_VFAT_BLK_CNT" address="0x1" permission="r" />
+          <node id="EVN" address="0x2" permission="r" mask="0xffffff"/>
+          <node id="INPUT_FIFO_DATA_CNT" address="0x4" permission="r" mask="0xfff"/>
+          <node id="EVT_FIFO_DATA_CNT" address="0x4" permission="r" mask="0xfff0000"/>
+          <node id="INPUT_FIFO_NEAR_FULL_CNT" address="0x5" permission="r" mask="0xffff"/>
+          <node id="EVT_FIFO_NEAR_FULL_CNT" address="0x5" permission="r" mask="0xffff0000"/>
+          <node id="VFAT_BLOCK_RATE" address="0x6" permission="r" mask="0x7fff"/>
+          <node id="EVT_RATE" address="0x6" permission="r" mask="0xffff8000"/>
+          <node id="MAX_EOE_TIMER" address="0x7" permission="r" mask="0xffffff"/>
+          <node id="LAST_EOE_TIMER" address="0x8" permission="r" mask="0xffffff"/>
+        </node>
+        <node id="LASTBLOCK0" address="0x9" permission="r" />
+        <node id="LASTBLOCK1" address="0xa" permission="r" />
+        <node id="LASTBLOCK2" address="0xb" permission="r" />
+        <node id="LASTBLOCK3" address="0xc" permission="r" />
+        <node id="LASTBLOCK4" address="0xd" permission="r" />
+        <node id="LASTBLOCK5" address="0xe" permission="r" />
+        <node id="LASTBLOCK6" address="0xf" permission="r" />
+      </node>
+      <node id="OH7" address="0x80" >
+        <node id="CONTROL" address="0x0" >
+          <node id="EOE_TIMEOUT" address="0x3" permission="rw" mask="0xffffff"/>
+        </node>
+        <node id="STATUS" address="0x0" >
+          <node id="VFAT_MIXED_EC" address="0x0" permission="r" mask="0x2"/>
+          <node id="VFAT_MIXED_BC" address="0x0" permission="r" mask="0x4"/>
+          <node id="OH_MIXED_BC" address="0x0" permission="r" mask="0x8"/>
+          <node id="VFAT_TOO_MANY" address="0x0" permission="r" mask="0x10"/>
+          <node id="VFAT_SMALL_BLOCK" address="0x0" permission="r" mask="0x20"/>
+          <node id="VFAT_LARGE_BLOCK" address="0x0" permission="r" mask="0x40"/>
+          <node id="VFAT_NO_MARKER" address="0x0" permission="r" mask="0x80"/>
+          <node id="INPUT_FIFO_HAD_OFLOW" address="0x0" permission="r" mask="0x100"/>
+          <node id="INPUT_FIFO_HAD_UFLOW" address="0x0" permission="r" mask="0x200"/>
+          <node id="EVENT_FIFO_HAD_OFLOW" address="0x0" permission="r" mask="0x400"/>
+          <node id="EVT_SIZE_ERR" address="0x0" permission="r" mask="0x800"/>
+          <node id="VFAT_INPUT_HAD_OVF" address="0x0" permission="r" mask="0x10000"/>
+          <node id="VFAT_INPUT_HAD_UNF" address="0x0" permission="r" mask="0x20000"/>
+          <node id="TTS_STATE" address="0x0" permission="r" mask="0xf000"/>
+          <node id="INPUT_FIFO_IS_UFLOW" address="0x0" permission="r" mask="0x1000000"/>
+          <node id="INPUT_FIFO_IS_FULL" address="0x0" permission="r" mask="0x2000000"/>
+          <node id="INPUT_FIFO_IS_AFULL" address="0x0" permission="r" mask="0x4000000"/>
+          <node id="INPUT_FIFO_IS_EMPTY" address="0x0" permission="r" mask="0x8000000"/>
+          <node id="EVENT_FIFO_IS_UFLOW" address="0x0" permission="r" mask="0x10000000"/>
+          <node id="EVENT_FIFO_IS_FULL" address="0x0" permission="r" mask="0x20000000"/>
+          <node id="EVENT_FIFO_IS_AFULL" address="0x0" permission="r" mask="0x40000000"/>
+          <node id="EVENT_FIFO_IS_EMPTY" address="0x0" permission="r" mask="0x80000000"/>
+        </node>
+        <node id="COUNTERS" address="0x0" >
+          <node id="CORRUPT_VFAT_BLK_CNT" address="0x1" permission="r" />
+          <node id="EVN" address="0x2" permission="r" mask="0xffffff"/>
+          <node id="INPUT_FIFO_DATA_CNT" address="0x4" permission="r" mask="0xfff"/>
+          <node id="EVT_FIFO_DATA_CNT" address="0x4" permission="r" mask="0xfff0000"/>
+          <node id="INPUT_FIFO_NEAR_FULL_CNT" address="0x5" permission="r" mask="0xffff"/>
+          <node id="EVT_FIFO_NEAR_FULL_CNT" address="0x5" permission="r" mask="0xffff0000"/>
+          <node id="VFAT_BLOCK_RATE" address="0x6" permission="r" mask="0x7fff"/>
+          <node id="EVT_RATE" address="0x6" permission="r" mask="0xffff8000"/>
+          <node id="MAX_EOE_TIMER" address="0x7" permission="r" mask="0xffffff"/>
+          <node id="LAST_EOE_TIMER" address="0x8" permission="r" mask="0xffffff"/>
+        </node>
+        <node id="LASTBLOCK0" address="0x9" permission="r" />
+        <node id="LASTBLOCK1" address="0xa" permission="r" />
+        <node id="LASTBLOCK2" address="0xb" permission="r" />
+        <node id="LASTBLOCK3" address="0xc" permission="r" />
+        <node id="LASTBLOCK4" address="0xd" permission="r" />
+        <node id="LASTBLOCK5" address="0xe" permission="r" />
+        <node id="LASTBLOCK6" address="0xf" permission="r" />
+      </node>
+      <node id="OH8" address="0x90" >
+        <node id="CONTROL" address="0x0" >
+          <node id="EOE_TIMEOUT" address="0x3" permission="rw" mask="0xffffff"/>
+        </node>
+        <node id="STATUS" address="0x0" >
+          <node id="VFAT_MIXED_EC" address="0x0" permission="r" mask="0x2"/>
+          <node id="VFAT_MIXED_BC" address="0x0" permission="r" mask="0x4"/>
+          <node id="OH_MIXED_BC" address="0x0" permission="r" mask="0x8"/>
+          <node id="VFAT_TOO_MANY" address="0x0" permission="r" mask="0x10"/>
+          <node id="VFAT_SMALL_BLOCK" address="0x0" permission="r" mask="0x20"/>
+          <node id="VFAT_LARGE_BLOCK" address="0x0" permission="r" mask="0x40"/>
+          <node id="VFAT_NO_MARKER" address="0x0" permission="r" mask="0x80"/>
+          <node id="INPUT_FIFO_HAD_OFLOW" address="0x0" permission="r" mask="0x100"/>
+          <node id="INPUT_FIFO_HAD_UFLOW" address="0x0" permission="r" mask="0x200"/>
+          <node id="EVENT_FIFO_HAD_OFLOW" address="0x0" permission="r" mask="0x400"/>
+          <node id="EVT_SIZE_ERR" address="0x0" permission="r" mask="0x800"/>
+          <node id="VFAT_INPUT_HAD_OVF" address="0x0" permission="r" mask="0x10000"/>
+          <node id="VFAT_INPUT_HAD_UNF" address="0x0" permission="r" mask="0x20000"/>
+          <node id="TTS_STATE" address="0x0" permission="r" mask="0xf000"/>
+          <node id="INPUT_FIFO_IS_UFLOW" address="0x0" permission="r" mask="0x1000000"/>
+          <node id="INPUT_FIFO_IS_FULL" address="0x0" permission="r" mask="0x2000000"/>
+          <node id="INPUT_FIFO_IS_AFULL" address="0x0" permission="r" mask="0x4000000"/>
+          <node id="INPUT_FIFO_IS_EMPTY" address="0x0" permission="r" mask="0x8000000"/>
+          <node id="EVENT_FIFO_IS_UFLOW" address="0x0" permission="r" mask="0x10000000"/>
+          <node id="EVENT_FIFO_IS_FULL" address="0x0" permission="r" mask="0x20000000"/>
+          <node id="EVENT_FIFO_IS_AFULL" address="0x0" permission="r" mask="0x40000000"/>
+          <node id="EVENT_FIFO_IS_EMPTY" address="0x0" permission="r" mask="0x80000000"/>
+        </node>
+        <node id="COUNTERS" address="0x0" >
+          <node id="CORRUPT_VFAT_BLK_CNT" address="0x1" permission="r" />
+          <node id="EVN" address="0x2" permission="r" mask="0xffffff"/>
+          <node id="INPUT_FIFO_DATA_CNT" address="0x4" permission="r" mask="0xfff"/>
+          <node id="EVT_FIFO_DATA_CNT" address="0x4" permission="r" mask="0xfff0000"/>
+          <node id="INPUT_FIFO_NEAR_FULL_CNT" address="0x5" permission="r" mask="0xffff"/>
+          <node id="EVT_FIFO_NEAR_FULL_CNT" address="0x5" permission="r" mask="0xffff0000"/>
+          <node id="VFAT_BLOCK_RATE" address="0x6" permission="r" mask="0x7fff"/>
+          <node id="EVT_RATE" address="0x6" permission="r" mask="0xffff8000"/>
+          <node id="MAX_EOE_TIMER" address="0x7" permission="r" mask="0xffffff"/>
+          <node id="LAST_EOE_TIMER" address="0x8" permission="r" mask="0xffffff"/>
+        </node>
+        <node id="LASTBLOCK0" address="0x9" permission="r" />
+        <node id="LASTBLOCK1" address="0xa" permission="r" />
+        <node id="LASTBLOCK2" address="0xb" permission="r" />
+        <node id="LASTBLOCK3" address="0xc" permission="r" />
+        <node id="LASTBLOCK4" address="0xd" permission="r" />
+        <node id="LASTBLOCK5" address="0xe" permission="r" />
+        <node id="LASTBLOCK6" address="0xf" permission="r" />
+      </node>
+      <node id="OH9" address="0xa0" >
+        <node id="CONTROL" address="0x0" >
+          <node id="EOE_TIMEOUT" address="0x3" permission="rw" mask="0xffffff"/>
+        </node>
+        <node id="STATUS" address="0x0" >
+          <node id="VFAT_MIXED_EC" address="0x0" permission="r" mask="0x2"/>
+          <node id="VFAT_MIXED_BC" address="0x0" permission="r" mask="0x4"/>
+          <node id="OH_MIXED_BC" address="0x0" permission="r" mask="0x8"/>
+          <node id="VFAT_TOO_MANY" address="0x0" permission="r" mask="0x10"/>
+          <node id="VFAT_SMALL_BLOCK" address="0x0" permission="r" mask="0x20"/>
+          <node id="VFAT_LARGE_BLOCK" address="0x0" permission="r" mask="0x40"/>
+          <node id="VFAT_NO_MARKER" address="0x0" permission="r" mask="0x80"/>
+          <node id="INPUT_FIFO_HAD_OFLOW" address="0x0" permission="r" mask="0x100"/>
+          <node id="INPUT_FIFO_HAD_UFLOW" address="0x0" permission="r" mask="0x200"/>
+          <node id="EVENT_FIFO_HAD_OFLOW" address="0x0" permission="r" mask="0x400"/>
+          <node id="EVT_SIZE_ERR" address="0x0" permission="r" mask="0x800"/>
+          <node id="VFAT_INPUT_HAD_OVF" address="0x0" permission="r" mask="0x10000"/>
+          <node id="VFAT_INPUT_HAD_UNF" address="0x0" permission="r" mask="0x20000"/>
+          <node id="TTS_STATE" address="0x0" permission="r" mask="0xf000"/>
+          <node id="INPUT_FIFO_IS_UFLOW" address="0x0" permission="r" mask="0x1000000"/>
+          <node id="INPUT_FIFO_IS_FULL" address="0x0" permission="r" mask="0x2000000"/>
+          <node id="INPUT_FIFO_IS_AFULL" address="0x0" permission="r" mask="0x4000000"/>
+          <node id="INPUT_FIFO_IS_EMPTY" address="0x0" permission="r" mask="0x8000000"/>
+          <node id="EVENT_FIFO_IS_UFLOW" address="0x0" permission="r" mask="0x10000000"/>
+          <node id="EVENT_FIFO_IS_FULL" address="0x0" permission="r" mask="0x20000000"/>
+          <node id="EVENT_FIFO_IS_AFULL" address="0x0" permission="r" mask="0x40000000"/>
+          <node id="EVENT_FIFO_IS_EMPTY" address="0x0" permission="r" mask="0x80000000"/>
+        </node>
+        <node id="COUNTERS" address="0x0" >
+          <node id="CORRUPT_VFAT_BLK_CNT" address="0x1" permission="r" />
+          <node id="EVN" address="0x2" permission="r" mask="0xffffff"/>
+          <node id="INPUT_FIFO_DATA_CNT" address="0x4" permission="r" mask="0xfff"/>
+          <node id="EVT_FIFO_DATA_CNT" address="0x4" permission="r" mask="0xfff0000"/>
+          <node id="INPUT_FIFO_NEAR_FULL_CNT" address="0x5" permission="r" mask="0xffff"/>
+          <node id="EVT_FIFO_NEAR_FULL_CNT" address="0x5" permission="r" mask="0xffff0000"/>
+          <node id="VFAT_BLOCK_RATE" address="0x6" permission="r" mask="0x7fff"/>
+          <node id="EVT_RATE" address="0x6" permission="r" mask="0xffff8000"/>
+          <node id="MAX_EOE_TIMER" address="0x7" permission="r" mask="0xffffff"/>
+          <node id="LAST_EOE_TIMER" address="0x8" permission="r" mask="0xffffff"/>
+        </node>
+        <node id="LASTBLOCK0" address="0x9" permission="r" />
+        <node id="LASTBLOCK1" address="0xa" permission="r" />
+        <node id="LASTBLOCK2" address="0xb" permission="r" />
+        <node id="LASTBLOCK3" address="0xc" permission="r" />
+        <node id="LASTBLOCK4" address="0xd" permission="r" />
+        <node id="LASTBLOCK5" address="0xe" permission="r" />
+        <node id="LASTBLOCK6" address="0xf" permission="r" />
+      </node>
+      <node id="OH10" address="0xb0" >
+        <node id="CONTROL" address="0x0" >
+          <node id="EOE_TIMEOUT" address="0x3" permission="rw" mask="0xffffff"/>
+        </node>
+        <node id="STATUS" address="0x0" >
+          <node id="VFAT_MIXED_EC" address="0x0" permission="r" mask="0x2"/>
+          <node id="VFAT_MIXED_BC" address="0x0" permission="r" mask="0x4"/>
+          <node id="OH_MIXED_BC" address="0x0" permission="r" mask="0x8"/>
+          <node id="VFAT_TOO_MANY" address="0x0" permission="r" mask="0x10"/>
+          <node id="VFAT_SMALL_BLOCK" address="0x0" permission="r" mask="0x20"/>
+          <node id="VFAT_LARGE_BLOCK" address="0x0" permission="r" mask="0x40"/>
+          <node id="VFAT_NO_MARKER" address="0x0" permission="r" mask="0x80"/>
+          <node id="INPUT_FIFO_HAD_OFLOW" address="0x0" permission="r" mask="0x100"/>
+          <node id="INPUT_FIFO_HAD_UFLOW" address="0x0" permission="r" mask="0x200"/>
+          <node id="EVENT_FIFO_HAD_OFLOW" address="0x0" permission="r" mask="0x400"/>
+          <node id="EVT_SIZE_ERR" address="0x0" permission="r" mask="0x800"/>
+          <node id="VFAT_INPUT_HAD_OVF" address="0x0" permission="r" mask="0x10000"/>
+          <node id="VFAT_INPUT_HAD_UNF" address="0x0" permission="r" mask="0x20000"/>
+          <node id="TTS_STATE" address="0x0" permission="r" mask="0xf000"/>
+          <node id="INPUT_FIFO_IS_UFLOW" address="0x0" permission="r" mask="0x1000000"/>
+          <node id="INPUT_FIFO_IS_FULL" address="0x0" permission="r" mask="0x2000000"/>
+          <node id="INPUT_FIFO_IS_AFULL" address="0x0" permission="r" mask="0x4000000"/>
+          <node id="INPUT_FIFO_IS_EMPTY" address="0x0" permission="r" mask="0x8000000"/>
+          <node id="EVENT_FIFO_IS_UFLOW" address="0x0" permission="r" mask="0x10000000"/>
+          <node id="EVENT_FIFO_IS_FULL" address="0x0" permission="r" mask="0x20000000"/>
+          <node id="EVENT_FIFO_IS_AFULL" address="0x0" permission="r" mask="0x40000000"/>
+          <node id="EVENT_FIFO_IS_EMPTY" address="0x0" permission="r" mask="0x80000000"/>
+        </node>
+        <node id="COUNTERS" address="0x0" >
+          <node id="CORRUPT_VFAT_BLK_CNT" address="0x1" permission="r" />
+          <node id="EVN" address="0x2" permission="r" mask="0xffffff"/>
+          <node id="INPUT_FIFO_DATA_CNT" address="0x4" permission="r" mask="0xfff"/>
+          <node id="EVT_FIFO_DATA_CNT" address="0x4" permission="r" mask="0xfff0000"/>
+          <node id="INPUT_FIFO_NEAR_FULL_CNT" address="0x5" permission="r" mask="0xffff"/>
+          <node id="EVT_FIFO_NEAR_FULL_CNT" address="0x5" permission="r" mask="0xffff0000"/>
+          <node id="VFAT_BLOCK_RATE" address="0x6" permission="r" mask="0x7fff"/>
+          <node id="EVT_RATE" address="0x6" permission="r" mask="0xffff8000"/>
+          <node id="MAX_EOE_TIMER" address="0x7" permission="r" mask="0xffffff"/>
+          <node id="LAST_EOE_TIMER" address="0x8" permission="r" mask="0xffffff"/>
+        </node>
+        <node id="LASTBLOCK0" address="0x9" permission="r" />
+        <node id="LASTBLOCK1" address="0xa" permission="r" />
+        <node id="LASTBLOCK2" address="0xb" permission="r" />
+        <node id="LASTBLOCK3" address="0xc" permission="r" />
+        <node id="LASTBLOCK4" address="0xd" permission="r" />
+        <node id="LASTBLOCK5" address="0xe" permission="r" />
+        <node id="LASTBLOCK6" address="0xf" permission="r" />
+      </node>
+      <node id="OH11" address="0xc0" >
         <node id="CONTROL" address="0x0" >
           <node id="EOE_TIMEOUT" address="0x3" permission="rw" mask="0xffffff"/>
         </node>
@@ -793,6 +1623,1596 @@
           <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
         </node>
       </node>
+      <node id="OH2" address="0x300" >
+        <node id="GBT0_READY" address="0x0" permission="r" mask="0x1"/>
+        <node id="GBT1_READY" address="0x0" permission="r" mask="0x2"/>
+        <node id="GBT2_READY" address="0x0" permission="r" mask="0x4"/>
+        <node id="GBT0_WAS_NOT_READY" address="0x0" permission="r" mask="0x8"/>
+        <node id="GBT1_WAS_NOT_READY" address="0x0" permission="r" mask="0x10"/>
+        <node id="GBT2_WAS_NOT_READY" address="0x0" permission="r" mask="0x20"/>
+        <node id="GBT0_RX_HAD_OVERFLOW" address="0x0" permission="r" mask="0x40"/>
+        <node id="GBT1_RX_HAD_OVERFLOW" address="0x0" permission="r" mask="0x80"/>
+        <node id="GBT2_RX_HAD_OVERFLOW" address="0x0" permission="r" mask="0x100"/>
+        <node id="GBT0_RX_HAD_UNDERFLOW" address="0x0" permission="r" mask="0x200"/>
+        <node id="GBT1_RX_HAD_UNDERFLOW" address="0x0" permission="r" mask="0x400"/>
+        <node id="GBT2_RX_HAD_UNDERFLOW" address="0x0" permission="r" mask="0x800"/>
+        <node id="VFAT_MASK" address="0x1" permission="rw" mask="0xffffff"/>
+        <node id="VFAT0" address="0x10" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT1" address="0x12" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT2" address="0x14" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT3" address="0x16" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT4" address="0x18" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT5" address="0x1a" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT6" address="0x1c" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT7" address="0x1e" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT8" address="0x20" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT9" address="0x22" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT10" address="0x24" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT11" address="0x26" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT12" address="0x28" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT13" address="0x2a" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT14" address="0x2c" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT15" address="0x2e" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT16" address="0x30" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT17" address="0x32" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT18" address="0x34" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT19" address="0x36" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT20" address="0x38" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT21" address="0x3a" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT22" address="0x3c" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT23" address="0x3e" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+      </node>
+      <node id="OH3" address="0x400" >
+        <node id="GBT0_READY" address="0x0" permission="r" mask="0x1"/>
+        <node id="GBT1_READY" address="0x0" permission="r" mask="0x2"/>
+        <node id="GBT2_READY" address="0x0" permission="r" mask="0x4"/>
+        <node id="GBT0_WAS_NOT_READY" address="0x0" permission="r" mask="0x8"/>
+        <node id="GBT1_WAS_NOT_READY" address="0x0" permission="r" mask="0x10"/>
+        <node id="GBT2_WAS_NOT_READY" address="0x0" permission="r" mask="0x20"/>
+        <node id="GBT0_RX_HAD_OVERFLOW" address="0x0" permission="r" mask="0x40"/>
+        <node id="GBT1_RX_HAD_OVERFLOW" address="0x0" permission="r" mask="0x80"/>
+        <node id="GBT2_RX_HAD_OVERFLOW" address="0x0" permission="r" mask="0x100"/>
+        <node id="GBT0_RX_HAD_UNDERFLOW" address="0x0" permission="r" mask="0x200"/>
+        <node id="GBT1_RX_HAD_UNDERFLOW" address="0x0" permission="r" mask="0x400"/>
+        <node id="GBT2_RX_HAD_UNDERFLOW" address="0x0" permission="r" mask="0x800"/>
+        <node id="VFAT_MASK" address="0x1" permission="rw" mask="0xffffff"/>
+        <node id="VFAT0" address="0x10" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT1" address="0x12" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT2" address="0x14" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT3" address="0x16" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT4" address="0x18" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT5" address="0x1a" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT6" address="0x1c" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT7" address="0x1e" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT8" address="0x20" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT9" address="0x22" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT10" address="0x24" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT11" address="0x26" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT12" address="0x28" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT13" address="0x2a" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT14" address="0x2c" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT15" address="0x2e" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT16" address="0x30" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT17" address="0x32" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT18" address="0x34" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT19" address="0x36" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT20" address="0x38" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT21" address="0x3a" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT22" address="0x3c" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT23" address="0x3e" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+      </node>
+      <node id="OH4" address="0x500" >
+        <node id="GBT0_READY" address="0x0" permission="r" mask="0x1"/>
+        <node id="GBT1_READY" address="0x0" permission="r" mask="0x2"/>
+        <node id="GBT2_READY" address="0x0" permission="r" mask="0x4"/>
+        <node id="GBT0_WAS_NOT_READY" address="0x0" permission="r" mask="0x8"/>
+        <node id="GBT1_WAS_NOT_READY" address="0x0" permission="r" mask="0x10"/>
+        <node id="GBT2_WAS_NOT_READY" address="0x0" permission="r" mask="0x20"/>
+        <node id="GBT0_RX_HAD_OVERFLOW" address="0x0" permission="r" mask="0x40"/>
+        <node id="GBT1_RX_HAD_OVERFLOW" address="0x0" permission="r" mask="0x80"/>
+        <node id="GBT2_RX_HAD_OVERFLOW" address="0x0" permission="r" mask="0x100"/>
+        <node id="GBT0_RX_HAD_UNDERFLOW" address="0x0" permission="r" mask="0x200"/>
+        <node id="GBT1_RX_HAD_UNDERFLOW" address="0x0" permission="r" mask="0x400"/>
+        <node id="GBT2_RX_HAD_UNDERFLOW" address="0x0" permission="r" mask="0x800"/>
+        <node id="VFAT_MASK" address="0x1" permission="rw" mask="0xffffff"/>
+        <node id="VFAT0" address="0x10" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT1" address="0x12" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT2" address="0x14" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT3" address="0x16" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT4" address="0x18" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT5" address="0x1a" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT6" address="0x1c" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT7" address="0x1e" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT8" address="0x20" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT9" address="0x22" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT10" address="0x24" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT11" address="0x26" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT12" address="0x28" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT13" address="0x2a" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT14" address="0x2c" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT15" address="0x2e" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT16" address="0x30" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT17" address="0x32" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT18" address="0x34" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT19" address="0x36" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT20" address="0x38" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT21" address="0x3a" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT22" address="0x3c" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT23" address="0x3e" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+      </node>
+      <node id="OH5" address="0x600" >
+        <node id="GBT0_READY" address="0x0" permission="r" mask="0x1"/>
+        <node id="GBT1_READY" address="0x0" permission="r" mask="0x2"/>
+        <node id="GBT2_READY" address="0x0" permission="r" mask="0x4"/>
+        <node id="GBT0_WAS_NOT_READY" address="0x0" permission="r" mask="0x8"/>
+        <node id="GBT1_WAS_NOT_READY" address="0x0" permission="r" mask="0x10"/>
+        <node id="GBT2_WAS_NOT_READY" address="0x0" permission="r" mask="0x20"/>
+        <node id="GBT0_RX_HAD_OVERFLOW" address="0x0" permission="r" mask="0x40"/>
+        <node id="GBT1_RX_HAD_OVERFLOW" address="0x0" permission="r" mask="0x80"/>
+        <node id="GBT2_RX_HAD_OVERFLOW" address="0x0" permission="r" mask="0x100"/>
+        <node id="GBT0_RX_HAD_UNDERFLOW" address="0x0" permission="r" mask="0x200"/>
+        <node id="GBT1_RX_HAD_UNDERFLOW" address="0x0" permission="r" mask="0x400"/>
+        <node id="GBT2_RX_HAD_UNDERFLOW" address="0x0" permission="r" mask="0x800"/>
+        <node id="VFAT_MASK" address="0x1" permission="rw" mask="0xffffff"/>
+        <node id="VFAT0" address="0x10" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT1" address="0x12" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT2" address="0x14" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT3" address="0x16" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT4" address="0x18" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT5" address="0x1a" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT6" address="0x1c" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT7" address="0x1e" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT8" address="0x20" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT9" address="0x22" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT10" address="0x24" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT11" address="0x26" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT12" address="0x28" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT13" address="0x2a" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT14" address="0x2c" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT15" address="0x2e" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT16" address="0x30" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT17" address="0x32" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT18" address="0x34" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT19" address="0x36" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT20" address="0x38" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT21" address="0x3a" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT22" address="0x3c" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT23" address="0x3e" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+      </node>
+      <node id="OH6" address="0x700" >
+        <node id="GBT0_READY" address="0x0" permission="r" mask="0x1"/>
+        <node id="GBT1_READY" address="0x0" permission="r" mask="0x2"/>
+        <node id="GBT2_READY" address="0x0" permission="r" mask="0x4"/>
+        <node id="GBT0_WAS_NOT_READY" address="0x0" permission="r" mask="0x8"/>
+        <node id="GBT1_WAS_NOT_READY" address="0x0" permission="r" mask="0x10"/>
+        <node id="GBT2_WAS_NOT_READY" address="0x0" permission="r" mask="0x20"/>
+        <node id="GBT0_RX_HAD_OVERFLOW" address="0x0" permission="r" mask="0x40"/>
+        <node id="GBT1_RX_HAD_OVERFLOW" address="0x0" permission="r" mask="0x80"/>
+        <node id="GBT2_RX_HAD_OVERFLOW" address="0x0" permission="r" mask="0x100"/>
+        <node id="GBT0_RX_HAD_UNDERFLOW" address="0x0" permission="r" mask="0x200"/>
+        <node id="GBT1_RX_HAD_UNDERFLOW" address="0x0" permission="r" mask="0x400"/>
+        <node id="GBT2_RX_HAD_UNDERFLOW" address="0x0" permission="r" mask="0x800"/>
+        <node id="VFAT_MASK" address="0x1" permission="rw" mask="0xffffff"/>
+        <node id="VFAT0" address="0x10" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT1" address="0x12" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT2" address="0x14" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT3" address="0x16" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT4" address="0x18" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT5" address="0x1a" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT6" address="0x1c" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT7" address="0x1e" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT8" address="0x20" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT9" address="0x22" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT10" address="0x24" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT11" address="0x26" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT12" address="0x28" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT13" address="0x2a" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT14" address="0x2c" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT15" address="0x2e" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT16" address="0x30" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT17" address="0x32" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT18" address="0x34" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT19" address="0x36" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT20" address="0x38" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT21" address="0x3a" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT22" address="0x3c" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT23" address="0x3e" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+      </node>
+      <node id="OH7" address="0x800" >
+        <node id="GBT0_READY" address="0x0" permission="r" mask="0x1"/>
+        <node id="GBT1_READY" address="0x0" permission="r" mask="0x2"/>
+        <node id="GBT2_READY" address="0x0" permission="r" mask="0x4"/>
+        <node id="GBT0_WAS_NOT_READY" address="0x0" permission="r" mask="0x8"/>
+        <node id="GBT1_WAS_NOT_READY" address="0x0" permission="r" mask="0x10"/>
+        <node id="GBT2_WAS_NOT_READY" address="0x0" permission="r" mask="0x20"/>
+        <node id="GBT0_RX_HAD_OVERFLOW" address="0x0" permission="r" mask="0x40"/>
+        <node id="GBT1_RX_HAD_OVERFLOW" address="0x0" permission="r" mask="0x80"/>
+        <node id="GBT2_RX_HAD_OVERFLOW" address="0x0" permission="r" mask="0x100"/>
+        <node id="GBT0_RX_HAD_UNDERFLOW" address="0x0" permission="r" mask="0x200"/>
+        <node id="GBT1_RX_HAD_UNDERFLOW" address="0x0" permission="r" mask="0x400"/>
+        <node id="GBT2_RX_HAD_UNDERFLOW" address="0x0" permission="r" mask="0x800"/>
+        <node id="VFAT_MASK" address="0x1" permission="rw" mask="0xffffff"/>
+        <node id="VFAT0" address="0x10" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT1" address="0x12" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT2" address="0x14" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT3" address="0x16" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT4" address="0x18" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT5" address="0x1a" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT6" address="0x1c" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT7" address="0x1e" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT8" address="0x20" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT9" address="0x22" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT10" address="0x24" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT11" address="0x26" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT12" address="0x28" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT13" address="0x2a" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT14" address="0x2c" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT15" address="0x2e" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT16" address="0x30" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT17" address="0x32" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT18" address="0x34" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT19" address="0x36" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT20" address="0x38" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT21" address="0x3a" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT22" address="0x3c" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT23" address="0x3e" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+      </node>
+      <node id="OH8" address="0x900" >
+        <node id="GBT0_READY" address="0x0" permission="r" mask="0x1"/>
+        <node id="GBT1_READY" address="0x0" permission="r" mask="0x2"/>
+        <node id="GBT2_READY" address="0x0" permission="r" mask="0x4"/>
+        <node id="GBT0_WAS_NOT_READY" address="0x0" permission="r" mask="0x8"/>
+        <node id="GBT1_WAS_NOT_READY" address="0x0" permission="r" mask="0x10"/>
+        <node id="GBT2_WAS_NOT_READY" address="0x0" permission="r" mask="0x20"/>
+        <node id="GBT0_RX_HAD_OVERFLOW" address="0x0" permission="r" mask="0x40"/>
+        <node id="GBT1_RX_HAD_OVERFLOW" address="0x0" permission="r" mask="0x80"/>
+        <node id="GBT2_RX_HAD_OVERFLOW" address="0x0" permission="r" mask="0x100"/>
+        <node id="GBT0_RX_HAD_UNDERFLOW" address="0x0" permission="r" mask="0x200"/>
+        <node id="GBT1_RX_HAD_UNDERFLOW" address="0x0" permission="r" mask="0x400"/>
+        <node id="GBT2_RX_HAD_UNDERFLOW" address="0x0" permission="r" mask="0x800"/>
+        <node id="VFAT_MASK" address="0x1" permission="rw" mask="0xffffff"/>
+        <node id="VFAT0" address="0x10" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT1" address="0x12" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT2" address="0x14" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT3" address="0x16" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT4" address="0x18" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT5" address="0x1a" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT6" address="0x1c" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT7" address="0x1e" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT8" address="0x20" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT9" address="0x22" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT10" address="0x24" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT11" address="0x26" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT12" address="0x28" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT13" address="0x2a" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT14" address="0x2c" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT15" address="0x2e" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT16" address="0x30" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT17" address="0x32" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT18" address="0x34" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT19" address="0x36" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT20" address="0x38" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT21" address="0x3a" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT22" address="0x3c" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT23" address="0x3e" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+      </node>
+      <node id="OH9" address="0xa00" >
+        <node id="GBT0_READY" address="0x0" permission="r" mask="0x1"/>
+        <node id="GBT1_READY" address="0x0" permission="r" mask="0x2"/>
+        <node id="GBT2_READY" address="0x0" permission="r" mask="0x4"/>
+        <node id="GBT0_WAS_NOT_READY" address="0x0" permission="r" mask="0x8"/>
+        <node id="GBT1_WAS_NOT_READY" address="0x0" permission="r" mask="0x10"/>
+        <node id="GBT2_WAS_NOT_READY" address="0x0" permission="r" mask="0x20"/>
+        <node id="GBT0_RX_HAD_OVERFLOW" address="0x0" permission="r" mask="0x40"/>
+        <node id="GBT1_RX_HAD_OVERFLOW" address="0x0" permission="r" mask="0x80"/>
+        <node id="GBT2_RX_HAD_OVERFLOW" address="0x0" permission="r" mask="0x100"/>
+        <node id="GBT0_RX_HAD_UNDERFLOW" address="0x0" permission="r" mask="0x200"/>
+        <node id="GBT1_RX_HAD_UNDERFLOW" address="0x0" permission="r" mask="0x400"/>
+        <node id="GBT2_RX_HAD_UNDERFLOW" address="0x0" permission="r" mask="0x800"/>
+        <node id="VFAT_MASK" address="0x1" permission="rw" mask="0xffffff"/>
+        <node id="VFAT0" address="0x10" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT1" address="0x12" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT2" address="0x14" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT3" address="0x16" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT4" address="0x18" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT5" address="0x1a" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT6" address="0x1c" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT7" address="0x1e" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT8" address="0x20" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT9" address="0x22" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT10" address="0x24" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT11" address="0x26" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT12" address="0x28" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT13" address="0x2a" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT14" address="0x2c" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT15" address="0x2e" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT16" address="0x30" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT17" address="0x32" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT18" address="0x34" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT19" address="0x36" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT20" address="0x38" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT21" address="0x3a" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT22" address="0x3c" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT23" address="0x3e" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+      </node>
+      <node id="OH10" address="0xb00" >
+        <node id="GBT0_READY" address="0x0" permission="r" mask="0x1"/>
+        <node id="GBT1_READY" address="0x0" permission="r" mask="0x2"/>
+        <node id="GBT2_READY" address="0x0" permission="r" mask="0x4"/>
+        <node id="GBT0_WAS_NOT_READY" address="0x0" permission="r" mask="0x8"/>
+        <node id="GBT1_WAS_NOT_READY" address="0x0" permission="r" mask="0x10"/>
+        <node id="GBT2_WAS_NOT_READY" address="0x0" permission="r" mask="0x20"/>
+        <node id="GBT0_RX_HAD_OVERFLOW" address="0x0" permission="r" mask="0x40"/>
+        <node id="GBT1_RX_HAD_OVERFLOW" address="0x0" permission="r" mask="0x80"/>
+        <node id="GBT2_RX_HAD_OVERFLOW" address="0x0" permission="r" mask="0x100"/>
+        <node id="GBT0_RX_HAD_UNDERFLOW" address="0x0" permission="r" mask="0x200"/>
+        <node id="GBT1_RX_HAD_UNDERFLOW" address="0x0" permission="r" mask="0x400"/>
+        <node id="GBT2_RX_HAD_UNDERFLOW" address="0x0" permission="r" mask="0x800"/>
+        <node id="VFAT_MASK" address="0x1" permission="rw" mask="0xffffff"/>
+        <node id="VFAT0" address="0x10" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT1" address="0x12" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT2" address="0x14" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT3" address="0x16" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT4" address="0x18" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT5" address="0x1a" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT6" address="0x1c" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT7" address="0x1e" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT8" address="0x20" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT9" address="0x22" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT10" address="0x24" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT11" address="0x26" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT12" address="0x28" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT13" address="0x2a" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT14" address="0x2c" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT15" address="0x2e" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT16" address="0x30" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT17" address="0x32" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT18" address="0x34" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT19" address="0x36" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT20" address="0x38" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT21" address="0x3a" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT22" address="0x3c" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT23" address="0x3e" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+      </node>
+      <node id="OH11" address="0xc00" >
+        <node id="GBT0_READY" address="0x0" permission="r" mask="0x1"/>
+        <node id="GBT1_READY" address="0x0" permission="r" mask="0x2"/>
+        <node id="GBT2_READY" address="0x0" permission="r" mask="0x4"/>
+        <node id="GBT0_WAS_NOT_READY" address="0x0" permission="r" mask="0x8"/>
+        <node id="GBT1_WAS_NOT_READY" address="0x0" permission="r" mask="0x10"/>
+        <node id="GBT2_WAS_NOT_READY" address="0x0" permission="r" mask="0x20"/>
+        <node id="GBT0_RX_HAD_OVERFLOW" address="0x0" permission="r" mask="0x40"/>
+        <node id="GBT1_RX_HAD_OVERFLOW" address="0x0" permission="r" mask="0x80"/>
+        <node id="GBT2_RX_HAD_OVERFLOW" address="0x0" permission="r" mask="0x100"/>
+        <node id="GBT0_RX_HAD_UNDERFLOW" address="0x0" permission="r" mask="0x200"/>
+        <node id="GBT1_RX_HAD_UNDERFLOW" address="0x0" permission="r" mask="0x400"/>
+        <node id="GBT2_RX_HAD_UNDERFLOW" address="0x0" permission="r" mask="0x800"/>
+        <node id="VFAT_MASK" address="0x1" permission="rw" mask="0xffffff"/>
+        <node id="VFAT0" address="0x10" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT1" address="0x12" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT2" address="0x14" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT3" address="0x16" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT4" address="0x18" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT5" address="0x1a" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT6" address="0x1c" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT7" address="0x1e" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT8" address="0x20" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT9" address="0x22" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT10" address="0x24" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT11" address="0x26" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT12" address="0x28" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT13" address="0x2a" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT14" address="0x2c" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT15" address="0x2e" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT16" address="0x30" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT17" address="0x32" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT18" address="0x34" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT19" address="0x36" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT20" address="0x38" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT21" address="0x3a" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT22" address="0x3c" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+        <node id="VFAT23" address="0x3e" >
+          <node id="LINK_GOOD" address="0x0" permission="r" mask="0x1"/>
+          <node id="SYNC_ERR_CNT" address="0x0" permission="r" mask="0xf0"/>
+          <node id="DAQ_EVENT_CNT" address="0x0" permission="r" mask="0xff00"/>
+          <node id="DAQ_CRC_ERROR_CNT" address="0x0" permission="r" mask="0xff0000"/>
+        </node>
+      </node>
     </node>
     <node id="SLOW_CONTROL" address="0xb00000" >
       <node id="SCA" address="0x0" >
@@ -800,12 +3220,23 @@
           <node id="MODULE_RESET" address="0x0" permission="w" />
           <node id="OH_FPGA_HARD_RESET" address="0x1" permission="w" />
           <node id="TTC_HARD_RESET_EN" address="0x2" permission="rw" mask="0x1"/>
+          <node id="SCA_RESET_ENABLE_MASK" address="0x3" permission="rw" mask="0xffffffff"/>
         </node>
         <node id="STATUS" address="0x100" >
           <node id="READY" address="0x0" permission="r" mask="0xffffffff"/>
           <node id="CRITICAL_ERROR" address="0x1" permission="r" mask="0xffffffff"/>
           <node id="NOT_READY_CNT_OH0" address="0x2" permission="r" mask="0xffff"/>
           <node id="NOT_READY_CNT_OH1" address="0x3" permission="r" mask="0xffff"/>
+          <node id="NOT_READY_CNT_OH2" address="0x4" permission="r" mask="0xffff"/>
+          <node id="NOT_READY_CNT_OH3" address="0x5" permission="r" mask="0xffff"/>
+          <node id="NOT_READY_CNT_OH4" address="0x6" permission="r" mask="0xffff"/>
+          <node id="NOT_READY_CNT_OH5" address="0x7" permission="r" mask="0xffff"/>
+          <node id="NOT_READY_CNT_OH6" address="0x8" permission="r" mask="0xffff"/>
+          <node id="NOT_READY_CNT_OH7" address="0x9" permission="r" mask="0xffff"/>
+          <node id="NOT_READY_CNT_OH8" address="0xa" permission="r" mask="0xffff"/>
+          <node id="NOT_READY_CNT_OH9" address="0xb" permission="r" mask="0xffff"/>
+          <node id="NOT_READY_CNT_OH10" address="0xc" permission="r" mask="0xffff"/>
+          <node id="NOT_READY_CNT_OH11" address="0xd" permission="r" mask="0xffff"/>
         </node>
         <node id="MANUAL_CONTROL" address="0x1000" >
           <node id="LINK_ENABLE_MASK" address="0x0" permission="rw" mask="0xffffffff"/>
@@ -823,6 +3254,66 @@
             <node id="SCA_RPY_DATA" address="0x1" permission="r" />
           </node>
           <node id="SCA_REPLY_OH1" address="0x6" >
+            <node id="SCA_RPY_CHANNEL" address="0x0" permission="r" mask="0xff"/>
+            <node id="SCA_RPY_ERROR" address="0x0" permission="r" mask="0xff00"/>
+            <node id="SCA_RPY_LENGTH" address="0x0" permission="r" mask="0xff0000"/>
+            <node id="SCA_RPY_DATA" address="0x1" permission="r" />
+          </node>
+          <node id="SCA_REPLY_OH2" address="0x8" >
+            <node id="SCA_RPY_CHANNEL" address="0x0" permission="r" mask="0xff"/>
+            <node id="SCA_RPY_ERROR" address="0x0" permission="r" mask="0xff00"/>
+            <node id="SCA_RPY_LENGTH" address="0x0" permission="r" mask="0xff0000"/>
+            <node id="SCA_RPY_DATA" address="0x1" permission="r" />
+          </node>
+          <node id="SCA_REPLY_OH3" address="0xa" >
+            <node id="SCA_RPY_CHANNEL" address="0x0" permission="r" mask="0xff"/>
+            <node id="SCA_RPY_ERROR" address="0x0" permission="r" mask="0xff00"/>
+            <node id="SCA_RPY_LENGTH" address="0x0" permission="r" mask="0xff0000"/>
+            <node id="SCA_RPY_DATA" address="0x1" permission="r" />
+          </node>
+          <node id="SCA_REPLY_OH4" address="0xc" >
+            <node id="SCA_RPY_CHANNEL" address="0x0" permission="r" mask="0xff"/>
+            <node id="SCA_RPY_ERROR" address="0x0" permission="r" mask="0xff00"/>
+            <node id="SCA_RPY_LENGTH" address="0x0" permission="r" mask="0xff0000"/>
+            <node id="SCA_RPY_DATA" address="0x1" permission="r" />
+          </node>
+          <node id="SCA_REPLY_OH5" address="0xe" >
+            <node id="SCA_RPY_CHANNEL" address="0x0" permission="r" mask="0xff"/>
+            <node id="SCA_RPY_ERROR" address="0x0" permission="r" mask="0xff00"/>
+            <node id="SCA_RPY_LENGTH" address="0x0" permission="r" mask="0xff0000"/>
+            <node id="SCA_RPY_DATA" address="0x1" permission="r" />
+          </node>
+          <node id="SCA_REPLY_OH6" address="0x10" >
+            <node id="SCA_RPY_CHANNEL" address="0x0" permission="r" mask="0xff"/>
+            <node id="SCA_RPY_ERROR" address="0x0" permission="r" mask="0xff00"/>
+            <node id="SCA_RPY_LENGTH" address="0x0" permission="r" mask="0xff0000"/>
+            <node id="SCA_RPY_DATA" address="0x1" permission="r" />
+          </node>
+          <node id="SCA_REPLY_OH7" address="0x12" >
+            <node id="SCA_RPY_CHANNEL" address="0x0" permission="r" mask="0xff"/>
+            <node id="SCA_RPY_ERROR" address="0x0" permission="r" mask="0xff00"/>
+            <node id="SCA_RPY_LENGTH" address="0x0" permission="r" mask="0xff0000"/>
+            <node id="SCA_RPY_DATA" address="0x1" permission="r" />
+          </node>
+          <node id="SCA_REPLY_OH8" address="0x14" >
+            <node id="SCA_RPY_CHANNEL" address="0x0" permission="r" mask="0xff"/>
+            <node id="SCA_RPY_ERROR" address="0x0" permission="r" mask="0xff00"/>
+            <node id="SCA_RPY_LENGTH" address="0x0" permission="r" mask="0xff0000"/>
+            <node id="SCA_RPY_DATA" address="0x1" permission="r" />
+          </node>
+          <node id="SCA_REPLY_OH9" address="0x16" >
+            <node id="SCA_RPY_CHANNEL" address="0x0" permission="r" mask="0xff"/>
+            <node id="SCA_RPY_ERROR" address="0x0" permission="r" mask="0xff00"/>
+            <node id="SCA_RPY_LENGTH" address="0x0" permission="r" mask="0xff0000"/>
+            <node id="SCA_RPY_DATA" address="0x1" permission="r" />
+          </node>
+          <node id="SCA_REPLY_OH10" address="0x18" >
+            <node id="SCA_RPY_CHANNEL" address="0x0" permission="r" mask="0xff"/>
+            <node id="SCA_RPY_ERROR" address="0x0" permission="r" mask="0xff00"/>
+            <node id="SCA_RPY_LENGTH" address="0x0" permission="r" mask="0xff0000"/>
+            <node id="SCA_RPY_DATA" address="0x1" permission="r" />
+          </node>
+          <node id="SCA_REPLY_OH11" address="0x1a" >
             <node id="SCA_RPY_CHANNEL" address="0x0" permission="r" mask="0xff"/>
             <node id="SCA_RPY_ERROR" address="0x0" permission="r" mask="0xff00"/>
             <node id="SCA_RPY_LENGTH" address="0x0" permission="r" mask="0xff0000"/>
@@ -875,6 +3366,226 @@
             <node id="BOARD_TEMP8" address="0x9" permission="r" mask="0xfff"/>
             <node id="BOARD_TEMP9" address="0x9" permission="r" mask="0xfff000"/>
           </node>
+          <node id="OH2" address="0x1f" >
+            <node id="AVCCN" address="0x0" permission="r" mask="0xfff"/>
+            <node id="AVTTN" address="0x0" permission="r" mask="0xfff000"/>
+            <node id="1V0_INT" address="0x1" permission="r" mask="0xfff"/>
+            <node id="1V8F" address="0x1" permission="r" mask="0xfff000"/>
+            <node id="1V5" address="0x2" permission="r" mask="0xfff"/>
+            <node id="2V5_IO" address="0x2" permission="r" mask="0xfff000"/>
+            <node id="3V0" address="0x3" permission="r" mask="0xfff"/>
+            <node id="1V8" address="0x3" permission="r" mask="0xfff000"/>
+            <node id="VTRX_RSSI2" address="0x4" permission="r" mask="0xfff"/>
+            <node id="VTRX_RSSI1" address="0x4" permission="r" mask="0xfff000"/>
+            <node id="SCA_TEMP" address="0x5" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP1" address="0x5" permission="r" mask="0xfff000"/>
+            <node id="BOARD_TEMP2" address="0x6" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP3" address="0x6" permission="r" mask="0xfff000"/>
+            <node id="BOARD_TEMP4" address="0x7" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP5" address="0x7" permission="r" mask="0xfff000"/>
+            <node id="BOARD_TEMP6" address="0x8" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP7" address="0x8" permission="r" mask="0xfff000"/>
+            <node id="BOARD_TEMP8" address="0x9" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP9" address="0x9" permission="r" mask="0xfff000"/>
+          </node>
+          <node id="OH3" address="0x2e" >
+            <node id="AVCCN" address="0x0" permission="r" mask="0xfff"/>
+            <node id="AVTTN" address="0x0" permission="r" mask="0xfff000"/>
+            <node id="1V0_INT" address="0x1" permission="r" mask="0xfff"/>
+            <node id="1V8F" address="0x1" permission="r" mask="0xfff000"/>
+            <node id="1V5" address="0x2" permission="r" mask="0xfff"/>
+            <node id="2V5_IO" address="0x2" permission="r" mask="0xfff000"/>
+            <node id="3V0" address="0x3" permission="r" mask="0xfff"/>
+            <node id="1V8" address="0x3" permission="r" mask="0xfff000"/>
+            <node id="VTRX_RSSI2" address="0x4" permission="r" mask="0xfff"/>
+            <node id="VTRX_RSSI1" address="0x4" permission="r" mask="0xfff000"/>
+            <node id="SCA_TEMP" address="0x5" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP1" address="0x5" permission="r" mask="0xfff000"/>
+            <node id="BOARD_TEMP2" address="0x6" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP3" address="0x6" permission="r" mask="0xfff000"/>
+            <node id="BOARD_TEMP4" address="0x7" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP5" address="0x7" permission="r" mask="0xfff000"/>
+            <node id="BOARD_TEMP6" address="0x8" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP7" address="0x8" permission="r" mask="0xfff000"/>
+            <node id="BOARD_TEMP8" address="0x9" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP9" address="0x9" permission="r" mask="0xfff000"/>
+          </node>
+          <node id="OH4" address="0x3d" >
+            <node id="AVCCN" address="0x0" permission="r" mask="0xfff"/>
+            <node id="AVTTN" address="0x0" permission="r" mask="0xfff000"/>
+            <node id="1V0_INT" address="0x1" permission="r" mask="0xfff"/>
+            <node id="1V8F" address="0x1" permission="r" mask="0xfff000"/>
+            <node id="1V5" address="0x2" permission="r" mask="0xfff"/>
+            <node id="2V5_IO" address="0x2" permission="r" mask="0xfff000"/>
+            <node id="3V0" address="0x3" permission="r" mask="0xfff"/>
+            <node id="1V8" address="0x3" permission="r" mask="0xfff000"/>
+            <node id="VTRX_RSSI2" address="0x4" permission="r" mask="0xfff"/>
+            <node id="VTRX_RSSI1" address="0x4" permission="r" mask="0xfff000"/>
+            <node id="SCA_TEMP" address="0x5" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP1" address="0x5" permission="r" mask="0xfff000"/>
+            <node id="BOARD_TEMP2" address="0x6" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP3" address="0x6" permission="r" mask="0xfff000"/>
+            <node id="BOARD_TEMP4" address="0x7" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP5" address="0x7" permission="r" mask="0xfff000"/>
+            <node id="BOARD_TEMP6" address="0x8" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP7" address="0x8" permission="r" mask="0xfff000"/>
+            <node id="BOARD_TEMP8" address="0x9" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP9" address="0x9" permission="r" mask="0xfff000"/>
+          </node>
+          <node id="OH5" address="0x4c" >
+            <node id="AVCCN" address="0x0" permission="r" mask="0xfff"/>
+            <node id="AVTTN" address="0x0" permission="r" mask="0xfff000"/>
+            <node id="1V0_INT" address="0x1" permission="r" mask="0xfff"/>
+            <node id="1V8F" address="0x1" permission="r" mask="0xfff000"/>
+            <node id="1V5" address="0x2" permission="r" mask="0xfff"/>
+            <node id="2V5_IO" address="0x2" permission="r" mask="0xfff000"/>
+            <node id="3V0" address="0x3" permission="r" mask="0xfff"/>
+            <node id="1V8" address="0x3" permission="r" mask="0xfff000"/>
+            <node id="VTRX_RSSI2" address="0x4" permission="r" mask="0xfff"/>
+            <node id="VTRX_RSSI1" address="0x4" permission="r" mask="0xfff000"/>
+            <node id="SCA_TEMP" address="0x5" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP1" address="0x5" permission="r" mask="0xfff000"/>
+            <node id="BOARD_TEMP2" address="0x6" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP3" address="0x6" permission="r" mask="0xfff000"/>
+            <node id="BOARD_TEMP4" address="0x7" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP5" address="0x7" permission="r" mask="0xfff000"/>
+            <node id="BOARD_TEMP6" address="0x8" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP7" address="0x8" permission="r" mask="0xfff000"/>
+            <node id="BOARD_TEMP8" address="0x9" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP9" address="0x9" permission="r" mask="0xfff000"/>
+          </node>
+          <node id="OH6" address="0x5b" >
+            <node id="AVCCN" address="0x0" permission="r" mask="0xfff"/>
+            <node id="AVTTN" address="0x0" permission="r" mask="0xfff000"/>
+            <node id="1V0_INT" address="0x1" permission="r" mask="0xfff"/>
+            <node id="1V8F" address="0x1" permission="r" mask="0xfff000"/>
+            <node id="1V5" address="0x2" permission="r" mask="0xfff"/>
+            <node id="2V5_IO" address="0x2" permission="r" mask="0xfff000"/>
+            <node id="3V0" address="0x3" permission="r" mask="0xfff"/>
+            <node id="1V8" address="0x3" permission="r" mask="0xfff000"/>
+            <node id="VTRX_RSSI2" address="0x4" permission="r" mask="0xfff"/>
+            <node id="VTRX_RSSI1" address="0x4" permission="r" mask="0xfff000"/>
+            <node id="SCA_TEMP" address="0x5" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP1" address="0x5" permission="r" mask="0xfff000"/>
+            <node id="BOARD_TEMP2" address="0x6" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP3" address="0x6" permission="r" mask="0xfff000"/>
+            <node id="BOARD_TEMP4" address="0x7" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP5" address="0x7" permission="r" mask="0xfff000"/>
+            <node id="BOARD_TEMP6" address="0x8" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP7" address="0x8" permission="r" mask="0xfff000"/>
+            <node id="BOARD_TEMP8" address="0x9" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP9" address="0x9" permission="r" mask="0xfff000"/>
+          </node>
+          <node id="OH7" address="0x6a" >
+            <node id="AVCCN" address="0x0" permission="r" mask="0xfff"/>
+            <node id="AVTTN" address="0x0" permission="r" mask="0xfff000"/>
+            <node id="1V0_INT" address="0x1" permission="r" mask="0xfff"/>
+            <node id="1V8F" address="0x1" permission="r" mask="0xfff000"/>
+            <node id="1V5" address="0x2" permission="r" mask="0xfff"/>
+            <node id="2V5_IO" address="0x2" permission="r" mask="0xfff000"/>
+            <node id="3V0" address="0x3" permission="r" mask="0xfff"/>
+            <node id="1V8" address="0x3" permission="r" mask="0xfff000"/>
+            <node id="VTRX_RSSI2" address="0x4" permission="r" mask="0xfff"/>
+            <node id="VTRX_RSSI1" address="0x4" permission="r" mask="0xfff000"/>
+            <node id="SCA_TEMP" address="0x5" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP1" address="0x5" permission="r" mask="0xfff000"/>
+            <node id="BOARD_TEMP2" address="0x6" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP3" address="0x6" permission="r" mask="0xfff000"/>
+            <node id="BOARD_TEMP4" address="0x7" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP5" address="0x7" permission="r" mask="0xfff000"/>
+            <node id="BOARD_TEMP6" address="0x8" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP7" address="0x8" permission="r" mask="0xfff000"/>
+            <node id="BOARD_TEMP8" address="0x9" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP9" address="0x9" permission="r" mask="0xfff000"/>
+          </node>
+          <node id="OH8" address="0x79" >
+            <node id="AVCCN" address="0x0" permission="r" mask="0xfff"/>
+            <node id="AVTTN" address="0x0" permission="r" mask="0xfff000"/>
+            <node id="1V0_INT" address="0x1" permission="r" mask="0xfff"/>
+            <node id="1V8F" address="0x1" permission="r" mask="0xfff000"/>
+            <node id="1V5" address="0x2" permission="r" mask="0xfff"/>
+            <node id="2V5_IO" address="0x2" permission="r" mask="0xfff000"/>
+            <node id="3V0" address="0x3" permission="r" mask="0xfff"/>
+            <node id="1V8" address="0x3" permission="r" mask="0xfff000"/>
+            <node id="VTRX_RSSI2" address="0x4" permission="r" mask="0xfff"/>
+            <node id="VTRX_RSSI1" address="0x4" permission="r" mask="0xfff000"/>
+            <node id="SCA_TEMP" address="0x5" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP1" address="0x5" permission="r" mask="0xfff000"/>
+            <node id="BOARD_TEMP2" address="0x6" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP3" address="0x6" permission="r" mask="0xfff000"/>
+            <node id="BOARD_TEMP4" address="0x7" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP5" address="0x7" permission="r" mask="0xfff000"/>
+            <node id="BOARD_TEMP6" address="0x8" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP7" address="0x8" permission="r" mask="0xfff000"/>
+            <node id="BOARD_TEMP8" address="0x9" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP9" address="0x9" permission="r" mask="0xfff000"/>
+          </node>
+          <node id="OH9" address="0x88" >
+            <node id="AVCCN" address="0x0" permission="r" mask="0xfff"/>
+            <node id="AVTTN" address="0x0" permission="r" mask="0xfff000"/>
+            <node id="1V0_INT" address="0x1" permission="r" mask="0xfff"/>
+            <node id="1V8F" address="0x1" permission="r" mask="0xfff000"/>
+            <node id="1V5" address="0x2" permission="r" mask="0xfff"/>
+            <node id="2V5_IO" address="0x2" permission="r" mask="0xfff000"/>
+            <node id="3V0" address="0x3" permission="r" mask="0xfff"/>
+            <node id="1V8" address="0x3" permission="r" mask="0xfff000"/>
+            <node id="VTRX_RSSI2" address="0x4" permission="r" mask="0xfff"/>
+            <node id="VTRX_RSSI1" address="0x4" permission="r" mask="0xfff000"/>
+            <node id="SCA_TEMP" address="0x5" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP1" address="0x5" permission="r" mask="0xfff000"/>
+            <node id="BOARD_TEMP2" address="0x6" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP3" address="0x6" permission="r" mask="0xfff000"/>
+            <node id="BOARD_TEMP4" address="0x7" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP5" address="0x7" permission="r" mask="0xfff000"/>
+            <node id="BOARD_TEMP6" address="0x8" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP7" address="0x8" permission="r" mask="0xfff000"/>
+            <node id="BOARD_TEMP8" address="0x9" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP9" address="0x9" permission="r" mask="0xfff000"/>
+          </node>
+          <node id="OH10" address="0x97" >
+            <node id="AVCCN" address="0x0" permission="r" mask="0xfff"/>
+            <node id="AVTTN" address="0x0" permission="r" mask="0xfff000"/>
+            <node id="1V0_INT" address="0x1" permission="r" mask="0xfff"/>
+            <node id="1V8F" address="0x1" permission="r" mask="0xfff000"/>
+            <node id="1V5" address="0x2" permission="r" mask="0xfff"/>
+            <node id="2V5_IO" address="0x2" permission="r" mask="0xfff000"/>
+            <node id="3V0" address="0x3" permission="r" mask="0xfff"/>
+            <node id="1V8" address="0x3" permission="r" mask="0xfff000"/>
+            <node id="VTRX_RSSI2" address="0x4" permission="r" mask="0xfff"/>
+            <node id="VTRX_RSSI1" address="0x4" permission="r" mask="0xfff000"/>
+            <node id="SCA_TEMP" address="0x5" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP1" address="0x5" permission="r" mask="0xfff000"/>
+            <node id="BOARD_TEMP2" address="0x6" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP3" address="0x6" permission="r" mask="0xfff000"/>
+            <node id="BOARD_TEMP4" address="0x7" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP5" address="0x7" permission="r" mask="0xfff000"/>
+            <node id="BOARD_TEMP6" address="0x8" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP7" address="0x8" permission="r" mask="0xfff000"/>
+            <node id="BOARD_TEMP8" address="0x9" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP9" address="0x9" permission="r" mask="0xfff000"/>
+          </node>
+          <node id="OH11" address="0xa6" >
+            <node id="AVCCN" address="0x0" permission="r" mask="0xfff"/>
+            <node id="AVTTN" address="0x0" permission="r" mask="0xfff000"/>
+            <node id="1V0_INT" address="0x1" permission="r" mask="0xfff"/>
+            <node id="1V8F" address="0x1" permission="r" mask="0xfff000"/>
+            <node id="1V5" address="0x2" permission="r" mask="0xfff"/>
+            <node id="2V5_IO" address="0x2" permission="r" mask="0xfff000"/>
+            <node id="3V0" address="0x3" permission="r" mask="0xfff"/>
+            <node id="1V8" address="0x3" permission="r" mask="0xfff000"/>
+            <node id="VTRX_RSSI2" address="0x4" permission="r" mask="0xfff"/>
+            <node id="VTRX_RSSI1" address="0x4" permission="r" mask="0xfff000"/>
+            <node id="SCA_TEMP" address="0x5" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP1" address="0x5" permission="r" mask="0xfff000"/>
+            <node id="BOARD_TEMP2" address="0x6" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP3" address="0x6" permission="r" mask="0xfff000"/>
+            <node id="BOARD_TEMP4" address="0x7" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP5" address="0x7" permission="r" mask="0xfff000"/>
+            <node id="BOARD_TEMP6" address="0x8" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP7" address="0x8" permission="r" mask="0xfff000"/>
+            <node id="BOARD_TEMP8" address="0x9" permission="r" mask="0xfff"/>
+            <node id="BOARD_TEMP9" address="0x9" permission="r" mask="0xfff000"/>
+          </node>
         </node>
         <node id="JTAG" address="0x2500" >
           <node id="CTRL" address="0x0" >
@@ -891,6 +3602,16 @@
           <node id="TDO" address="0x4" permission="w" />
           <node id="TDI_OH0" address="0x5" permission="r" />
           <node id="TDI_OH1" address="0x6" permission="r" />
+          <node id="TDI_OH2" address="0x7" permission="r" />
+          <node id="TDI_OH3" address="0x8" permission="r" />
+          <node id="TDI_OH4" address="0x9" permission="r" />
+          <node id="TDI_OH5" address="0xa" permission="r" />
+          <node id="TDI_OH6" address="0xb" permission="r" />
+          <node id="TDI_OH7" address="0xc" permission="r" />
+          <node id="TDI_OH8" address="0xd" permission="r" />
+          <node id="TDI_OH9" address="0xe" permission="r" />
+          <node id="TDI_OH10" address="0xf" permission="r" />
+          <node id="TDI_OH11" address="0x10" permission="r" />
         </node>
       </node>
       <node id="IC" address="0x3000" >
@@ -909,6 +3630,57 @@
         <node id="TIMEOUT_ERROR_CNT" address="0x1" permission="r" mask="0xffff0000"/>
         <node id="AXI_STROBE_ERROR_CNT" address="0x2" permission="r" mask="0xffff"/>
         <node id="TRANSACTION_CNT" address="0x2" permission="r" mask="0xffff0000"/>
+      </node>
+    </node>
+    <node id="CONFIG_BLASTER" address="0xc00000" >
+      <node id="CTRL" address="0x0" >
+        <node id="BLASTER_ENABLE" address="0x0" permission="rw" mask="0x1"/>
+      </node>
+      <node id="STATUS" address="0x100" >
+        <node id="GBT_RAM_SIZE" address="0x0" permission="r" />
+        <node id="VFAT_RAM_SIZE" address="0x1" permission="r" />
+        <node id="OH_RAM_SIZE" address="0x2" permission="r" />
+      </node>
+      <node id="RAM" address="0x10000" >
+        <node id="GBT" address="0x0" permission="rw" mode="block"size="3312"/>
+        <node id="VFAT" address="0x10000" permission="rw" mode="block"size="21312"/>
+        <node id="OH_FPGA" address="0x20000" permission="rw" mode="block"size="2400"/>
+        <node id="GBT_OH0" address="0x0" permission="rw" mode="block"size="276"/>
+        <node id="GBT_OH1" address="0x144" permission="rw" mode="block"size="276"/>
+        <node id="GBT_OH2" address="0x288" permission="rw" mode="block"size="276"/>
+        <node id="GBT_OH3" address="0x3cc" permission="rw" mode="block"size="276"/>
+        <node id="GBT_OH4" address="0x510" permission="rw" mode="block"size="276"/>
+        <node id="GBT_OH5" address="0x654" permission="rw" mode="block"size="276"/>
+        <node id="GBT_OH6" address="0x798" permission="rw" mode="block"size="276"/>
+        <node id="GBT_OH7" address="0x8dc" permission="rw" mode="block"size="276"/>
+        <node id="GBT_OH8" address="0xa20" permission="rw" mode="block"size="276"/>
+        <node id="GBT_OH9" address="0xb64" permission="rw" mode="block"size="276"/>
+        <node id="GBT_OH10" address="0xca8" permission="rw" mode="block"size="276"/>
+        <node id="GBT_OH11" address="0xdec" permission="rw" mode="block"size="276"/>
+        <node id="VFAT_OH0" address="0x10000" permission="rw" mode="block"size="1776"/>
+        <node id="VFAT_OH1" address="0x106f0" permission="rw" mode="block"size="1776"/>
+        <node id="VFAT_OH2" address="0x10de0" permission="rw" mode="block"size="1776"/>
+        <node id="VFAT_OH3" address="0x114d0" permission="rw" mode="block"size="1776"/>
+        <node id="VFAT_OH4" address="0x11bc0" permission="rw" mode="block"size="1776"/>
+        <node id="VFAT_OH5" address="0x122b0" permission="rw" mode="block"size="1776"/>
+        <node id="VFAT_OH6" address="0x129a0" permission="rw" mode="block"size="1776"/>
+        <node id="VFAT_OH7" address="0x13090" permission="rw" mode="block"size="1776"/>
+        <node id="VFAT_OH8" address="0x13780" permission="rw" mode="block"size="1776"/>
+        <node id="VFAT_OH9" address="0x13e70" permission="rw" mode="block"size="1776"/>
+        <node id="VFAT_OH10" address="0x14560" permission="rw" mode="block"size="1776"/>
+        <node id="VFAT_OH11" address="0x14c50" permission="rw" mode="block"size="1776"/>
+        <node id="OH_FPGA_OH0" address="0x20000" permission="rw" mode="block"size="200"/>
+        <node id="OH_FPGA_OH1" address="0x200c8" permission="rw" mode="block"size="200"/>
+        <node id="OH_FPGA_OH2" address="0x20190" permission="rw" mode="block"size="200"/>
+        <node id="OH_FPGA_OH3" address="0x20258" permission="rw" mode="block"size="200"/>
+        <node id="OH_FPGA_OH4" address="0x20320" permission="rw" mode="block"size="200"/>
+        <node id="OH_FPGA_OH5" address="0x203e8" permission="rw" mode="block"size="200"/>
+        <node id="OH_FPGA_OH6" address="0x204b0" permission="rw" mode="block"size="200"/>
+        <node id="OH_FPGA_OH7" address="0x20578" permission="rw" mode="block"size="200"/>
+        <node id="OH_FPGA_OH8" address="0x20640" permission="rw" mode="block"size="200"/>
+        <node id="OH_FPGA_OH9" address="0x20708" permission="rw" mode="block"size="200"/>
+        <node id="OH_FPGA_OH10" address="0x207d0" permission="rw" mode="block"size="200"/>
+        <node id="OH_FPGA_OH11" address="0x20898" permission="rw" mode="block"size="200"/>
       </node>
     </node>
     <node id="GLIB_SYSTEM" address="0x910000" >

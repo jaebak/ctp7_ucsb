@@ -318,11 +318,41 @@ begin
     end generate;
   end generate;
 
-  gen_qpll_refclk_assign_Q118 : for i in 8 to 8 generate
+  gen_qpll_refclk_assign_Q118_to_Q119 : for i in 8 to 9 generate
   begin
     gen_qpll_inner : for j in 0 to 3 generate
     begin
       s_gth_gt_clk_in_arr(i*4+j).GTREFCLK0  <= s_refclk_F_0(0);
+      s_gth_gt_clk_in_arr(i*4+j).qpllclk    <= s_gth_common_clk_out_arr(i).QPLLCLK;
+      s_gth_gt_clk_in_arr(i*4+j).qpllrefclk <= s_gth_common_clk_out_arr(i).QPLLREFCLK;
+    end generate;
+  end generate;
+
+  gen_qpll_refclk_assign_Q218_to_Q219 : for i in 10 to 11 generate
+  begin
+    gen_qpll_inner : for j in 0 to 3 generate
+    begin
+      s_gth_gt_clk_in_arr(i*4+j).GTREFCLK0  <= s_refclk_B_0(3);
+      s_gth_gt_clk_in_arr(i*4+j).qpllclk    <= s_gth_common_clk_out_arr(i).QPLLCLK;
+      s_gth_gt_clk_in_arr(i*4+j).qpllrefclk <= s_gth_common_clk_out_arr(i).QPLLREFCLK;
+    end generate;
+  end generate;
+
+  gen_qpll_refclk_assign_Q215_to_Q217 : for i in 12 to 14 generate
+  begin
+    gen_qpll_inner : for j in 0 to 3 generate
+    begin
+      s_gth_gt_clk_in_arr(i*4+j).GTREFCLK0  <= s_refclk_B_0(2);
+      s_gth_gt_clk_in_arr(i*4+j).qpllclk    <= s_gth_common_clk_out_arr(i).QPLLCLK;
+      s_gth_gt_clk_in_arr(i*4+j).qpllrefclk <= s_gth_common_clk_out_arr(i).QPLLREFCLK;
+    end generate;
+  end generate;
+
+  gen_qpll_refclk_assign_Q214 : for i in 15 to 15 generate
+  begin
+    gen_qpll_inner : for j in 0 to 3 generate
+    begin
+      s_gth_gt_clk_in_arr(i*4+j).GTREFCLK0  <= s_refclk_B_0(1);
       s_gth_gt_clk_in_arr(i*4+j).qpllclk    <= s_gth_common_clk_out_arr(i).QPLLCLK;
       s_gth_gt_clk_in_arr(i*4+j).qpllrefclk <= s_gth_common_clk_out_arr(i).QPLLREFCLK;
     end generate;

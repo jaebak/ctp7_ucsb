@@ -637,6 +637,8 @@ def printNodeToUHALFile(node, file, level, baseAddress, baseName, addrOffset, nu
         file.write('mask="%s"' % hex(node.mask))
     if node.mode is not None:
         file.write('mode="%s"' % node.mode)
+    if node.size is not None:
+        file.write('size="%s"' % node.size)
 
     if len(node.children) > 0:
         file.write('>\n')

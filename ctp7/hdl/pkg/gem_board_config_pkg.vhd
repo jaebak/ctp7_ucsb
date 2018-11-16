@@ -22,7 +22,7 @@ package gem_board_config_package is
     constant CFG_BOARD_TYPE         : std_logic_vector(3 downto 0) := x"1"; 
 
     constant CFG_USE_TRIG_LINKS     : boolean := true; -- this should be TRUE by default, but could be set to false for tests or quicker compilation if not needed
-    constant CFG_NUM_OF_OHs         : integer := 4;     -- total number of OHs to instanciate (remember to adapt the CFG_OH_LINK_CONFIG_ARR accordingly)
+    constant CFG_NUM_OF_OHs         : integer := 12;   -- total number of OHs to instanciate (remember to adapt the CFG_OH_LINK_CONFIG_ARR accordingly)
 
     -- this should normally be set to false, but in special cases where the board is in a test stand that doesn't have AMC13, the board can use the internal oscillator for MGTs
     -- and then this parameter should be set to true (in this case the clockinit command should also be updated in CTP7 to use the oscillator instead of the backplane for reference)
@@ -48,42 +48,51 @@ package gem_board_config_package is
 --        (3, 4, 5, 26, 27) 
 --    );
 
-    constant CFG_OH_LINK_CONFIG_ARR : t_oh_link_config_arr := (
-        (0, 1, 2, 24, 25), 
-        (3, 4, 5, 26, 27),
-        (6, 7, 8, 28, 29), 
-        (9, 10, 11, 30, 31)
-    );
-    
 --    constant CFG_OH_LINK_CONFIG_ARR : t_oh_link_config_arr := (
---        (0, 1, 2, 0, 0), 
---        (3, 4, 5, 0, 0),
---        (6, 7, 8, 0, 0), 
---        (9, 10, 11, 0, 0),
---
---        (12, 13, 14, 0, 0), 
---        (15, 16, 17, 0, 0), 
---        (18, 19, 20, 0, 0), 
---        (21, 22, 23, 0, 0), 
---
---        (24, 25, 26, 0, 0), 
---        (27, 28, 29, 0, 0), 
---        (30, 31, 32, 0, 0), 
---        (33, 34, 35, 0, 0) 
+--        (0, 1, 2, 24, 25), 
+--        (3, 4, 5, 26, 27),
+--        (6, 7, 8, 28, 29), 
+--        (9, 10, 11, 30, 31)
 --    );
+    
+    constant CFG_OH_LINK_CONFIG_ARR : t_oh_link_config_arr := (
+        (0, 1, 2, 40, 41), 
+        (3, 4, 5, 42, 43),
+        (6, 7, 8, 44, 45), 
+        (9, 10, 11, 46, 47),
+
+        (12, 13, 14, 48, 49), 
+        (15, 16, 17, 50, 51), 
+        (18, 19, 20, 52, 53), 
+        (21, 22, 23, 54, 55), 
+
+        (24, 25, 26, 56, 57), 
+        (27, 28, 29, 58, 59), 
+        (30, 31, 32, 68, 69), 
+        (33, 34, 35, 70, 71) 
+    );
 
     -- this record is used in CXP fiber to GTH map (holding tx and rx GTH index)
     type t_cxp_fiber_to_gth_link is record
-        tx      : integer range 0 to 35; -- GTH TX index
-        rx      : integer range 0 to 35; -- GTH RX index
+        tx      : integer range 0 to 67; -- GTH TX index (#67 means disconnected/non-existing)
+        rx      : integer range 0 to 67; -- GTH RX index (#67 means disconnected/non-existing)
     end record;
     
     -- this array is meant to hold mapping from CXP fiber index to GTH TX and RX indexes
-    type t_cxp_fiber_to_gth_link_map is array (0 to 35) of t_cxp_fiber_to_gth_link;
+    type t_cxp_fiber_to_gth_link_map is array (0 to 71) of t_cxp_fiber_to_gth_link;
 
-    -- defines the GTH TX and RX index for each index of the CXP fiber
+    -- defines the GTH TX and RX index for each index of the CXP and MP fiber
+    -- CXP0: fibers 0-11
+    -- CXP1: fibers 12-23
+    -- CXP2: fibers 24-35
+    -- MP0 RX: fibers 36-47
+    -- MP1 RX: fibers 48-59
+    -- MP TX : fibers 48-59
+    -- MP2 RX: fibers 60-71
+    -- note that GTH channel #67 is used as a placeholder for fiber links that are not connected to the FPGA
     constant CFG_CXP_FIBER_TO_GTH_MAP : t_cxp_fiber_to_gth_link_map := (
-        (1, 2), -- fiber 0 (CXP 0)
+        --=== CXP0 ===--
+        (1, 2), -- fiber 0
         (3, 0), -- fiber 1
         (5, 4), -- fiber 2
         (0, 3), -- fiber 3
@@ -95,7 +104,8 @@ package gem_board_config_package is
         (11, 6), -- fiber 9
         (9, 8), -- fiber 10
         (7, 11), -- fiber 11
-        (13, 15), -- fiber 12 (CXP 1)
+        --=== CXP1 ===--        
+        (13, 15), -- fiber 12
         (15, 12), -- fiber 13
         (17, 16), -- fiber 14
         (12, 14), -- fiber 15 
@@ -107,7 +117,8 @@ package gem_board_config_package is
         (23, 17), -- fiber 21
         (21, 21), -- fiber 22
         (19, 22), -- fiber 23
-        (25, 27), -- fiber 24 (CXP 2)
+        --=== CXP2 ===--        
+        (25, 27), -- fiber 24
         (27, 24), -- fiber 25
         (29, 28), -- fiber 26
         (24, 26), -- fiber 27
@@ -118,7 +129,46 @@ package gem_board_config_package is
         (30, 32), -- fiber 32
         (35, 29), -- fiber 33
         (33, 33), -- fiber 34
-        (31, 34)  -- fiber 35
+        (31, 34), -- fiber 35
+        --=== no TX / MP0 RX ===--
+        (67, 67), -- fiber 36 -- RX NULL (not connected)
+        (67, 66), -- fiber 37
+        (67, 64), -- fiber 38
+        (67, 65), -- fiber 39
+        (67, 62), -- fiber 40
+        (67, 63), -- fiber 41
+        (67, 61), -- fiber 42
+        (67, 60), -- fiber 43
+        (67, 59), -- fiber 44
+        (67, 58), -- fiber 45
+        (67, 57), -- fiber 46
+        (67, 56), -- fiber 47
+        --=== MP TX / MP1 RX ===--
+        (59, 54), -- fiber 48 
+        (56, 55), -- fiber 49
+        (63, 52), -- fiber 50
+        (52, 53), -- fiber 51
+        (62, 50), -- fiber 52
+        (53, 51), -- fiber 53
+        (61, 49), -- fiber 54
+        (54, 48), -- fiber 55
+        (60, 47), -- fiber 56
+        (55, 46), -- fiber 57
+        (58, 45), -- fiber 58
+        (57, 44), -- fiber 59
+        --=== no TX / MP2 RX ===--
+        (67, 67),  -- fiber 60 -- RX NULL (not connected)
+        (67, 67), -- fiber 61 -- RX NULL (not connected)
+        (67, 43), -- fiber 62
+        (67, 67), -- fiber 63 -- RX NULL (not connected)
+        (67, 42), -- fiber 64 
+        (67, 67), -- fiber 65 -- RX NULL (not connected)
+        (67, 40), -- fiber 66
+        (67, 36), -- fiber 67 -- RX inverted
+        (67, 41), -- fiber 68 
+        (67, 37), -- fiber 69 -- RX inverted
+        (67, 38), -- fiber 70
+        (67, 39) -- fiber 71        
     );
     
 end package gem_board_config_package;

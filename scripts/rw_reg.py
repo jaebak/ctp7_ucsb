@@ -16,6 +16,7 @@ class Node:
     parent = None
     level = 0
     mode = None
+    size = None
 
     def __init__(self):
         self.children = []
@@ -87,6 +88,8 @@ def makeTree(node,baseName,baseAddress,nodes,parentNode,vars,isGenerated,num_of_
     newNode.isModule = node.get('fw_is_module') is not None and node.get('fw_is_module') == 'true'
     if node.get('mode') is not None:
         newNode.mode = node.get('mode')
+    if node.get('size') is not None:
+        newNode.size = node.get('size')
     nodes.append(newNode)
     if parentNode is not None:
         parentNode.addChild(newNode)

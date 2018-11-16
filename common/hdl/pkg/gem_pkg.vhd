@@ -10,10 +10,10 @@ package gem_pkg is
     --==  Firmware version  ==--
     --========================-- 
 
-    constant C_FIRMWARE_DATE    : std_logic_vector(31 downto 0) := x"20180726";
+    constant C_FIRMWARE_DATE    : std_logic_vector(31 downto 0) := x"20181116";
     constant C_FIRMWARE_MAJOR   : integer range 0 to 255        := 3;
-    constant C_FIRMWARE_MINOR   : integer range 0 to 255        := 5;
-    constant C_FIRMWARE_BUILD   : integer range 0 to 255        := 1;
+    constant C_FIRMWARE_MINOR   : integer range 0 to 255        := 7;
+    constant C_FIRMWARE_BUILD   : integer range 0 to 255        := 0;
     
     ------ Change log ------
     -- 1.8.6 no gbt sync procedure with oh
@@ -91,7 +91,13 @@ package gem_pkg is
     -- 3.4.4  Set the default parameters for OH v3b FPGA elink bitslips that are working. Also ILA debugging OH index was changed from 0 to 1
     -- 3.4.5  Fix VFAT7 when using v3b (changed elink in v3b OH)
     -- 3.5.0  Merged with promless project. NOTE: this version needs updated Zynq firmware with AXI-full and AXI interrupt support!
-    -- 3.5.1  Added flipflops for ipb_mosi inputs in the ipbus_slave.vhd to ease the timing on the ipbus path    
+    -- 3.5.1  Added flipflops for ipb_mosi inputs in the ipbus_slave.vhd to ease the timing on the ipbus path
+    -- 3.5.2  Fixed OH GBT-FPGA communication bitslip settings defaults (the defaults were reset to 0 in 3.5.1 somehow, probably due to some merge activities)
+    -- 3.5.3  Added an SCA reset enable mask register which defines which SCAs will get reset uppon a receipt of a module reset command
+    --        Also updated the default GPIO direction and output value to drive the VFAT3 resets in OHv3c. The reset is lifted by default after SCA reset, but it is pulsed high when a hard reset command is received
+    -- 3.6.0  Added a config blaster interface. RAMs for GBTs, VFATs, and OHs are implemented and writable/readable from IPbus, but the actual config blaster is not yet implemented
+    -- 3.6.1  Trying to fix RAM size registers (were always reading 0 in 3.6.0)
+    -- 3.7.0  Introduced MiniPOD links, and moved trigger inputs there, allowing to expand the number of OHs to 12
 
     --======================--
     --==      General     ==--
