@@ -59,7 +59,9 @@ entity gth_clk_bufs is
     clk_gth_rx_usrclk_arr_o : out std_logic_vector(g_NUM_OF_GTH_GTs-1 downto 0);
 
     clk_gth_4p8g_common_rxusrclk_o : out std_logic;
-    clk_gth_4p8g_common_txoutclk_o : out std_logic
+    clk_gth_4p8g_common_txoutclk_o : out std_logic;
+
+    clk_gth_3p2g_common_txusrclk_o : out std_logic
 
     );
 end gth_clk_bufs;
@@ -92,6 +94,8 @@ begin
   clk_gth_4p8g_common_rxusrclk_o <= ttc_clks_i.clk_120;
   --GTH_4p8g_TX_MMCM_locked_o <= s_gth_4p8g_mmcm_locked;
   GTH_4p8g_TX_MMCM_locked_o <= ttc_clks_locked_i;
+
+  clk_gth_3p2g_common_txusrclk_o <= s_gth_3p2g_txusrclk;
 
   gen_ibufds_F_clk_gte2 : for i in 0 to 3 generate
 

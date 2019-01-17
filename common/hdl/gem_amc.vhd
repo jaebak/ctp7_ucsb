@@ -27,6 +27,8 @@ entity gem_amc is
     generic(
         g_NUM_OF_OHs         : integer;
         g_USE_TRIG_LINKS     : boolean := true;  -- this should be TRUE by default, but could be set to false for tests or quicker compilation if not needed
+        g_USE_TRIG_TX_LINKS  : boolean := true;  -- if true, then trigger output links will be instantiated
+        g_NUM_TRIG_TX_LINKS  : integer;
         
         g_NUM_IPB_SLAVES     : integer;
         g_DAQ_CLK_FREQ       : integer
@@ -46,6 +48,10 @@ entity gem_amc is
         gt_trig0_rx_data_arr_i  : in  t_gt_8b10b_rx_data_arr(g_NUM_OF_OHs - 1 downto 0);
         gt_trig1_rx_clk_arr_i   : in  std_logic_vector(g_NUM_OF_OHs - 1 downto 0);
         gt_trig1_rx_data_arr_i  : in  t_gt_8b10b_rx_data_arr(g_NUM_OF_OHs - 1 downto 0);
+
+        -- Trigger TX GTH links (3.2Gbs, 16bit @ 160MHz w/ 8b10b encoding) -- this is just for testing right now, will be changed to (9.6Gbs, 32bit @ 240MHz w/ 8b10b encoding)
+        gt_trig_tx_data_arr_o   : out t_gt_8b10b_tx_data_arr(g_NUM_TRIG_TX_LINKS - 1 downto 0);
+        gt_trig_tx_clk_i        : in  std_logic;
 
         -- GBT DAQ + Control GTX / GTH links (4.8Gbs, 40bit @ 120MHz without encoding)
         gt_gbt_rx_data_arr_i    : in  t_gt_gbt_data_arr(g_NUM_OF_OHs * 3 - 1 downto 0);
@@ -347,7 +353,7 @@ begin
         i_optohybrid_single : entity work.optohybrid
             generic map(
                 g_OH_IDX        => std_logic_vector(to_unsigned(i, 4)),
-                g_DEBUG         => i = 0
+                g_DEBUG         => i = 4
             )
             port map(
                 reset_i                 => reset or link_reset,
@@ -406,7 +412,9 @@ begin
 
     i_trigger : entity work.trigger
         generic map(
-            g_NUM_OF_OHs => g_NUM_OF_OHs
+            g_NUM_OF_OHs => g_NUM_OF_OHs,
+            g_NUM_TRIG_TX_LINKS => g_NUM_TRIG_TX_LINKS,
+            g_USE_TRIG_TX_LINKS => g_USE_TRIG_TX_LINKS
         )
         port map(
             reset_i            => reset or link_reset,
@@ -415,6 +423,8 @@ begin
             sbit_clusters_i    => sbit_clusters_arr,
             sbit_link_status_i => sbit_links_status_arr,
             trig_led_o         => led_trigger_o,
+            tx_link_clk_i      => gt_trig_tx_clk_i,
+            trig_tx_data_arr_o => gt_trig_tx_data_arr_o,      
             ipb_reset_i        => ipb_reset,
             ipb_clk_i          => ipb_clk_i,
             ipb_miso_o         => ipb_miso_arr(C_IPB_SLV.trigger),

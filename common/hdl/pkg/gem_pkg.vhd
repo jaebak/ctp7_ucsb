@@ -10,10 +10,10 @@ package gem_pkg is
     --==  Firmware version  ==--
     --========================-- 
 
-    constant C_FIRMWARE_DATE    : std_logic_vector(31 downto 0) := x"20181116";
+    constant C_FIRMWARE_DATE    : std_logic_vector(31 downto 0) := x"20190116";
     constant C_FIRMWARE_MAJOR   : integer range 0 to 255        := 3;
     constant C_FIRMWARE_MINOR   : integer range 0 to 255        := 7;
-    constant C_FIRMWARE_BUILD   : integer range 0 to 255        := 1;
+    constant C_FIRMWARE_BUILD   : integer range 0 to 255        := 2;
     
     ------ Change log ------
     -- 1.8.6 no gbt sync procedure with oh
@@ -99,6 +99,7 @@ package gem_pkg is
     -- 3.6.1  Trying to fix RAM size registers (were always reading 0 in 3.6.0)
     -- 3.7.0  Introduced MiniPOD links, and moved trigger inputs there, allowing to expand the number of OHs to 12
     -- 3.7.1  Made VFAT3 ADC0 and ADC1 reading async by returning a value from a local cache, and using a separate register to actually trigger the real read and update of the cache
+    -- 3.7.2  Fixed a bug related to miniPOD links -- some config registers were missing, preventing the links from starting up correctly. Dummy trigger (EMTF) outputs added on miniPOD TX for easy loopback testing of the miniPOD trigger inputs 
 
     --======================--
     --==      General     ==--

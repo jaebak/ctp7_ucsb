@@ -28,6 +28,9 @@ package gem_board_config_package is
     -- and then this parameter should be set to true (in this case the clockinit command should also be updated in CTP7 to use the oscillator instead of the backplane for reference)
     constant CFG_DISABLE_TTC_PHASE_LOCKING : boolean := false;
 
+    constant CFG_USE_TRIG_TX_LINKS  : boolean := false; -- if true, then trigger transmitters will be instantiated (used to connect to EMTF)
+    constant CFG_NUM_TRIG_TX        : integer := 12; -- number of trigger transmitters used to connect to EMTF
+
     --========================--
     --== Link configuration ==--
     --========================--
@@ -71,6 +74,11 @@ package gem_board_config_package is
         (30, 31, 32, 68, 69), 
         (33, 34, 35, 70, 71) 
     );
+
+    type t_trig_tx_link_config_arr is array (0 to CFG_NUM_TRIG_TX - 1) of integer range 0 to 79;
+    
+    constant CFG_TRIG_TX_LINK_CONFIG_ARR : t_trig_tx_link_config_arr := (48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59);
+
 
     -- this record is used in CXP fiber to GTH map (holding tx and rx GTH index)
     type t_cxp_fiber_to_gth_link is record

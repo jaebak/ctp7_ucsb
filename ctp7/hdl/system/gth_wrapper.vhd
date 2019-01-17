@@ -104,7 +104,9 @@ entity gth_wrapper is
     gth_gbt_rx_data_arr_o : out t_gt_gbt_data_arr(g_NUM_OF_GTH_GTs-1 downto 0);
     
     gth_gbt_common_rxusrclk_o : out std_logic;
-    gth_gbt_common_txoutclk_o : out std_logic
+    gth_gbt_common_txoutclk_o : out std_logic;
+    
+    gth_3p2g_common_txusrclk_o : out std_logic
     
     );
 end gth_wrapper;
@@ -278,7 +280,9 @@ begin
       clk_gth_rx_usrclk_arr_o => s_clk_gth_rx_usrclk_arr,
 
       clk_gth_4p8g_common_rxusrclk_o => s_gth_4p8g_common_rxusrclk,
-      clk_gth_4p8g_common_txoutclk_o => gth_gbt_common_txoutclk_o
+      clk_gth_4p8g_common_txoutclk_o => gth_gbt_common_txoutclk_o,
+      
+      clk_gth_3p2g_common_txusrclk_o => gth_3p2g_common_txusrclk_o
       );
 
   ttc_clks_reset_o <= s_GTH_4p8g_TX_MMCM_reset;
