@@ -38,8 +38,8 @@ entity optohybrid is
         
         -- FPGA control link
         gbt_rx_ready_i          : in  std_logic_vector(2 downto 0);
-        fpga_tx_data_o          : out std_logic_vector(9 downto 0);
-        fpga_rx_data_i          : in  std_logic_vector(13 downto 0);
+        fpga_tx_data_o          : out std_logic_vector(7 downto 0);
+        fpga_rx_data_i          : in  std_logic_vector(7 downto 0);
 
         -- VFAT3 links
         vfat3_tx_data_o         : out t_std8_array(23 downto 0);
@@ -146,7 +146,7 @@ architecture optohybrid_arch of optohybrid is
     
     --== FPGA register access requests ==--
 
-    signal fpga_rx_data             : std_logic_vector(9 downto 0);    
+    signal fpga_rx_data             : std_logic_vector(7 downto 0);
     
     --== Trigger RX sync FIFOs ==--
 
@@ -177,7 +177,7 @@ begin
     --==        Wiring        ==--
     --==========================--
     vfat3_tx_data_o <= vfat3_tx_data;
-    fpga_rx_data <= fpga_rx_data_i(13 downto 4);
+    fpga_rx_data <= fpga_rx_data_i;
     
     --------------------------------------- old
     tk_data_link_o.clk <= ttc_clk_i.clk_80;

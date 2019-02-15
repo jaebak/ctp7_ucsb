@@ -33,8 +33,8 @@ entity link_oh_fpga is
         ipb_miso_o      : out ipb_rbus;
         
         -- fifo I/O
-        rx_elink_i      : in  std_logic_vector(9 downto 0);
-        tx_elink_o      : out std_logic_vector(9 downto 0)
+        rx_elink_i      : in  std_logic_vector(7 downto 0);
+        tx_elink_o      : out std_logic_vector(7 downto 0)
         
         -- monitoring
 --        status_o        : out t_vfat_slow_control_status

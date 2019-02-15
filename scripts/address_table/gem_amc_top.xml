@@ -399,15 +399,6 @@
         <node id="USE_OH_V3B_MAPPING" address="0x1" mask="0x00000004" permission="rw"
               description="If set high, then will use the v3b elink assignments for the OH FPGA communication, otherwise v3a"
               fw_signal="use_v3b_elink_mapping" fw_default="0b1"/>
-        <node id="V3B_FPGA_SLOW_RX_BITSHIFT" address="0x1" mask="0x00000070" permission="rw"
-              description="for debugging only - allows shifting the bits in the slow 80Mbit/s RX elink of v3b (shift of 0 means picking out bits 0 and 4, shift of 1 means picking out bits 1 and 5, shift of 4 means picking out bits 4 and 0, etc)"
-              fw_signal="v3b_slow_rx_bitshift" fw_default="0b010"/>
-        <node id="V3B_FPGA_TX_0_BITSLIP" address="0x1" mask="0x00000f00" permission="rw"
-              description="bit slips the OH FPGA TX elink 0 (the top 8 bits)"
-              fw_signal="v3b_tx_0_bitslip" fw_default="0x0"/>
-        <node id="V3B_FPGA_TX_1_BITSLIP" address="0x1" mask="0x0000f000" permission="rw"
-              description="bit slips the OH FPGA TX elink 1 (the bottom 8 bits)"
-              fw_signal="v3b_tx_1_bitslip" fw_default="0x4"/>
       </node>
 
       <node id="TESTS" address="0x200">

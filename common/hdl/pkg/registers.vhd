@@ -1798,21 +1798,6 @@ package registers is
     constant REG_GEM_SYSTEM_VFAT3_USE_OH_V3B_MAPPING_BIT    : integer := 2;
     constant REG_GEM_SYSTEM_VFAT3_USE_OH_V3B_MAPPING_DEFAULT : std_logic := '1';
 
-    constant REG_GEM_SYSTEM_VFAT3_V3B_FPGA_SLOW_RX_BITSHIFT_ADDR    : std_logic_vector(16 downto 0) := '0' & x"0011";
-    constant REG_GEM_SYSTEM_VFAT3_V3B_FPGA_SLOW_RX_BITSHIFT_MSB    : integer := 6;
-    constant REG_GEM_SYSTEM_VFAT3_V3B_FPGA_SLOW_RX_BITSHIFT_LSB     : integer := 4;
-    constant REG_GEM_SYSTEM_VFAT3_V3B_FPGA_SLOW_RX_BITSHIFT_DEFAULT : std_logic_vector(6 downto 4) := "010";
-
-    constant REG_GEM_SYSTEM_VFAT3_V3B_FPGA_TX_0_BITSLIP_ADDR    : std_logic_vector(16 downto 0) := '0' & x"0011";
-    constant REG_GEM_SYSTEM_VFAT3_V3B_FPGA_TX_0_BITSLIP_MSB    : integer := 11;
-    constant REG_GEM_SYSTEM_VFAT3_V3B_FPGA_TX_0_BITSLIP_LSB     : integer := 8;
-    constant REG_GEM_SYSTEM_VFAT3_V3B_FPGA_TX_0_BITSLIP_DEFAULT : std_logic_vector(11 downto 8) := x"0";
-
-    constant REG_GEM_SYSTEM_VFAT3_V3B_FPGA_TX_1_BITSLIP_ADDR    : std_logic_vector(16 downto 0) := '0' & x"0011";
-    constant REG_GEM_SYSTEM_VFAT3_V3B_FPGA_TX_1_BITSLIP_MSB    : integer := 15;
-    constant REG_GEM_SYSTEM_VFAT3_V3B_FPGA_TX_1_BITSLIP_LSB     : integer := 12;
-    constant REG_GEM_SYSTEM_VFAT3_V3B_FPGA_TX_1_BITSLIP_DEFAULT : std_logic_vector(15 downto 12) := x"4";
-
     constant REG_GEM_SYSTEM_CTRL_CNT_RESET_ADDR    : std_logic_vector(16 downto 0) := '0' & x"0100";
     constant REG_GEM_SYSTEM_CTRL_CNT_RESET_MSB    : integer := 31;
     constant REG_GEM_SYSTEM_CTRL_CNT_RESET_LSB     : integer := 0;

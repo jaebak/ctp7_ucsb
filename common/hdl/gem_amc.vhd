@@ -31,7 +31,8 @@ entity gem_amc is
         g_NUM_TRIG_TX_LINKS  : integer;
         
         g_NUM_IPB_SLAVES     : integer;
-        g_DAQ_CLK_FREQ       : integer
+        g_DAQ_CLK_FREQ       : integer;
+        g_SYSTEM             : string := "GE11"
     );
     port(
         reset_i                 : in   std_logic;
@@ -169,8 +170,8 @@ architecture gem_amc_arch of gem_amc is
     signal gbt_ic_tx_data_arr           : t_std2_array(g_NUM_OF_OHs * 3 - 1 downto 0);
     signal gbt_ic_rx_data_arr           : t_std2_array(g_NUM_OF_OHs * 3 - 1 downto 0);
     signal promless_tx_data             : std_logic_vector(15 downto 0);
-    signal oh_fpga_tx_data_arr          : t_std10_array(g_NUM_OF_OHs - 1 downto 0);
-    signal oh_fpga_rx_data_arr          : t_std14_array(g_NUM_OF_OHs - 1 downto 0);
+    signal oh_fpga_tx_data_arr          : t_std8_array(g_NUM_OF_OHs - 1 downto 0);
+    signal oh_fpga_rx_data_arr          : t_std8_array(g_NUM_OF_OHs - 1 downto 0);
     signal vfat3_tx_data_arr            : t_vfat3_elinks_arr(g_NUM_OF_OHs - 1 downto 0);
     signal vfat3_rx_data_arr            : t_vfat3_elinks_arr(g_NUM_OF_OHs - 1 downto 0);
     
@@ -198,10 +199,7 @@ architecture gem_amc_arch of gem_amc is
     signal vfat_mask_arr                : t_std24_array(g_NUM_OF_OHs - 1 downto 0);
     
     signal use_v3b_elink_mapping        : std_logic;
-    signal v3b_slow_rx_bitshift         : std_logic_vector(2 downto 0);    
-    signal v3b_tx_0_bitslip             : std_logic_vector(3 downto 0);    
-    signal v3b_tx_1_bitslip             : std_logic_vector(3 downto 0);    
-    
+
     -- test module links
     signal test_gbt_rx_data_arr         : t_gbt_frame_array((g_NUM_OF_OHs * 3) - 1 downto 0);
     signal test_gbt_tx_data_arr         : t_gbt_frame_array((g_NUM_OF_OHs * 3) - 1 downto 0);
@@ -485,9 +483,6 @@ begin
             use_oh_vfat3_connectors_o   => use_oh_vfat3_connectors,
             vfat3_sc_only_mode_o        => vfat3_sc_only_mode,
             use_v3b_elink_mapping_o     => use_v3b_elink_mapping,
-            v3b_slow_rx_bitshift_o      => v3b_slow_rx_bitshift,
-            v3b_tx_0_bitslip_o          => v3b_tx_0_bitslip,
-            v3b_tx_1_bitslip_o          => v3b_tx_1_bitslip,
             manual_link_reset_o         => manual_link_reset
         );
 
@@ -601,9 +596,8 @@ begin
             mgt_rx_data_arr_i           => gt_gbt_rx_data_arr_i,
             link_status_arr_o           => gbt_link_status_arr
         );
-    
-    
-    i_gbt_link_mux : entity work.gbt_link_mux
+
+    i_gbt_link_mux : entity work.gbt_link_mux(gbt_link_mux_ge21)
         generic map(
             g_NUM_OF_OHs  => g_NUM_OF_OHs
         )
@@ -617,9 +611,6 @@ begin
             link_test_mode_i            => loopback_gbt_test_en,
             use_oh_vfat3_connectors_i   => use_oh_vfat3_connectors,
             use_v3b_mapping_i           => use_v3b_elink_mapping,
-            v3b_slow_rx_bitshift_i      => v3b_slow_rx_bitshift,
-            v3b_slow_tx_bitslip_0_i     => v3b_tx_0_bitslip,
-            v3b_slow_tx_bitslip_1_i     => v3b_tx_1_bitslip,
 
             sca_tx_data_arr_i           => sca_tx_data_arr,
             sca_rx_data_arr_o           => sca_rx_data_arr,
