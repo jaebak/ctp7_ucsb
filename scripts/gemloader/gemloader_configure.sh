@@ -1,14 +1,10 @@
 #!/bin/sh
 
-#LOAD_BIT_FILE=/mnt/persistent/texas/oh_fw/evka_ohv3a_test0.bit
-LOAD_BIT_FILE=/mnt/persistent/texas/oh_fw/OH-20180306-3.1.0.B.bit
-#LOAD_BIT_FILE=/mnt/persistent/texas/oh_fw/OH-20180223-3.0.10.A.bit
+LOAD_BIT_FILE=/mnt/persistent/gemdaq/oh_fw/optohybrid_top.bit
+SIZE_BIT_FILE=$(stat -c %s $(readlink -f /mnt/persistent/gemdaq/oh_fw/optohybrid_top.bit) )
 
-echo "Loading $LOAD_BIT_FILE"
+echo "Loading $LOAD_BIT_FILE with size $SIZE_BIT_FILE bytes"
 gemloader load $LOAD_BIT_FILE
-#/mnt/persistent/texas/tamu/gemloader/gemloader_clear_header.sh
 
-mpoke 0x6a000000 1       #enable the loader fw core
-#mpoke 0x6a000004 7694183 #number of bytes to load -- OTMB mez (v6 190T)
-mpoke 0x6a000004 5465074 #number of bytes to load -- OHv3a (v6 130T)
-#mpoke 0x6a000004 5465091 #number of bytes to load -- OHv3b (v6 130T)
+mpoke 0x6a000000 1              #enable the loader fw core
+mpoke 0x6a000004 $SIZE_BIT_FILE #number of bytes to load
