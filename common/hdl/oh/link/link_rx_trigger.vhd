@@ -77,12 +77,14 @@ architecture Behavioral of link_rx_trigger is
 
     constant FRAME_MARKERS          : t_std8_array(0 to 3) := (x"bc", x"f7", x"fb", x"fd");
     constant OVERFLOW_FRAME_MARKER  : std_logic_vector(7 downto 0) := x"fc";
+    constant BC0_FRAME_MARKER       : std_logic_vector(7 downto 0) := x"1c";
+    constant RESYNC_FRAME_MARKER    : std_logic_vector(7 downto 0) := x"3c";
 
     type state_t is (COMMA, DATA_0, DATA_1, DATA_2);    
     
     signal state                : state_t := COMMA;
     signal frame_counter        : integer range 0 to 3;
-    signal reset_done           : std_logic := '0'; -- asserted after the first comma after the reset    
+    signal reset_cntdown        : unsigned(7 downto 0) := x"ff"; -- after a reset this is count down every clock cycle and errors are counted only after this reaches 0 
     signal missed_comma_err     : std_logic := '0'; -- asserted if a comma character is not found when FSM is in COMMA state
     signal sbit_overflow        : std_logic := '0'; -- asserted when an overflow K-char is detected at the BX boundary (0xFC)
 
@@ -106,7 +108,7 @@ begin
             else
                 case state is
                     when COMMA =>
-                        if (rx_kchar_i(1 downto 0) = "01" and ((rx_data_i(7 downto 0) = FRAME_MARKERS(frame_counter)) or (rx_data_i(7 downto 0) = OVERFLOW_FRAME_MARKER))) then
+                        if (rx_kchar_i(1 downto 0) = "01" and ((rx_data_i(7 downto 0) = FRAME_MARKERS(frame_counter)) or (rx_data_i(7 downto 0) = OVERFLOW_FRAME_MARKER) or (rx_data_i(7 downto 0) = BC0_FRAME_MARKER) or (rx_data_i(7 downto 0) = RESYNC_FRAME_MARKER))) then
                             state <= DATA_0;
                             if (frame_counter = 3) then
                                 frame_counter <= 0;
@@ -129,17 +131,21 @@ begin
     begin
         if (rising_edge(gt_rx_trig_usrclk_i)) then
             if (reset_i = '1') then
-                reset_done <= '0';
+                reset_cntdown <= x"ff";
                 missed_comma_err <= '0';
                 fifo_we <= '0';
                 fifo_re <= '0';
                 sbit_overflow <= '0';
             else
+                
+                if (reset_cntdown /= x"00") then
+                    reset_cntdown <= reset_cntdown - 1;
+                end if;
+                
                 case state is
                     when COMMA =>
                         fifo_we <= '0';
-                        if (rx_kchar_i(1 downto 0) = "01" and ((rx_data_i(7 downto 0) = FRAME_MARKERS(frame_counter)) or (rx_data_i(7 downto 0) = OVERFLOW_FRAME_MARKER))) then
-                            reset_done <= '1';
+                        if (rx_kchar_i(1 downto 0) = "01" and ((rx_data_i(7 downto 0) = FRAME_MARKERS(frame_counter)) or (rx_data_i(7 downto 0) = OVERFLOW_FRAME_MARKER) or (rx_data_i(7 downto 0) = BC0_FRAME_MARKER) or (rx_data_i(7 downto 0) = RESYNC_FRAME_MARKER))) then
                             if (fifo_we = '1') then
                                 missed_comma_err <= '0'; -- deassert it only if it's the first clock we're in the COMMA state
                             end if;
@@ -149,7 +155,7 @@ begin
                                 sbit_overflow <= '0';
                             end if;
                             fifo_din(7 downto 0) <= rx_data_i(15 downto 8);
-                        elsif (reset_done = '1') then
+                        elsif (reset_cntdown = x"00") then
                             missed_comma_err <= '1';
                         end if;
                     when DATA_0 =>
@@ -213,7 +219,7 @@ begin
                 probe2  => fifo_din,
                 probe3  => fifo_dout,
                 probe4  => std_logic_vector(to_unsigned(state_t'pos(state), 2)),
-                probe5  => reset_done,
+                probe5  => '1',
                 probe6  => missed_comma_err,
                 probe7  => fifo_we,
                 probe8  => fifo_re,

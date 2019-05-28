@@ -35,9 +35,17 @@ class Virtex6Instructions:
     ISC_PROGRAM = 0x3D1
     ISC_DISABLE = 0x3D6
 
-    
+
+ARTIX7_75T_FIRMWARE_SIZE = 3825768
+ARTIX7_75T_FPGA_ID = 0x49c0
 VIRTEX6_FIRMWARE_SIZE = 5464972
 VIRTEX6_FPGA_ID = 0x6424a093
+
+FIRMWARE_SIZE = VIRTEX6_FIRMWARE_SIZE
+FPGA_ID = VIRTEX6_FPGA_ID
+
+#FIRMWARE_SIZE = ARTIX7_75T_FIRMWARE_SIZE
+#FPGA_ID = ARTIX7_75T_FPGA_ID
 
 ADDR_JTAG_LENGTH = None
 ADDR_JTAG_TMS = None
@@ -100,7 +108,7 @@ def main():
             value = jtagCommand(True, Virtex6Instructions.FPGA_ID, 10, 0x0, 32, ohList)
             for oh in ohList:
                 print(('OH #%d FPGA ID= ' % oh) + hex(value[oh]))
-                if value[oh] != VIRTEX6_FPGA_ID:
+                if value[oh] != FPGA_ID:
                     errors += 1
 
         totalTime = clock() - timeStart
@@ -153,11 +161,11 @@ def main():
         if type == "mcs":
             print("Reading the MCS file...")
             bytes = readMcs(filename)
-            if len(bytes) < VIRTEX6_FIRMWARE_SIZE:
-                raise ValueError("MCS file is too short.. For Virtex6 we expect it to be " + str(VIRTEX6_FIRMWARE_SIZE) + " bytes long")
+            if len(bytes) < FIRMWARE_SIZE:
+                raise ValueError("MCS file is too short.. For Virtex6 we expect it to be " + str(FIRMWARE_SIZE) + " bytes long")
 
             print("Swapping bytes...")
-            for i in range(0, VIRTEX6_FIRMWARE_SIZE/4):
+            for i in range(0, FIRMWARE_SIZE/4):
                 words.append((bytes[i*4 + 2] << 24) + (bytes[i*4 + 3] << 16) + (bytes[i*4] << 8) + (bytes[i*4 + 1]))
 
         elif type == "bit":
@@ -165,7 +173,7 @@ def main():
             f.read(119) # skip the header
             print("Reading the bit file")
             bitWords = []
-            bitWords = struct.unpack('>{}I'.format(VIRTEX6_FIRMWARE_SIZE/4), f.read(VIRTEX6_FIRMWARE_SIZE))
+            bitWords = struct.unpack('>{}I'.format(FIRMWARE_SIZE/4), f.read(FIRMWARE_SIZE))
             print("reversing bits")
 
             # reverse the bits using a lookup table -- that's the fastest way
@@ -190,10 +198,10 @@ def main():
             for word in bitWords:
                 words.append(bitReverseTable256[word & 0xff] << 24 | bitReverseTable256[(word >> 8) & 0xff] << 16 | bitReverseTable256[(word >> 16) & 0xff] << 8 | bitReverseTable256[(word >> 24) & 0xff])
 
-            if len(words) < VIRTEX6_FIRMWARE_SIZE/4:
-                raise ValueError("Bit file is too short.. For Virtex6 we expect it to be " + str(VIRTEX6_FIRMWARE_SIZE) + " bytes long")
+            if len(words) < FIRMWARE_SIZE/4:
+                raise ValueError("Bit file is too short.. For Virtex6 we expect it to be " + str(FIRMWARE_SIZE) + " bytes long")
 
-        numWords = VIRTEX6_FIRMWARE_SIZE / 4
+        numWords = FIRMWARE_SIZE / 4
 
         timeStart = clock()
         enableJtag(ohMask, 2)
@@ -204,8 +212,8 @@ def main():
         for oh in ohList:
             print('FPGA ID = ' + hex(fpgaIds[fpgaIdIdx]))
             fpgaIdIdx += 1
-            #if fpgaIds[oh] != VIRTEX6_FPGA_ID:
-            #    raise ValueError("Bad FPGA-ID (should be " + hex(VIRTEX6_FPGA_ID) + ")... Hands off...")
+            #if fpgaIds[oh] != FPGA_ID:
+            #    raise ValueError("Bad FPGA-ID (should be " + hex(FPGA_ID) + ")... Hands off...")
 
         jtagCommand(False, Virtex6Instructions.SHUTDN, 10, None, 0, False)
 
@@ -349,6 +357,39 @@ def main():
             sleep(0.001)
             writeReg(getNode('GEM_AMC.SLOW_CONTROL.SCA.MANUAL_CONTROL.FPGA_HARD_RESET'), 0x1)
 
+    elif instructions == 'adc-read':
+        subheading('Disabling SCA ADC monitoring')
+        writeReg(getNode('GEM_AMC.SLOW_CONTROL.SCA.ADC_MONITORING.MONITORING_OFF'), 0xffffffff)
+        sleep(0.1)
+
+        for ch in range(32):
+            sendScaCommand(ohList, 0x14, 0x50, 0x4, ch << 24, False)
+            results = sendScaCommand(ohList, 0x14, 0x02, 0x4, 1 << 24, True)
+            for oh in range(len(results)):
+                res = (results[oh] >> 24) + ((results[oh] >> 8) & 0xff00)
+                if (res > 0xfff):
+                    printRed("ERROR: ADC returned a reading above 0xfff!!")
+                res_mv = ((1.0 / 0xfff) * float(res)) * 1000
+                print "Channel %d OH %d: %d counts (%s) = %fmV" % (ch, oh, res, hex(res), res_mv)
+                #print "curr = %s" % hex(curr[oh])
+            sleep(0.001)
+
+    elif instructions == 'adc-read-v1':  
+        subheading('Disabling SCA ADC monitoring')
+        writeReg(getNode('GEM_AMC.SLOW_CONTROL.SCA.ADC_MONITORING.MONITORING_OFF'), 0xffffffff)
+        sleep(0.1)     
+                       
+        for ch in range(32):
+            sendScaCommand(ohList, 0x14, 0x30, 0x4, ch << 24, False)
+            results = sendScaCommand(ohList, 0x14, 0xb2, 0x4, 0, True)
+            for oh in range(len(results)):
+                res = ((results[oh] >> 24) + ((results[oh] >> 8) & 0xff00)) & 0xfff
+                if (res > 0xfff):                                                                                                
+                    printRed("ERROR: ADC returned a reading above 0xfff!!")                                                      
+                res_mv = ((1.0 / 0xfff) * float(res)) * 1000
+                print "Channel %d OH %d: %d counts (%s) = %fmV" % (ch, oh, res, hex(res), res_mv)
+            sleep(0.001) 
+                       
     elif instructions == 'compare-mcs-bit':
         if len(sys.argv) < 5:
             print("Usage: sca.py compare-mcs-bit <mcs_filename> <bit_filename>")
@@ -363,7 +404,7 @@ def main():
         f.read(119)
         print("reading")
         bitWords = []
-        bitWords = struct.unpack('>{}I'.format(VIRTEX6_FIRMWARE_SIZE/4), f.read(VIRTEX6_FIRMWARE_SIZE))
+        bitWords = struct.unpack('>{}I'.format(FIRMWARE_SIZE/4), f.read(FIRMWARE_SIZE))
         print("reversing bits")
         timeStart = clock()
 
@@ -401,7 +442,7 @@ def main():
 
         print("comparing bytes")
         errors = 0
-        for i in range(0, VIRTEX6_FIRMWARE_SIZE / 4):
+        for i in range(0, FIRMWARE_SIZE / 4):
            if (mcsBytes[i*4 + 2] << 24) + (mcsBytes[i*4 + 3] << 16) + (mcsBytes[i*4] << 8) + (mcsBytes[i*4 + 1]) != bitWordsReversed[i]:
                errors += 1
                print("Ooops, bytes #%d are not equal : "%i + hex(mcsBytes[i]) + ", " + hex(bitBytes[i]))

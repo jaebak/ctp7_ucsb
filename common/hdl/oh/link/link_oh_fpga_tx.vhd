@@ -50,7 +50,6 @@ architecture link_oh_fpga_tx_arch of link_oh_fpga_tx is
 
     signal elink_data       : std_logic_vector(7 downto 0);
     signal frame_data       : std_logic_vector(g_FRAME_WIDTH-1 downto 0);
-    signal frame_data_delay : std_logic_vector(g_FRAME_WIDTH-1 downto 0);
 
     signal reg_data         : std_logic_vector(47 downto 0);
 
@@ -143,14 +142,9 @@ begin
 
     --== Data transmission ==--
 
-    send_header <= '1' when state=HEADER else '0';
-    send_idle   <= '1' when state=IDLE   else '0';
-
     process(ttc_clk_40_i)
     begin
         if (rising_edge(ttc_clk_40_i)) then
-
-            frame_data_delay <= frame_data;
 
             if (reset_i = '1') then
                 frame_data <= (others => '0');
@@ -158,14 +152,24 @@ begin
                 case state is
                     when IDLE =>
                         frame_data <= "000000";
+                        send_idle <= '1';
+                        send_header <= '0';
                     when HEADER =>
                         frame_data <= "000000";
+                        send_idle <= '0';
+                        send_header <= '1';
                     when START =>
                         frame_data <= "1" & request_write_i & x"b";
+                        send_idle <= '0';
+                        send_header <= '0';
                     when DATA =>
                         frame_data <= reg_data(((g_FRAME_COUNT_MAX - data_frame_cnt) * g_FRAME_WIDTH) - 1 downto (g_FRAME_COUNT_MAX-1-data_frame_cnt)*g_FRAME_WIDTH);
+                        send_idle <= '0';
+                        send_header <= '0';
                     when others =>
                         frame_data <= (others => '0');
+                        send_idle <= '0';
+                        send_header <= '0';
                 end case;
             end if;
         end if;
