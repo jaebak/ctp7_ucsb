@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="20" Path="/home/evka/code/gem_fresh/GEM_AMC/ctp7/work_dir/gem_amc.xpr">
+<Project Version="7" Minor="20" Path="/data/jbkim/odmb/ctp7/GEM_AMC/ctp7/work_dir/gem_amc.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="e1dcef5053524aa7b3f3a5b0dc2878d1"/>
@@ -1299,12 +1299,6 @@
         </FileInfo>
       </File>
       <File Path="$PPRDIR/../../common/hdl/oh/link/6b8b.vhd">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../../common/hdl/daq/variable_input_fifo_driver.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>

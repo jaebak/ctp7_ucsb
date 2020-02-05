@@ -22,11 +22,13 @@ package gem_board_config_package is
     constant CFG_BOARD_TYPE         : std_logic_vector(3 downto 0) := x"1"; 
 
     constant CFG_USE_TRIG_LINKS     : boolean := true; -- this should be TRUE by default, but could be set to false for tests or quicker compilation if not needed
-    constant CFG_NUM_OF_OHs         : integer := 12;   -- total number of OHs to instanciate (remember to adapt the CFG_OH_LINK_CONFIG_ARR accordingly)
+    --constant CFG_NUM_OF_OHs         : integer := 12;   -- total number of OHs to instanciate (remember to adapt the CFG_OH_LINK_CONFIG_ARR accordingly)
+    constant CFG_NUM_OF_OHs         : integer := 2;   -- total number of OHs to instanciate (remember to adapt the CFG_OH_LINK_CONFIG_ARR accordingly)
 
     -- this should normally be set to false, but in special cases where the board is in a test stand that doesn't have AMC13, the board can use the internal oscillator for MGTs
     -- and then this parameter should be set to true (in this case the clockinit command should also be updated in CTP7 to use the oscillator instead of the backplane for reference)
-    constant CFG_DISABLE_TTC_PHASE_LOCKING : boolean := false;
+    --constant CFG_DISABLE_TTC_PHASE_LOCKING : boolean := false;
+    constant CFG_DISABLE_TTC_PHASE_LOCKING : boolean := true;
 
     constant CFG_USE_TRIG_TX_LINKS  : boolean := false; -- if true, then trigger transmitters will be instantiated (used to connect to EMTF)
     constant CFG_NUM_TRIG_TX        : integer := 12; -- number of trigger transmitters used to connect to EMTF
@@ -46,10 +48,10 @@ package gem_board_config_package is
     
     type t_oh_link_config_arr is array (0 to CFG_NUM_OF_OHs - 1) of t_oh_link_config;
 
---    constant CFG_OH_LINK_CONFIG_ARR : t_oh_link_config_arr := (
---        (0, 1, 2, 40, 41), 
---        (3, 4, 5, 42, 43) 
---    );
+    constant CFG_OH_LINK_CONFIG_ARR : t_oh_link_config_arr := (
+        (0, 1, 2, 40, 41), 
+        (3, 4, 5, 42, 43) 
+    );
 
 --    constant CFG_OH_LINK_CONFIG_ARR : t_oh_link_config_arr := (
 --        (0, 1, 2, 24, 25), 
@@ -58,22 +60,22 @@ package gem_board_config_package is
 --        (9, 10, 11, 30, 31)
 --    );
     
-    constant CFG_OH_LINK_CONFIG_ARR : t_oh_link_config_arr := (
-        (0, 1, 2, 40, 41), 
-        (3, 4, 5, 42, 43),
-        (6, 7, 8, 44, 45), 
-        (9, 10, 11, 46, 47),
+    --constant CFG_OH_LINK_CONFIG_ARR : t_oh_link_config_arr := (
+    --    (0, 1, 2, 40, 41), 
+    --    (3, 4, 5, 42, 43),
+    --    (6, 7, 8, 44, 45), 
+    --    (9, 10, 11, 46, 47),
 
-        (12, 13, 14, 48, 49), 
-        (15, 16, 17, 50, 51), 
-        (18, 19, 20, 52, 53), 
-        (21, 22, 23, 54, 55), 
+    --    (12, 13, 14, 48, 49), 
+    --    (15, 16, 17, 50, 51), 
+    --    (18, 19, 20, 52, 53), 
+    --    (21, 22, 23, 54, 55), 
 
-        (24, 25, 26, 56, 57), 
-        (27, 28, 29, 58, 59), 
-        (30, 31, 32, 68, 69), 
-        (33, 34, 35, 70, 71) 
-    );
+    --    (24, 25, 26, 56, 57), 
+    --    (27, 28, 29, 58, 59), 
+    --    (30, 31, 32, 68, 69), 
+    --    (33, 34, 35, 70, 71) 
+    --);
 
     type t_trig_tx_link_config_arr is array (0 to CFG_NUM_TRIG_TX - 1) of integer range 0 to 79;
     
